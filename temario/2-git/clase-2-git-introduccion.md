@@ -35,7 +35,7 @@ Git es un software de control de versiones diseñado por Linus Torvalds. Enfocad
 Gratis, de código abierto y compatible para proyectos tanto grandes cómo pequeños.
 
 
-![Linus Torvalds](imgs/linus_torvalds.jpg)
+![Linus Torvalds](../../images/linus_torvalds.jpg)
 
 ### Git y GitHub
 **GitHub** es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador.
@@ -137,9 +137,9 @@ Poniendo como analogía a un árbol, podemos decir que:
 - **Merge**: Cuando una rama se une de vuelta al tronco.
 
 
-![Ramas GIT](imgs/git-branches.png)
+![Ramas GIT](../../images/git-branches.png)
 
-![Ramas GIT Avanzado](imgs/branches.svg)
+![Ramas GIT Avanzado](../../images/branches.svg)
 
 
 #### Repositorio remoto
