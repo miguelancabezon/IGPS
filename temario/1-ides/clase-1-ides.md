@@ -48,7 +48,7 @@ Pero tampoco hacen falta muchas cosas para escribir código. Puedes hacerlo con 
 
 ### Panorama de IDEs
 
-![IDES](imgs/ides.jpg)
+![IDES](../images/ides.jpg)
 
 IDEs hay muchos. Unos más famosos y otros menos. Al final un IDE es bueno si te sirve a ti como ingeniero/a para realizar el desarrollo del proyecto de la manera más eficiente para ti y el proyecto concreto en el que estás trabajando.
 
