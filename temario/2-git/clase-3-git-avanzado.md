@@ -2,9 +2,9 @@
 
 ## Ramas
 
-![Ramas GIT](imgs/git-branches.png)
+![Ramas GIT](../../images/git-branches.png)
 
-![Ramas GIT Avanzado](imgs/branches.svg)
+![Ramas GIT Avanzado](../../images/branches.svg)
 
 
 **Feature Branches (Ramas de Funcionalidad):** Estas ramas se utilizan para desarrollar nuevas características o funcionalidades. 
