@@ -1,6 +1,6 @@
 # IGPS
 
-- [x] [IDEs](temarios/1-ides/clase-1-ides.md)
+- [x] [IDEs](temario/1-ides/clase-1-ides.md)
 - [ ] [GIT]()
 - **Sofware**
   - [ ] [Ingeniería del Software]()
