@@ -25,7 +25,7 @@ Un **sistema de control de versiones** es una herramienta que registra los cambi
 
 ## Representación Visual
 
-![Distribuido vs Centralizado](imgs/control_versiones-distribuido_vs_centralizado.jpg)
+![Distribuido vs Centralizado](../../images/control_versiones-distribuido_vs_centralizado.jpg)
 
 ## GIT - Fundamentos
 
