@@ -35,6 +35,14 @@ Git es un software de control de versiones diseñado por Linus Torvalds. Enfocad
 Gratis, de código abierto y compatible para proyectos tanto grandes cómo pequeños.
 
 
+### Historia de Git
+
+A principios de los 2000 el kernel de Linux comenzaba a tener un tamaño considerable. Las versiones, se controlaban con parches enviado a través de correo electrónico indicando los cmabios realizados en los archivos. Paralelamente, muchos desarrolladores que aportaban al proyecto, usaban Beekeeper como herramienta para la gestión del código fuente.
+En 2005, Beekeeper eliminó la versión gratuita alegando infracciones de contrato debido a que varios desarrolladores de Linux habían realizado modificaciones en el software desbloqueando funciones de pago. Esta trifulca entre el equipo de Beekeeper y Linux llevó a Linus Torvalds, iniciador y parte importante de Linux, a diseñar un nuevo software de control de versiones tan libre como lo era (y es) Linux.
+
+Así nació Git.
+
+
 ![Linus Torvalds](../../images/linus_torvalds.jpg)
 
 ### Git y GitHub
