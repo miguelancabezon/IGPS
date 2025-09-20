@@ -79,6 +79,7 @@ git config --global user.email "tu@email.com" # Email de Git
 git config --list # Lista los usuarios (opcional)
 ```
 
+
 ### Conceptos básicos
 
 ![Git Resumen](../../images/git-resumen.png)
@@ -124,7 +125,14 @@ Para añadir los cambios preparados en la staging area, debemos hacer un commit 
 git commit -m "Add homepage design" # -m Indica el mensaje que vas a escribir entre comillas
 ```
 
-#### Estados
+Podemos ver cada commit como una versión única del repositorio.
+
+#### ¿Qué es HEAD?
+
+HEAD es el nombre de una variable que almacena la dirección del último commit. Es útil para cuando queramos realizar acciones partiendo desde ese commit.
+
+
+#### Estados - git status
 
 Cuando ejecutamos el comando `git status` nos va a devolver una serie de estados por archivo. Cada uno tiene su significado:
 
@@ -133,14 +141,59 @@ Cuando ejecutamos el comando `git status` nos va a devolver una serie de estados
 - **Staged**: El archivo está en el _staging area_.
 - **Commited**: El archivo está en el repositorio, registrado en el historial de git.
 
+#### Registro de cambios - git log
+
+Con `git log` vamos a poder ver los commits realizados en el repositorio con su id único y demás datos de interés. Si queremos ver una versión simplificada de estos registros, podemos usar `git log --oneline`.
+
+
+#### Comandos personalizados - git alias
+
+*¿Cansado de escribir comandos largos todo el día?* Ahora puedes crear tus propios comandos con `git alias`. Git alias es otra configuración para poder crear tus propios comandos personalizados.
+
+Como ejemplo, podemos crear un alias para el comando `git status` ejecutando el siguiente comando `git config --global alias.st status`. Ahora, cada vez que quieras ver el estado del repositorio puedes ejecutar `git st`.
+
+Otro ejemplo puede ser simplificar el comando `git log --oneline`. Podemos configurarlo con `git config --global alias.logone "log --onlineline"` (OJO, OJITO a que el comando lleva comillas, porque le hemos añadido el parámetro --oneline).
+
+
+
+### Revertir cambios y manejo de commits
+
+Imagináos la siguiente situación. Estamos trabajando y hacemos distintos commits pero, en un momento, nos damos cuenta de que tenemos un error que hiciste hace varios commits y no tienes ni idea de cómo volver atrás.
+Pues existen varias maneras en las que tendremos que tener en cuenta, qué queremos hacer o deshacer y a qué areas va a afectar esa restauración.
+
+#### git reset
+
+Es un poderoso comando que reescribe el historial de commits. Para usarlo, tenemos tres opciones:
+
+  - Soft: `git reset --soft <id_commit>` Mantiene los cambios tanto en el directorio de trabajo cómo en el área de preparación.
+  - Mixed (por defecto): `git reset --mixed <id_commit>` Mantiene los cambios sólo en el directorio de trabajo.
+  - Hard (muy destructivo): `git reset --hard <id_commit>` Descarta todos los cambios en todos los entornos.
+
+#### git restore
+
+Es un comando introducido en las versiones más recientes de Git (concretamente la 2.23 de Agosto de 2019) diseñada para deshacer cambios en el directorio de trabajo y en el *staging area*.
+
+Para descartar cambios en el directorio de trabajo podemos usar `git restore <ruta_archivo>`. Esto es lo mismo que si usasemos `git checkout -- <ruta_archivo>`.
+Para eliminar del *staging area* un archivo, se puede usar `git restore --staged <ruta_archivo>`. Es lo mismo que `git reset <ruta_archivo>`.
+Para reestablecer un archivo de un commit en específico, podemos usar `git restore --source=<id_commit> <ruta_archivo>`.
+
+Se introdujo este nuevo comando para separar la funcionalidad de restaurar archivos con git chekcout y crear comandos más específicos.
+
+#### git checkout
+
+Es un comando flexible que te permite navegar entre ramas y reestablecer los archivos en el directorio de trabajo.
+Podemos usarlo para cambiar a un commit específico con `git checkout <id_commit>`.
+
+Y también podemos usarlo para cambiar a una rama existente con `git checkout <nombre_rama>`, o cambiar a una nueva `git checkout -b <nombre_rama_nueva>`.
+
+
 **---Ejercicio práctico---**
 
 - Crear proyecto HTML simple
 - Hacer 5 commits diferentes
 - Explorar git log y git status
 
-
-#### El Formato
+### El Formato
 
 Como cuando cada lenguaje, patrón de diseño o tipo de proyecto tiene su formato de carpetas y archivos, Git también tiene el suyo. Puede variar de proyecto en proyecto pero aquí tenéis algunas convenciones:
 
@@ -162,8 +215,6 @@ Más información sobre el formato de los commits [aquí](https://gist.github.co
 
 #### Comandos útiles
 
-- `git log` Muestra el historial
-- `git diff` Muestra los cambios
-- `git remote -v` Muestra los repositorios remotos configurados
+- `gitk`: Muestra una representación visual de los cambios de tu repositorio
 
 Si queréis saber más sobre Git y sus posibilidades, [aquí tenéis la documentación](https://git-scm.com/doc).
