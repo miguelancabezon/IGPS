@@ -1,25 +1,29 @@
 # GIT
 
 ## Control de Versiones
+
 Un **sistema de control de versiones** es una herramienta que registra los cambios realizados en archivos a lo largo del tiempo, permitiendo recuperar versiones específicas cuando sea necesario. Es como tener un "historial de cambios" detallado de tu proyecto.
 
 ## Tipos de Sistemas de Control de Versiones
 
 ### **1. Sistemas Locales**
+
 - Guardan versiones en tu computadora.
 - **Problema**: No hay colaboración, riesgo de pérdida de datos.
 - **Ejemplo**: RCS (Revision Control System)
 
 ### **2. Sistemas Centralizados**
+
 - Un servidor central almacena todas las versiones.
 - Los desarrolladores descargan archivos del servidor.
 - **Ejemplos**: SVN (Subversion), Perforce, CVS.
 - **Problemas**:
-    - Si el servidor falla, nadie puede trabajar.
-    - Punto único de falla.
-    - Dependencia de conexión a internet.
+  - Si el servidor falla, nadie puede trabajar.
+  - Punto único de falla.
+  - Dependencia de conexión a internet.
 
 ### **3. Sistemas Distribuidos (Como Git)**
+
 - Cada desarrollador tiene una **copia completa** del historial.
 - No hay un punto central único.
 
@@ -30,10 +34,10 @@ Un **sistema de control de versiones** es una herramienta que registra los cambi
 ## GIT - Fundamentos
 
 ### ¿Qué es Git?
+
 Git es un software de control de versiones diseñado por Linus Torvalds. Enfocado a la eficiencia y la compatibilidad de versiones en archivos de código, su propósito es llevar registro de los cambios incluyendo coordinar el trabajo que varias personas realizan sobre archivos compartidos en un repositorio de código.
 
 Gratis, de código abierto y compatible para proyectos tanto grandes cómo pequeños.
-
 
 ### Historia de Git
 
@@ -42,10 +46,10 @@ En 2005, Beekeeper eliminó la versión gratuita alegando infracciones de contra
 
 Así nació Git.
 
-
 ![Linus Torvalds](../../images/linus_torvalds.jpg)
 
 ### Git y GitHub
+
 **GitHub** es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador.
 
 Podéis acceder a GitHub a través de este [enlace](https://github.com).
@@ -64,8 +68,8 @@ Para ver si está instalado correctamente, sólo hay que acceder al terminal e i
 git --version
 ```
 
-
 ### Configuración inicial
+
 Por su naturaleza colaborativa, Git utiliza un sistema de cuentas para poder conocer quién ha realizado los cambios en los archivos.
 Para poder usar Git sin que te pida la contraseña en cada acción debemos configurarlo en un inicio con nuestras credenciales:
 
@@ -75,8 +79,9 @@ git config --global user.email "tu@email.com" # Email de Git
 git config --list # Lista los usuarios (opcional)
 ```
 
-
 ### Conceptos básicos
+
+![Git Resumen](../../images/git-resumen.png)
 
 #### Los tres entornos de Git
 
@@ -84,11 +89,12 @@ git config --list # Lista los usuarios (opcional)
 
 Este es el directorio/carpeta en el que el ingeniero trabaja, ya sea para cambiar líneas de código, añadir o eliminar archivos, ...
 
-Dentro de esta carpeta, aparte del proyecto a trabajar, tendremos la carpeta oculta *.git* que tiene toda la información sobre el repositorio local y remoto y sus ramas.
+Dentro de esta carpeta, aparte del proyecto a trabajar, tendremos la carpeta oculta _.git_ que tiene toda la información sobre el repositorio local y remoto y sus ramas.
 
 Un ejemplo de proyecto con Git sería:
+
 ```
-mi-proyecto/ 
+mi-proyecto/
 ├── .git
 ├── index.html
 ├── style.css
@@ -97,9 +103,9 @@ mi-proyecto/
 
 Dato: El nombre de la carpeta "mi-proyecto" es el nombre del repositorio de Git.
 
-**Staging Area (Área de "Preparación")** 
+**Staging Area (Área de "Preparación")**
 
-El *Staging Area* es un área intermedia al que iremos añadiendo los archivos que has modificado con el objetivo de preparar tu próximo *commit*.
+El _Staging Area_ es un área intermedia al que iremos añadiendo los archivos que has modificado con el objetivo de preparar tu próximo _commit_.
 
 Para añadir archivos al staging area sólo necesitaréis el siguiente comando:
 
@@ -107,7 +113,6 @@ Para añadir archivos al staging area sólo necesitaréis el siguiente comando:
 git add index.html # Para un solo archivo
 git add * # Para incluir al commit todo lo modificado
 ```
-
 
 **Repositorio (carpeta .git)**
 
@@ -119,55 +124,52 @@ Para añadir los cambios preparados en la staging area, debemos hacer un commit 
 git commit -m "Add homepage design" # -m Indica el mensaje que vas a escribir entre comillas
 ```
 
-
 #### Estados
+
 Cuando ejecutamos el comando `git status` nos va a devolver una serie de estados por archivo. Cada uno tiene su significado:
 
 - **Untracked**: El archivo con este estado es nuevo y no está añadido a git.
 - **Modified**: Está en git y detecta cambios en el archivo.
-- **Staged**: El archivo está en el *staging area*.
+- **Staged**: El archivo está en el _staging area_.
 - **Commited**: El archivo está en el repositorio, registrado en el historial de git.
 
 **---Ejercicio práctico---**
+
 - Crear proyecto HTML simple
 - Hacer 5 commits diferentes
 - Explorar git log y git status
 
 #### Diagrama de flujo
+
 Git basa su organización en función a las ramas. ¿Pero qué son las ramas?
 Las **ramas (branches)** son líneas independientes de desarrollo que te permiten trabajar en diferentes características o experimentos sin afectar el código principal.
 
 Poniendo como analogía a un árbol, podemos decir que:
 
-- **Tronco principal**: La rama `main` es código estable. A veces llamado `prod` o  `master`.
+- **Tronco principal**: La rama `main` es código estable. A veces llamado `prod` o `master`.
 - **Ramas**: Diferentes direcciones de crecimiento. Ejemplos de ramas pueden ser `fix`, `beta`, `int` (integración)
 - **Hojas**: Serían los commits individuales.
 - **Merge**: Cuando una rama se une de vuelta al tronco.
-
 
 ![Ramas GIT](../../images/git-branches.png)
 
 ![Ramas GIT Avanzado](../../images/branches.svg)
 
-
 #### Repositorio remoto
-
-
 
 **SSH vs HTTPS**
 
 SSH (Sedcure Shell) es el nombre de un protocolo cuya función principal es la de conectar con un servidor remoto a travésd de un canal seguro dónde toda la información es cifrada.
 HTTPS es el protocolo seguro de transferencia de hipertexto que utiliza en su cifrado SSL para establecer un canal seguro gracias a la identificación por usuario y contraseña. Hoy en día este protocolo es el estándar y recomendado para cualquier página o aplicación web.
 
-| Característica               | SSH                                          | HTTPS                                       |
-| ---------------------------- | -------------------------------------------- | ------------------------------------------- |
-| Autenticación             | Por clave pública/privada                    | Por usuario y contraseña (o token personal) |
-| Seguridad                 | Muy segura (uso de criptografía asimétrica)  | Segura (usa SSL/TLS)                        |
-| Configuración             | Requiere generar e instalar claves           | Más simple, sin configuración inicial       |
-| Uso repetido              | No pide credenciales cada vez (usa la clave) | Puede pedir usuario/token en cada push      |
-| Firewalls/Proxies         | Puede estar bloqueado por algunas redes      | Funciona casi siempre (puerto 443)          |
+| Característica         | SSH                                          | HTTPS                                       |
+| ---------------------- | -------------------------------------------- | ------------------------------------------- |
+| Autenticación          | Por clave pública/privada                    | Por usuario y contraseña (o token personal) |
+| Seguridad              | Muy segura (uso de criptografía asimétrica)  | Segura (usa SSL/TLS)                        |
+| Configuración          | Requiere generar e instalar claves           | Más simple, sin configuración inicial       |
+| Uso repetido           | No pide credenciales cada vez (usa la clave) | Puede pedir usuario/token en cada push      |
+| Firewalls/Proxies      | Puede estar bloqueado por algunas redes      | Funciona casi siempre (puerto 443)          |
 | Experiencia de usuario | Ideal para desarrolladores frecuentes        | Mejor para principiantes o usos esporádicos |
-
 
 **¿Cuándo usar SSH?**
 
@@ -177,13 +179,13 @@ HTTPS es el protocolo seguro de transferencia de hipertexto que utiliza en su ci
 - Tienes experiencia configurando claves SSH.
 
 **Ventajas**
+
 - Más seguro a largo plazo.
 - Automatizable (por ejemplo, en scripts CI/CD).
 
 **Desventajas**
+
 - Requiere configuración inicial (claves, agente SSH).
-
-
 
 **¿Cuándo usar HTTPS?**
 
@@ -230,8 +232,8 @@ Si te has equivocado al establecer el repositorio remoto, puedes cambiar la url 
 Imáginate que tú y tu compañero de equipo estáis trabajando en la misma rama en un mismo archivo. El trabaja por la mañana y tú por la tarde. Sabes que ha subido sus cambios y ahora quieres tenerlos en local para seguir avanzando en el trabajo. Fácil, sólo tienes que ejecutar el siguiente comando, `git pull`, y los cambios se te descargarán a tu repositorio local.
 Los conflictos es algo que veremos en la siguiente lección.
 
-
 #### El Formato
+
 Como cuando cada lenguaje, patrón de diseño o tipo de proyecto tiene su formato de carpetas y archivos, Git también tiene el suyo. Puede variar de proyecto en proyecto pero aquí tenéis algunas convenciones:
 
 **CONVENCIONES GENERALES**
@@ -246,18 +248,14 @@ Sea como sea tu proyecto asegúrate de cumplir las siguientes normas:
 
 **MENSAJE DE COMMITS**
 
-
 Más información sobre el formato de los commits [aquí](https://gist.github.com/qoomon/5dfcdf8eec66a051ecd85625518cfd13).
 
-
-
 ### Más información
+
 #### Comandos útiles
 
-- `git log` Muestra el historial 
+- `git log` Muestra el historial
 - `git diff` Muestra los cambios
 - `git remote -v` Muestra los repositorios remotos configurados
 
-
 Si queréis saber más sobre Git y sus posibilidades, [aquí tenéis la documentación](https://git-scm.com/doc).
-
