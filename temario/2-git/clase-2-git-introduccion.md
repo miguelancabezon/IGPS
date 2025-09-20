@@ -173,9 +173,9 @@ Es un poderoso comando que reescribe el historial de commits. Para usarlo, tenem
 
 Es un comando introducido en las versiones más recientes de Git (concretamente la 2.23 de Agosto de 2019) diseñada para deshacer cambios en el directorio de trabajo y en el *staging area*.
 
-Para descartar cambios en el directorio de trabajo podemos usar `git restore <ruta_archivo>`. Esto es lo mismo que si usasemos `git checkout -- <ruta_archivo>`.
-Para eliminar del *staging area* un archivo, se puede usar `git restore --staged <ruta_archivo>`. Es lo mismo que `git reset <ruta_archivo>`.
-Para reestablecer un archivo de un commit en específico, podemos usar `git restore --source=<id_commit> <ruta_archivo>`.
+  - Para descartar cambios en el directorio de trabajo podemos usar `git restore <ruta_archivo>`. Esto es lo mismo que si usasemos `git checkout -- <ruta_archivo>`.
+  - Para eliminar del *staging area* un archivo, se puede usar `git restore --staged <ruta_archivo>`. Es lo mismo que `git reset <ruta_archivo>`.
+  - Para reestablecer un archivo de un commit en específico, podemos usar `git restore --source=<id_commit> <ruta_archivo>`.
 
 Se introdujo este nuevo comando para separar la funcionalidad de restaurar archivos con git chekcout y crear comandos más específicos.
 
