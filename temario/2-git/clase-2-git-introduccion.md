@@ -68,6 +68,8 @@ Para ver si está instalado correctamente, sólo hay que acceder al terminal e i
 git --version
 ```
 
+![Git version](../../images/git-version-img.png)
+
 ### Configuración inicial
 
 Por su naturaleza colaborativa, Git utiliza un sistema de cuentas para poder conocer quién ha realizado los cambios en los archivos.
@@ -76,7 +78,7 @@ Para poder usar Git sin que te pida la contraseña en cada acción debemos confi
 ```
 git config --global user.name "Tu Nombre" # Usuario de Git
 git config --global user.email "tu@email.com" # Email de Git
-git config --list # Lista los usuarios (opcional)
+git config --list # Lista toda la configuración (opcional)
 ```
 
 
