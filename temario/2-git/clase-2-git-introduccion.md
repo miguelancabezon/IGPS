@@ -218,3 +218,5 @@ Más información sobre el formato de los commits [aquí](https://gist.github.co
 - `gitk`: Muestra una representación visual de los cambios de tu repositorio
 
 Si queréis saber más sobre Git y sus posibilidades, [aquí tenéis la documentación](https://git-scm.com/doc).
+
+*Si queréis practicar Git en un playground que os muestra cómo se van formando los commits de manera visual, podéis entrar [aquí](https://learngitbranching.js.org/?locale=es_ES)*
