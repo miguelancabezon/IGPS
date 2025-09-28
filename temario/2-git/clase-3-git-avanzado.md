@@ -101,7 +101,7 @@ Para ello, antes de desarrollar cualquier funcionalidad (o de arreglar cualquier
 
 Para ver las ramas que tenemos actualmente podemos usar `git branch` y nos mostrará una lista con las ramas y nos marcará en cuál tenemos apuntando nuestro puntero HEAD (es decir, dónde nos encontramos realizando cambios).
 
-
+![Git Branch](../../images/git-ramas-git_branch.png)
 
 
 
