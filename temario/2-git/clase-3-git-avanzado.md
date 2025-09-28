@@ -63,6 +63,8 @@ HTTPS es el protocolo seguro de transferencia de hipertexto que utiliza en su ci
 
 - Puede requerir ingresar credenciales frecuentemente (aunque puedes usar un credential helper o un token).
 
+---
+
 ## REPOSITORIO REMOTO
 
 El repositorio remoto es el directorio alojado en cualquier servicio en línea. Este, será modificado en función de los commits de los desarrolladores implicados. Muchos de estos servicios también ofrecen herramientas de seguridad y gestión para adaptarlos a tu negocio o proyecto.
@@ -87,12 +89,17 @@ Ahora, ¿qué pasa cuando queremos crear el repositorio en GitHub y descargarlo 
 Más fácil aún. Sólo tendremos que ir a través de terminal a nuestro directorio de proyectos y escribir `git clone <URL_REPO>`.
 Una vez hecho ya estaría todo listo para empezar a hacer cambios.
 
-Si te has equivocado al establecer el repositorio remoto, puedes cambiar la url de la siguiente manera: `git remote set-url origin <URL_REPO>`
+Si te has equivocado al establecer el repositorio remoto, puedes cambiar la url de la siguiente manera: `git remote set-url origin <URL_REPO>`.
+
+> [!TIP]
+> Para evitar subir a GitHub archivos innecesarios o muy pesados podemos crear una arhivo `.gitignore` a la misma altura de vueastra carpeta `.git`.
+> Más información sobre gitignore [aquí](https://git-scm.com/docs/gitignore).
 
 ### TRABAJO COLABORATIVO
 Imáginate que tú y tu compañero de equipo estáis trabajando en la misma rama en un mismo archivo. El trabaja por la mañana y tú por la tarde. Sabes que ha subido sus cambios y ahora quieres tenerlos en local para seguir avanzando en el trabajo. Fácil, sólo tienes que ejecutar el siguiente comando, `git pull`, y los cambios se te descargarán a tu repositorio local.
 Los conflictos es algo que veremos en la siguiente lección.
 
+---
 
 ## Ramas
 Hasta ahora hemos visto una única rama, la rama principal llamada *main* o *master* (aunque ya hemos visto que pueden tener otros nombres dependiendo del proyecto). Pero trabajar sobre una sola rama es peligroso. Podemos romper algo y que no sea recuperable a través de revertir commits. O peor aún, tu producto es una red social y se rompe durante unos segundos, así que toda la empresa pierde varios millones mientras está sin servicio.
@@ -103,7 +110,35 @@ Para ver las ramas que tenemos actualmente podemos usar `git branch` y nos mostr
 
 ![Git Branch](../../images/git-ramas-git_branch.png)
 
-Para crear una rama deberemos usar el comando `git checkout -b <nombre_rama>`. Atención porque la nueva rama tendrá los últimos cambios de la rama en la que esté situado el puntero HEAD al momento de crear la nueva rama. Por ejemplo, tenemos dos ramas *main* y *beta*. Queremos crear una funcionalidad para nuestro entorno beta que ayude a los desarrolladores,
+Para crear una rama deberemos usar el comando `git checkout -b <nombre_rama>`. 
+
+> [!WARNING]
+> Atención porque la nueva rama tendrá los últimos cambios de la rama en la que esté situado el puntero HEAD al momento de crear la nueva rama. 
+
+**Veámoslo con un ejemplo**
+> Tenemos dos ramas *main* y *beta*. 
+> Queremos crear una funcionalidad de historial para nuestro entorno beta que ayude a los desarrolladores, así que haríamos un `git checkout beta` (fíjate que no tiene -b).
+> Ahora para empezar a desarrollar, debemos crear nuestra nueva rama con `git checkout -b feat/historial`.
+
+```mermaid
+---
+title: Ejemplo
+---
+gitGraph
+    commit
+    commit
+    branch beta
+    commit
+    branch feat/historial
+    commit
+    commit
+    checkout beta
+    merge feat/historial
+    checkout main
+    merge beta
+```
+
+Para cambiar el nombre de una rama, usaríamos `git branch -m <nuevo_nombre_rama>`.
 
 Para eliminar una rama tanto en local como en remoto podemos usar los siguientes comandos:
 ```
@@ -113,12 +148,16 @@ git branch -d <nombre_rama>               # Elimina rama en local
 
 Para cambiar vuestra rama por defecto, tendréis que cambiar las configuración de Git a través del siguiente comando:
 ```
-git config --global init.defaultBranch {nombre_rama}
+git config --global init.defaultBranch <nombre_rama>
 ```
 
 
+> [!TIP]
+> Encontraréis información más profunda sobre las ramas en la documentación de Git [aquí](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
 
-Encontraréis información más profunda sobre las ramas en la documentación de Git [aquí](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
+
+
+### Tipos de ramas
 
 #### Ramas de entorno: Estas ramas se utilizan para separar entornos o fases del desarrollo
 
@@ -128,7 +167,6 @@ Ejemplos:
   int
   dev
 ```
-
 
 #### Feature Branches (Ramas de Funcionalidad): Estas ramas se utilizan para desarrollar nuevas características o funcionalidades. 
 
