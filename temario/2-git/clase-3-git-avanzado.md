@@ -94,6 +94,29 @@ Imáginate que tú y tu compañero de equipo estáis trabajando en la misma rama
 Los conflictos es algo que veremos en la siguiente lección.
 
 
+## Ramas
+Hasta ahora hemos visto una única rama, la rama principal llamada *main* o *master* (aunque ya hemos visto que pueden tener otros nombres dependiendo del proyecto). Pero trabajar sobre una sola rama es peligroso. Podemos romper algo y que no sea recuperable a través de revertir commits. O peor aún, tu producto es una red social y se rompe durante unos segundos, así que toda la empresa pierde varios millones mientras está sin servicio.
+
+Para ello, antes de desarrollar cualquier funcionalidad (o de arreglar cualquier problema) es altamente recomendable (por no decir obligatorio) crear una rama nueva.
+
+Para ver las ramas que tenemos actualmente podemos usar `git branch` y nos mostrará una lista con las ramas y nos marcará en cuál tenemos apuntando nuestro puntero HEAD (es decir, dónde nos encontramos realizando cambios).
+
+
+
+
+
+Encontraréis información más profunda sobre las ramas en la documentación de Git [aquí](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
+
+#### Ramas de entorno: Estas ramas se utilizan para separar entornos o fases del desarrollo
+
+Ejemplos:
+```
+  beta
+  int
+  dev
+```
+
+
 #### Feature Branches (Ramas de Funcionalidad): Estas ramas se utilizan para desarrollar nuevas características o funcionalidades. 
 
 Prefijo: `feature` o `feat` 
