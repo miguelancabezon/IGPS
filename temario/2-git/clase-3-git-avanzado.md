@@ -103,6 +103,19 @@ Para ver las ramas que tenemos actualmente podemos usar `git branch` y nos mostr
 
 ![Git Branch](../../images/git-ramas-git_branch.png)
 
+Para crear una rama deberemos usar el comando `git checkout -b <nombre_rama>`. Atención porque la nueva rama tendrá los últimos cambios de la rama en la que esté situado el puntero HEAD al momento de crear la nueva rama. Por ejemplo, tenemos dos ramas *main* y *beta*. Queremos crear una funcionalidad para nuestro entorno beta que ayude a los desarrolladores,
+
+Para eliminar una rama tanto en local como en remoto podemos usar los siguientes comandos:
+```
+git push -d <nombre_remoto> <nombre_rama>   # Elimina rama en remoto (nombre_remoto suele ser origin)
+git branch -d <nombre_rama>               # Elimina rama en local
+```
+
+Para cambiar vuestra rama por defecto, tendréis que cambiar las configuración de Git a través del siguiente comando:
+```
+git config --global init.defaultBranch {nombre_rama}
+```
+
 
 
 Encontraréis información más profunda sobre las ramas en la documentación de Git [aquí](https://git-scm.com/book/en/v2/Git-Branching-Basic-Branching-and-Merging).
