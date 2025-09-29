@@ -250,5 +250,46 @@ De esta manera es cómo se mantienen y fortalecen muchos proyectos de código ab
 > Puedes conocer más sobre código abierto en el siguiente [enlace](https://es.wikipedia.org/wiki/Código_abierto).
 
 
+--- 
+
+## Git merge
+
+Ya tenemos todos nuestros cambios hechos en nuestra rama creada para la nueva funcionalidad (o arreglo, o lo que sea) ya podemos añadir nuestros cambios a la rama principal. Para ello, debemos hacer un 'merge', es decir, combinar una rama con otra. Debemos seguir los siguientes pasos:
+
+**1. Que el HEAD apunte a la rama objetivo**
+ Digamos que queremos incluir nuestros cambios a la rama principal (en este ejemplo, main). Primero, nos cambiamos de rama con `git checkout main`.
+ 
+**2. Hacemos el merge**
+ Hacemos el merge de la rama en la que hemos hecho los cambios (en este ejemplo diremos que hemos desarrollado una funcionalidad de pagos en una rama llamada 'feat/pagos'), con `git merge feat/pagos`.
+
+
+>[!TIP]
+>**¿Qué pasa si nos equivocamos en un merge?**
+>
+>Podemos usar `git merge --abort` para terminar el proceso de merge.
+
+**3. Resolvemos posibles conflictos**
+¡OH, NO! Tenemos un archivo con conflictos.
+
+Vemos que archivos tienen conflictos con `git status`, y vemos qué ha cambiado con `git diff`.
+
+Cuando editemos un archivo con conflictos tendremos algo parecido al siguiente código:
+
+```
+<<<<<<< HEAD
+Your changes here
+=======
+Other branch's changes
+>>>>>>> feat/pagos
+```
+
+Dentro de esos <<<<<< y >>>>>, escogemos los cambios que queremos conservar y eliminamos lo que no, además de los marcadores de conflicto (<<<<<<<, =======, >>>>>>>).
+
+Por útlimo, preparamos los cambios con `git add <archivo_conflictos_resueltos>` y hacemos `git commit -m "<mensaje>"`.
+
+
+**4. Eliminamos las ramas innecesarias**
+Con los cambios ya realizados, y con el merge hecho y resuelto, ya podemos eliminar la rama dónde hicimos los cambios con el comando `git branch -d feat/pagos`.
+
 
 
