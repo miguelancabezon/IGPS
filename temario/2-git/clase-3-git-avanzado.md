@@ -235,6 +235,9 @@ Ya tenemos todos nuestros cambios hechos en nuestra rama creada para la nueva fu
 **2. Hacemos el merge**
  Hacemos el merge de la rama en la que hemos hecho los cambios (en este ejemplo diremos que hemos desarrollado una funcionalidad de pagos en una rama llamada 'feat/pagos'), con `git merge feat/pagos`.
 
+ Por defecto, Git usa el método Fast-Forward cuando hace merge, significando en hacer el merge sin commits adicionales pero manteniendo el historial de los commits que se han hecho en la rama de origen.
+ Para más información sobre los tipos de merge, podéis mirar la [documentación](https://www.w3schools.com/git/git_branch_merge.asp?remote=github).
+
 
 >[!TIP]
 >**¿Qué pasa si nos equivocamos en un merge?**
