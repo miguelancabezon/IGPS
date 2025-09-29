@@ -224,33 +224,6 @@ docs/installation-guide # Guía de instalación
 
 --- 
 
-## Bifurcar un repositorio o Forks
-
-Bifurcar un repositorio o hacer Fork a un repositorio es una manera de contribuir a repositorios que no son tuyos. Lo que hace es crear una copia de un repositorio en la que puedes realizar modificaciones sin afectar al repositorio original. También permite que, mientras estás trabajando en tu repostorio bifurcado (o *forkeado* si queréis llamarlo así), puedas recibir los últimos cambios evitando conflictos en un futuro merge.
-
-![Ejemplo Fork GitHub](../../images/ejemplo-fork-crear-github.png)
-
-El flujo de trabajo con los repositorios remotos sería el siguiente:
-
- 1. Creo una bifurcación del repositorio original.
- 2. Clono el repositorio bifurcado a mi propio entorno.
- 3. Hago los cambios necesarios en mi repositorio bifurcado.
- 4. Hago push a mi rama principal en el repositorio bifurcado.
- 5. Creo una Pull Request (PR) explicando los cambios al repositorio original.
-
-De esta manera es cómo se mantienen y fortalecen muchos proyectos de código abierto.
-
-> [!TIP]
-> Consejo PRO
-> 
-> Es recomendable que añadáis un segundo repositorio remoto con la url del repositorio original con `git remote add upstream <url_repo_repositrio_original>`. De esta manera podréis descargar cada cambio realizado en el repostirorio original.
-
-
-> [!NOTE]
-> Puedes conocer más sobre código abierto en el siguiente [enlace](https://es.wikipedia.org/wiki/Código_abierto).
-
-
---- 
 
 ## Git merge
 
@@ -292,4 +265,30 @@ Por útlimo, preparamos los cambios con `git add <archivo_conflictos_resueltos>`
 Con los cambios ya realizados, y con el merge hecho y resuelto, ya podemos eliminar la rama dónde hicimos los cambios con el comando `git branch -d feat/pagos`.
 
 
+--- 
 
+
+## Bifurcar un repositorio o Forks
+
+Bifurcar un repositorio o hacer Fork a un repositorio es una manera de contribuir a repositorios que no son tuyos. Lo que hace es crear una copia de un repositorio en la que puedes realizar modificaciones sin afectar al repositorio original. También permite que, mientras estás trabajando en tu repostorio bifurcado (o *forkeado* si queréis llamarlo así), puedas recibir los últimos cambios evitando conflictos en un futuro merge.
+
+![Ejemplo Fork GitHub](../../images/ejemplo-fork-crear-github.png)
+
+El flujo de trabajo con los repositorios remotos sería el siguiente:
+
+ 1. Creo una bifurcación del repositorio original.
+ 2. Clono el repositorio bifurcado a mi propio entorno.
+ 3. Hago los cambios necesarios en mi repositorio bifurcado.
+ 4. Hago push a mi rama principal en el repositorio bifurcado.
+ 5. Creo una Pull Request (PR) explicando los cambios al repositorio original.
+
+De esta manera es cómo se mantienen y fortalecen muchos proyectos de código abierto.
+
+> [!TIP]
+> Consejo PRO
+> 
+> Es recomendable que añadáis un segundo repositorio remoto con la url del repositorio original con `git remote add upstream <url_repo_repositrio_original>`. De esta manera podréis descargar cada cambio realizado en el repostirorio original.
+
+
+> [!NOTE]
+> Puedes conocer más sobre código abierto en el siguiente [enlace](https://es.wikipedia.org/wiki/Código_abierto).
