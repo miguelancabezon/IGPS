@@ -143,9 +143,13 @@ Cuando ejecutamos el comando `git status` nos va a devolver una serie de estados
 - **Staged**: El archivo está en el _staging area_.
 - **Commited**: El archivo está en el repositorio, registrado en el historial de git.
 
-#### Registro de cambios - git log
+#### Registro de cambios - git log, git show y git diff
 
 Con `git log` vamos a poder ver los commits realizados en el repositorio con su id único y demás datos de interés. Si queremos ver una versión simplificada de estos registros, podemos usar `git log --oneline`.
+
+Con `git show <id_commit>` podremos ver los detalles de un commit.
+
+Por último, con `git diff` podremos ver los cambios realizados que aún no estén en el Área de Preparación (Stage Area). Para ver los cambios del Stage Area usaremos `git diff --staged`.
 
 
 #### Comandos personalizados - git alias
