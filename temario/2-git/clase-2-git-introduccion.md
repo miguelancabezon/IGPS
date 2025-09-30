@@ -129,6 +129,11 @@ git commit -m "Add homepage design" # -m Indica el mensaje que vas a escribir en
 
 Podemos ver cada commit como una versión única del repositorio.
 
+
+>[!TIP]
+> Si quieres simplificar el proceso puedes usar el comando `git commit -am "<mensaje>"`, la 'a' adicional te mueve los cambios al Staging Area antes del commit.
+> Eso si, este comando solo funciona **para cambios en archivos**. **No funciona para archivos nuevos**.
+
 #### ¿Qué es HEAD?
 
 HEAD es el nombre de una variable que almacena la dirección del último commit. Es útil para cuando queramos realizar acciones partiendo desde ese commit.
