@@ -16,16 +16,16 @@ Para ello el pensamiento crítico y analítico es clave. A partir de su experien
 
 ### 10 cualidades del buen ingeniero
 
-    1. Resolutivo y autosuficiente
-    2. Pensamiento analítico y lógico
-    3. Creatividad y mente abierta
-    4. Aprendizaje continuo
-    5. Comunicación oral y escrita
-    6. Trabajo en equipo
-    7. Detallista
-    8. Inteligencia emocional y liderazgo
-    9. Gestión de proyectos, riesgos, cambios y crisis
-    10. Pensamiento crítico
+1. Resolutivo y autosuficiente
+2. Pensamiento analítico y lógico
+3. Creatividad y mente abierta
+4. Aprendizaje continuo
+5. Comunicación oral y escrita
+6. Trabajo en equipo
+7. Detallista
+8. Inteligencia emocional y liderazgo
+9. Gestión de proyectos, riesgos, cambios y crisis
+10. Pensamiento crítico
 
 ## ¿Qué ingenierías existen?
 
@@ -45,18 +45,18 @@ Aquí entra el diseño y desarrollo de sistemas y procesos digitales y analógic
 
 Como las ingenierías engloban la mayoría de los aspectos de nuestro mundo actual, aquí tenéis un listado de algunas:
 
-    -  Derivadas de las Ciencias de la Conducta
-    -  Derivadas de las Ciencias Naturales
-    -  Derivadas de la Economía
-    -  Derivadas de la Ingeniería Agrícola
-    -  Derivadas de la Ingeniería Eléctrica
-    -  Derivadas de la Ingeniería Empresarial
-    -  Derivadas de la Ingeniería Física
-    -  Derivadas de la Ingeniería Geológica
-    -  Derivadas de la Ingeniería Industrial
-    -  Derivadas de la Ingeniería Mecánica
-    -  Derivadas de la Ingeniería Química
-    -  Derivadas de la Matemática
+-  Derivadas de las Ciencias de la Conducta
+-  Derivadas de las Ciencias Naturales
+-  Derivadas de la Economía
+-  Derivadas de la Ingeniería Agrícola
+-  Derivadas de la Ingeniería Eléctrica
+-  Derivadas de la Ingeniería Empresarial
+-  Derivadas de la Ingeniería Física
+-  Derivadas de la Ingeniería Geológica
+-  Derivadas de la Ingeniería Industrial
+-  Derivadas de la Ingeniería Mecánica
+-  Derivadas de la Ingeniería Química
+-  Derivadas de la Matemática
 
 ## Algunos ingenieros y sus logros
 
@@ -121,5 +121,6 @@ También supo ver más allá llegando a afirmar que los ordenadores podían hace
 3.[Wikipedia - Lee De Forest](https://es.wikipedia.org/wiki/Lee_De_Forest)
 4.[Wikipedia - Douglas Engelbart](https://es.wikipedia.org/wiki/Douglas_Engelbart)
 5.[Wikipedia - Ada Lovelace](https://es.wikipedia.org/wiki/Ada_Lovelace)
+
 
 
