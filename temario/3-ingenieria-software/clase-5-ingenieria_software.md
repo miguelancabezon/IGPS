@@ -8,6 +8,8 @@ Es una disciplina amplia y cambiante, en parte porque depende en gran medida del
 
 ## ¿Qué significa ser ingeniero?
 
+![Ingeniero TF2](../../images/ingenirero-tf2.png)
+
 Ser ingeniero implica en analizar el contexto y objeto de una necesidad social, industrial o económica y diseñar y desarrollar una solución tecnológica, práctica y útil.
 
 Para ello el pensamiento crítico y analítico es clave. A partir de su experiencia (y las experiencias previas de sus predecesores) debe crear soluciones a distintos problemas teniendo en cuenta parámetros tales como el tiempo, los recutsos disponibles, la posibilidad o no de realizarlo, límites, prestaciones o, incluso, aspectos estéticos y comerciales.
@@ -58,10 +60,28 @@ Como las ingenierías engloban la mayoría de los aspectos de nuestro mundo actu
 
 ## Algunos ingenieros y sus logros
 
-Hedy Lamarr
-Lee De Forest
-Douglas Engelbart
-Ada Lovelace
+### Hedy Lamarr <sup>[(2)](#bibliografía)</sup>
+
+![Hedy Lamarr](hedy_lamarr.jpg)
+
+Hedwig Eva Maria Kiesler (1914 - 2000), fue una actriz de cine e inventora austríaca.
+Durante la segunda guerra mundial ayudó a desarrollar manera autodidacta distintas tecnologías militares. Entre ellas, patentó junto al compositor George Antheil, un sistema de comunicación secreto que usaba una pianola para hacer saltos de frecuencia (hasta 88). Esta patente fue utilizada para misiles teledirigidos, para después usarse en el actual Bluetooth y Wi-Fi.
+
+
+### Lee De Forest <sup>[(3)](#bibliografía)</sup>
+
+![Lee De Forest](lee_de_forest.jpg)
+
+
+### Douglas Engelbart <sup>[(4)](#bibliografía)</sup>
+
+![Douglas Engelbart](douglas_engelbart.jpg)
+
+
+### Ada Lovelace <sup>[(5)](#bibliografía)</sup>
+
+![Ada Lovelace](ada_lovelace.jpg)
+
 
 # Software
 
@@ -80,3 +100,8 @@ Ada Lovelace
 # Bibliografía
 
 1.[Wikipedia - Ingeniería](https://es.wikipedia.org/wiki/Ingeniería)
+2.[Wikipedia - Hedyy Lamarr](https://es.wikipedia.org/wiki/Hedy_Lamarr)
+3.[Wikipedia - Lee De Forest](https://es.wikipedia.org/wiki/Lee_De_Forest)
+4.[Wikipedia - Douglas Engelbart](https://es.wikipedia.org/wiki/Douglas_Engelbart)
+5.[Wikipedia - Ada Lovelace](https://es.wikipedia.org/wiki/Ada_Lovelace)
+
