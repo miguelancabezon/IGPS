@@ -62,25 +62,42 @@ Como las ingenierías engloban la mayoría de los aspectos de nuestro mundo actu
 
 ### Hedy Lamarr <sup>[(2)](#bibliografía)</sup>
 
-![Hedy Lamarr](hedy_lamarr.jpg)
+![Hedy Lamarr](../../images/hedy_lamarr.jpg)
 
-Hedwig Eva Maria Kiesler (1914 - 2000), fue una actriz de cine e inventora austríaca.
+Hedwig Eva Maria Kiesler (1914-2000), fue una actriz de cine e inventora austríaca.
 Durante la segunda guerra mundial ayudó a desarrollar manera autodidacta distintas tecnologías militares. Entre ellas, patentó junto al compositor George Antheil, un sistema de comunicación secreto que usaba una pianola para hacer saltos de frecuencia (hasta 88). Esta patente fue utilizada para misiles teledirigidos, para después usarse en el actual Bluetooth y Wi-Fi.
 
 
 ### Lee De Forest <sup>[(3)](#bibliografía)</sup>
 
-![Lee De Forest](lee_de_forest.jpg)
+![Lee De Forest](../../images/lee_de_forest.jpg)
+
+Lee De Forest (1873-1961) fue un inventor estadounidense de con más de 300 patentes.
+Entre ellas está el bisturí, el radioteléfono, sistemas de transmisión y recepción de radio, sistemas de comuncación de los trenes, un tipo de altavoz, la celda fotoeléctrica, la cámara de cine a prueba de ruidos, y parte de la televisión y de la televisión en color.
+
+En 1923 mostró en Nueva York por primera vez su sistema de sincronización de sonido en películas, considerandose la primera proyección con sonido. Aunque en su momento la crítica se quejó de la calidad del mismo.
+
+Pero su invento más importante fue en 1906. Su objetivo era el de descubrir un método para amplificar las ondas y al mismo tiempo, controlar el volumen del sonido. Construyó una delgada tira de alambre de platino (a la que dio el nombre de "rejilla"), la dobló en zigzag y la colocó entre el filamento y la placa. Después, encerró todo el aparato en una bombilla de vidrio. Así, inventó el tríodo, uno de los pilares de la electrónica.
 
 
 ### Douglas Engelbart <sup>[(4)](#bibliografía)</sup>
 
-![Douglas Engelbart](douglas_engelbart.jpg)
+![Douglas Engelbart](../../images/douglas_engelbart.jpg)
+
+Douglas Engelbart (1925-2013) fue uno de los inventores que más ha mejorado la vida de los informáticos. En 1967 presentó una patente llamada "indicador de posición XY para un sistema de visualización". Esta patente detallaba un dispositivo conectado por un cable a un ordenador y permitia el movimiento bidimensional de un indicador o cursor que facilitase la navegación por la pantalla. Es decir, un mouse.
+
+Su andadura en la ingenería de la computación también abarcó el surgimiento de las interfaces de comunicación.
 
 
 ### Ada Lovelace <sup>[(5)](#bibliografía)</sup>
 
-![Ada Lovelace](ada_lovelace.jpg)
+![Ada Lovelace](../../images/ada_lovelace.jpg)
+
+Augusta Ada King, condesa de Lovelace (1815-1852), hija de el famoso poeta británico Lord Byron y de la artistócrata y matemática Anna Isabella Noel Byron (Lady Byron), fue registrada al nacer como Augusta Ada Byron. Cambió su nombre cuando se casó con su mentor, Lord King.
+
+En este entorno científico y creativo, Ada se denominaba a sí misma científica poetisa (también escribía) y fue clave en sus escritos sobre la máquina analítica de Charles Babbage, una de las primeras computadoras y en sus primeros algoritmos.
+
+También supo ver más allá llegando a afirmar que los ordenadores podían hacer más cosas que calcular operaciones con números.
 
 
 # Software
@@ -104,4 +121,5 @@ Durante la segunda guerra mundial ayudó a desarrollar manera autodidacta distin
 3.[Wikipedia - Lee De Forest](https://es.wikipedia.org/wiki/Lee_De_Forest)
 4.[Wikipedia - Douglas Engelbart](https://es.wikipedia.org/wiki/Douglas_Engelbart)
 5.[Wikipedia - Ada Lovelace](https://es.wikipedia.org/wiki/Ada_Lovelace)
+
 
