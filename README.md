@@ -3,7 +3,7 @@
 - [x] [IDEs](temario/1-ides/clase-1-ides.md)
 - [x] [GIT](/temario/2-git)
 - **Sofware**
-  - [ ] [Ingeniería del Software](/temario/3-ingenieria-software/clase-5-ingenieria_software.md)
+  - [x] [Ingeniería del Software](/temario/3-ingenieria-software/clase-5-ingenieria_software.md)
   - [ ] [Procesos del Software](/temario/3-ingenieria-software/clase-6-proceso_software.md)
 - **Lenguajes de marcado**
   - [ ] [Markdown](/temario/4-markdown)
