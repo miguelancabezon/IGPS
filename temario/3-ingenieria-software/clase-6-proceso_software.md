@@ -99,6 +99,35 @@ El proceso evolutivo itera sobre sí mismo, creando un círculo completo de acti
 ![Proceso Evolutivo](../../images/proceso_evolutivo.webp)
 
 
+## Modelos de Desarrollo de Software
+El modelo puede utilizar cualquier proceso para generar pasos que se ejecutan de distintas maneras. Los modelos más usados son:
+
+### Modelo en cascada
+Muy similar al proceso lineal, cada fase se completa antes de pasar a la siguiente.
+
+![Modelo Cascada](../../images/modelo_cascada.png)
+
+### Modelo en cascada en V
+Primero realizamos el proceso lineal clásico en cascada, y volvemos atrás paso a paso confirmando y corrigiendo mediante distintos tipos de pruebas.
+
+![Modelo Cascada V](../../images/modelo_cascada_v.jpeg)
+
+### Modelo de procesos incrementales
+Con un proceso en cascada vamos añadiendo valor en cada iteración.
+
+![Modelo Procesos Incremental](../../images/modelo_incremental.jpg)
+
+### Modelo de procesos evolutivo
+Con un proceso incremental vamos añadiendo valor en cada iteración.
+
+![Modelo Procesos Incremental](../../images/modelo_incremental.jpg)
+
+### Modelo Unificado
+El modelo unificado se caracteriza por trabajar sobre todo el trabajo anterior. Sería una suma de los procesos iterativos e incremental. Es uno de los modelos más usados hoy en día.
+
+![Modelo Unificado](../../images/modelo_unificado.png)
+
+
 ## ¿Qué hace bueno a un software?
 
 Aunque la palabara *bueno* es subjetiva y depende tanto de a quien le preguntes y del proyecto. Existen varios frentes a los que poner especial énfasis cuando quieres construir un software considerado bueno o que tienda a ser bueno:
@@ -145,6 +174,7 @@ Estos cinco puntos deben equilibrarse para que todos queden satisfechos.
 1. [Wikipedia - Software](https://es.wikipedia.org/wiki/Software)
 2. [Wikipedia - Sistema Formal](https://es.wikipedia.org/wiki/Sistema_formal)
 3. [Medium - Procesos desarrollo Software](https://medium.com/@ramiroec/procesos-de-desarrollo-de-software-d06d18ebd78f)
+
 
 
 
