@@ -388,7 +388,7 @@ Tres formas diferentes de crear una línea horizontal
 ### **Comentarios (no visibles)**
 ```markdown
 <!-- Este es un comentario que no se verá -->
-[//]: # (Este es otro tipo de comentario)
+<!--[//]: # (Este es otro tipo de comentario)
 ```
 
 ### **Emojis (GitHub Markdown)**
@@ -532,4 +532,5 @@ MIT
 
 ¡Markdown es una habilidad esencial para cualquier desarrollador! Practica creando documentación para tus proyectos y pronto se volverá segunda naturaleza. 🚀
 -->
+
 
