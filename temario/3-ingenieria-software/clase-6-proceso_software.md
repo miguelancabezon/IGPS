@@ -86,7 +86,7 @@ El proceso lineal sigue la línea "natural" de las actividades y cada actividad 
 ### Proceso Iterativo
 El proceso iterativo tiene la ventaja de poder mejorar cada actividad y volver a ella antes de pasar a la siguiente. Muy útil para crear entregables con calidad.
 
-![Proceso Iterativo](../../images/proceso_lineal.jpg)
+![Proceso Iterativo](../../images/proceso_iterativo.jpg)
 
 ### Proceso Paralelo
 El proceso paralelo permite ejecutar una o más actividades en paralelo mientras las demás se están realizando.
@@ -120,7 +120,7 @@ Con un proceso en cascada vamos añadiendo valor en cada iteración.
 ### Modelo de procesos evolutivo
 Con un proceso incremental vamos añadiendo valor en cada iteración.
 
-![Modelo Procesos Incremental](../../images/modelo_incremental.jpg)
+![Modelo Procesos Incremental](../../images/modelo_evolutivo.jpg)
 
 ### Modelo Unificado
 El modelo unificado se caracteriza por trabajar sobre todo el trabajo anterior. Sería una suma de los procesos iterativos e incremental. Es uno de los modelos más usados hoy en día.
@@ -174,6 +174,7 @@ Estos cinco puntos deben equilibrarse para que todos queden satisfechos.
 1. [Wikipedia - Software](https://es.wikipedia.org/wiki/Software)
 2. [Wikipedia - Sistema Formal](https://es.wikipedia.org/wiki/Sistema_formal)
 3. [Medium - Procesos desarrollo Software](https://medium.com/@ramiroec/procesos-de-desarrollo-de-software-d06d18ebd78f)
+
 
 
 
