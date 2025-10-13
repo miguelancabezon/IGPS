@@ -69,6 +69,13 @@ Ahora ya se puede interactuar con una versión concreta del producto y que el cl
 Esta fase es de las más cortas si hemos hecho bien las anteriores, y es dónde los problemas más críticos pueden salir a la luz. Cualquier fallo es visto como una mella en la defición de buen software y, por consiguiente, en la confianza del usuario.
 
 
+### Actividades Sombrilla
+Como hemos dicho, las **actividades sombrilla** no son cruciales para el desarrollo de un software, pero sí para el desarrollo de un *buen software*. 
+Entre estas actividades se encuentran todas aquellas relacionadas con el **seguimiento y control** de los procesos y productos; la **administración de riesgos** para poder gestionarlos lo mejor posible; el **aseguramiento de la calidad** ya sea en código mediante patrones, sintáxis, etc. o la calidad del conjunto gracias a la realización de pruebas.
+
+Las **revisiones técnicas y de configuración** también sono importantes para mantener nuestro programa actualizado y a punto tanto en la parte tecnológica cómo en la que aborda la configuración del mismo.
+
+
 ## ¿Qué hace bueno a un software?
 
 Aunque la palabara *bueno* es subjetiva y depende tanto de a quien le preguntes y del proyecto. Existen varios frentes a los que poner especial énfasis cuando quieres construir un software considerado bueno o que tienda a ser bueno:
@@ -114,6 +121,7 @@ Estos cinco puntos deben equilibrarse para que todos queden satisfechos.
 
 1. [Wikipedia - Software](https://es.wikipedia.org/wiki/Software)
 2. [Wikipedia - Sistema Formal](https://es.wikipedia.org/wiki/Sistema_formal)
+
 
 
 
