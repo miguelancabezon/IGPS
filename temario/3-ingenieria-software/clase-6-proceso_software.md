@@ -38,8 +38,35 @@ Los técnicos e ingenieros del software que van a analizar una solución real y 
 
 ## ¿Cómo se construye?
 
+El sofware no se construye, se desarrolla. Esto implica que vamos a tener un proceso de planificación y modelado además de la propia construcción del programa.
+El desarrollo de software se puede separar en dos bloques, uno **estructural** y otro **sombrilla** que, aunque no sea explícitamente necesario para que un software pase de la nada a hecho, sí que contribuye en sobremanera a crear un mejor sistema.
 
+### Actividades Estructurales
 
+#### Requisitado/Comunicación
+Lo primero que necesitamos es el conocimiento de que alguien o algo necesita una solución informática a resolver. Hay que mantener una buena comunicación y sonsacar todo lo necesario para que el software se considere finalizado (el llamado *scope*). Aquí se nos comunicarán las horquillas de tiempo en las que el proyecto debe estar finalizado, incluso con fecha final.
+
+Esta comunicación puede darse tanto al principio como de manera constante, implicando al cliente en el proceso del desarrollo.
+
+#### Planificación
+Aquí deberemos acotar los otros retos de un software. Elegir las tecnologías, dar formato a las funcionalidades recibidas, y otros aspectos que darán pie a la asignación de costes. También analizar la viabilidad del proyecto, para determinar si lo pedido es factible, o analizar los riesgos para estar preparados ante cualquier situación, son actividades dentro de esta fase.
+
+#### Modelado
+Toca empezar a diseñar la solución. Para ello debemos tener en cuenta todos los entornos y funciones que va a tener nuestro software.
+Si va a tener una **base de datos**, deberemos diseñar una estructura que facilite la implementación y su posterior mantenimiento y evolución. Estos datos, deberán tener bien específicados cómo se van a mover a través del sistema con diagramas. Un buen diagrama, puede ayudar a trazar dónde esta el fallo antes de construir siquiera el software.
+
+También es imporante comenzar a diseñar las **interfaces de usuario** y que el cliente vaya aceptando el aspecto visual del mismo. Esto ayudará a que el flujo de uso de una aplicación sea lo más fluido posible y no crear una aplicación con una barrera de entrada alta para el usuario.
+
+#### Construcción
+Llegamos a a la hora de aplicar los conocimientos técnicos. Ya teniendo la selección de la tecnología, los diseños en los datos y en la interfaz, y demás asuntos, toca programar tanto el producto en sí como las pruebas.
+
+También puede ser el momento de desarrollar herramientas y automatizaciones que ayuden tanto al proceso de construcción como de despliegue.
+
+#### Despliegue
+Por último, una vez creado y probado el software (tanto internamente como con el cliente en una fase beta del producto), toca desplegar.
+Ahora ya se puede interactuar con una versión concreta del producto y que el cliente (u otros usuarios) va a poder usar de manera libre.
+
+Esta fase es de las más cortas si hemos hecho bien las anteriores, y es dónde los problemas más críticos pueden salir a la luz. Cualquier fallo es visto como una mella en la defición de buen software y, por consiguiente, en la confianza del usuario.
 
 
 ## ¿Qué hace bueno a un software?
@@ -83,13 +110,11 @@ Para crear un software, siempre tendremos ciertas limitaciones a las que tendrem
 Estos cinco puntos deben equilibrarse para que todos queden satisfechos.
 
 
-## ¿Cuáles son sus costos?
-
-
 ## Bibliografía
 
 1. [Wikipedia - Software](https://es.wikipedia.org/wiki/Software)
 2. [Wikipedia - Sistema Formal](https://es.wikipedia.org/wiki/Sistema_formal)
+
 
 
 
