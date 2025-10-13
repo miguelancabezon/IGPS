@@ -1,6 +1,6 @@
 # Markdown - Parte 1
 
-# 📝 Clase de Markdown Básico (2 horas)
+<!--# 📝 Clase de Markdown Básico (2 horas)
 
 ## 🎯 Objetivos de la Clase
 Al finalizar esta clase serás capaz de:
@@ -531,4 +531,5 @@ MIT
 - ✅ Código con syntax highlighting
 
 ¡Markdown es una habilidad esencial para cualquier desarrollador! Practica creando documentación para tus proyectos y pronto se volverá segunda naturaleza. 🚀
+-->
 
