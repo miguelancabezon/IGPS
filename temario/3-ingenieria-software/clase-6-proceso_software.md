@@ -76,6 +76,29 @@ Entre estas actividades se encuentran todas aquellas relacionadas con el **segui
 Las **revisiones técnicas y de configuración** también sono importantes para mantener nuestro programa actualizado y a punto tanto en la parte tecnológica cómo en la que aborda la configuración del mismo.
 
 
+## Procesos del Software<sup>[(3)](#bibliografía)</sup>
+
+### Proceso Lineal
+El proceso lineal sigue la línea "natural" de las actividades y cada actividad comienza cuando acaba la otra.
+
+![Proceso Lineal](../../images/proceso_lineal.jpg)
+
+### Proceso Iterativo
+El proceso iterativo tiene la ventaja de poder mejorar cada actividad y volver a ella antes de pasar a la siguiente. Muy útil para crear entregables con calidad.
+
+![Proceso Iterativo](../../images/proceso_lineal.jpg)
+
+### Proceso Paralelo
+El proceso paralelo permite ejecutar una o más actividades en paralelo mientras las demás se están realizando.
+
+![Proceso Paralelo](../../images/proceso_paralelo.webp)
+
+### Proceso Evolutivo
+El proceso evolutivo itera sobre sí mismo, creando un círculo completo de actividades y creando un incremento en el valor del software con cada iteración. Útil para la entrega continua de entregables.
+
+![Proceso Evolutivo](../../images/proceso_evolutivo.webp)
+
+
 ## ¿Qué hace bueno a un software?
 
 Aunque la palabara *bueno* es subjetiva y depende tanto de a quien le preguntes y del proyecto. Existen varios frentes a los que poner especial énfasis cuando quieres construir un software considerado bueno o que tienda a ser bueno:
@@ -121,6 +144,8 @@ Estos cinco puntos deben equilibrarse para que todos queden satisfechos.
 
 1. [Wikipedia - Software](https://es.wikipedia.org/wiki/Software)
 2. [Wikipedia - Sistema Formal](https://es.wikipedia.org/wiki/Sistema_formal)
+3. [Medium - Procesos desarrollo Software](https://medium.com/@ramiroec/procesos-de-desarrollo-de-software-d06d18ebd78f)
+
 
 
 
