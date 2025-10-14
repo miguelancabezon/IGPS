@@ -8,7 +8,7 @@ El software se puede separar en tres categorías principales:
 
 ### Software de Sistema
 
-El software de sistema es todo aquel que vincula adecuadamente tanto al programador como al usuario a la máquina. Procura interfaces de alto nivel para aislarlos de aspectos físicos como memooria, procesamiento, puertos, teclados, etc. Incluye:
+El software de sistema es todo aquel que vincula adecuadamente tanto al programador como al usuario a la máquina. Procura interfaces de alto nivel para aislarlos de aspectos físicos como memoria, procesamiento, puertos, teclados, etc. Incluye:
 - Sistemas operativos
 - BIOS
 - Controladores
@@ -174,6 +174,7 @@ Estos cinco puntos deben equilibrarse para que todos queden satisfechos.
 1. [Wikipedia - Software](https://es.wikipedia.org/wiki/Software)
 2. [Wikipedia - Sistema Formal](https://es.wikipedia.org/wiki/Sistema_formal)
 3. [Medium - Procesos desarrollo Software](https://medium.com/@ramiroec/procesos-de-desarrollo-de-software-d06d18ebd78f)
+
 
 
 
