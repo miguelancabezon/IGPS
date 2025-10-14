@@ -1,55 +1,46 @@
-# Markdown - Parte 1
-
-<!--# 📝 Clase de Markdown Básico (2 horas)
-
-## 🎯 Objetivos de la Clase
-Al finalizar esta clase serás capaz de:
-- Crear documentos con formato en Markdown
-- Estructurar contenido de forma profesional
-- Crear README.md para tus proyectos
-- Documentar código y proyectos efectivamente
+# Markdown - Parte 
 
 ---
 
-## 📚 PARTE 1: Introducción y Fundamentos (30 min)
+## PARTE 1: Introducción y Fundamentos
 
-### **¿Qué es Markdown? (10 min)**
+### **¿Qué es Markdown? **
 
 **Markdown** es un lenguaje de marcado ligero creado por John Gruber en 2004. Su objetivo es ser fácil de leer y escribir en formato de texto plano, y convertirse en HTML válido.
 
-**Ventajas:**
-- ✅ Sintaxis simple y legible
-- ✅ Multiplataforma (funciona en cualquier SO)
-- ✅ No necesitas editor especial (funciona en Notepad)
-- ✅ Ampliamente usado (GitHub, Reddit, Discord, etc.)
-- ✅ Se convierte fácilmente a HTML, PDF, etc.
+**Ventajas**
+- Sintaxis simple y legible
+- Multiplataforma (funciona en cualquier SO)
+- No necesitas editor especial (funciona en Notepad)
+- Ampliamente usado (GitHub, Reddit, Discord, etc.)
+- Se convierte fácilmente a HTML, PDF, etc.
 
-**Dónde se usa:**
+**Dónde se usa**
 - README.md en GitHub
 - Documentación técnica
 - Blogs y sitios web estáticos (Jekyll, Hugo)
 - Notas y wikis personales (Obsidian, Notion)
 - Mensajería (Discord, Slack)
 
-### **Configuración del Entorno (10 min)**
+### **Configuración del Entorno**
 
-**Opciones de editores:**
+**Opciones de editores**
 
-1. **Visual Studio Code** (Recomendado)
+1. **Visual Studio Code*
    - Extensiones útiles:
      - Markdown All in One
      - Markdown Preview Enhanced
    - Vista previa: `Ctrl+Shift+V`
 
-2. **Editores online:**
+2. **Editores online**
    - [Dillinger](https://dillinger.io/)
    - [StackEdit](https://stackedit.io/)
    - [HackMD](https://hackmd.io/)
 
-3. **Otros editores:**
+3. **Otros editores**
    - Typora, Obsidian, Notion
 
-**Crear tu primer archivo:**
+**Crear tu primer archivo**
 ```bash
 # Crear carpeta para práctica
 mkdir markdown-clase
@@ -61,7 +52,7 @@ touch mi-primer-documento.md
 code mi-primer-documento.md
 ```
 
-### **Sintaxis Básica - Encabezados (10 min)**
+### **Sintaxis Básica - Encabezados**
 
 ```markdown
 # Encabezado Nivel 1 (H1)
@@ -72,21 +63,21 @@ code mi-primer-documento.md
 ###### Encabezado Nivel 6 (H6)
 ```
 
-**Reglas importantes:**
+**Reglas importantes**
 - Siempre dejar un espacio después del `#`
 - Solo hay 6 niveles de encabezados
 - H1 usar solo para título principal
 - Mantener jerarquía lógica
 
-**❌ Errores comunes:**
+**Errores comunes**
 ```markdown
-#SinEspacio           ❌ Falta espacio
-####### 7 niveles     ❌ No existe H7
+#SinEspacio           Falta espacio
+####### 7 niveles     No existe H7
 ## Nivel 2
-# Nivel 1             ❌ Jerarquía ilógica
+# Nivel 1             Jerarquía ilógica
 ```
 
-**💻 Ejercicio Práctico 1 (5 min):**
+**💻 Ejercicio Práctico 1**
 Crear estructura de un CV:
 - Tu nombre (H1)
 - Secciones: Experiencia, Educación, Habilidades (H2)
@@ -94,9 +85,9 @@ Crear estructura de un CV:
 
 ---
 
-## 📚 PARTE 2: Formato de Texto (30 min)
+## PARTE 2: Formato de Texto
 
-### **Énfasis y Formato (15 min)**
+### **Énfasis y Formato**
 
 ```markdown
 **Texto en negrita**
@@ -116,7 +107,7 @@ ___También negrita y cursiva___
 > Puede tener múltiples líneas
 ```
 
-**Resultado:**
+**Resultado**
 - **Texto en negrita**
 - *Texto en cursiva*
 - ***Negrita y cursiva***
@@ -124,14 +115,14 @@ ___También negrita y cursiva___
 - `Código en línea`
 - > Cita o blockquote
 
-**Combinaciones útiles:**
+**Combinaciones útiles**
 ```markdown
 Este es un texto **importante** con un *énfasis* especial.
 El comando `git init` inicia un repositorio.
 **ADVERTENCIA:** ~~No usar~~ Usar con precaución.
 ```
 
-### **Párrafos y Saltos de Línea (5 min)**
+### **Párrafos y Saltos de Línea**
 
 ```markdown
 Este es un párrafo.
@@ -143,14 +134,14 @@ Para forzar un salto de línea
 usa dos espacios al final.
 ```
 
-**Reglas:**
+**Reglas**
 - Párrafos separados por línea en blanco
 - Salto de línea dentro de párrafo: 2 espacios + Enter
 - No mezclar tabulaciones y espacios
 
-### **Listas (10 min)**
+### **Listas**
 
-**Listas no ordenadas:**
+**Listas no ordenadas**
 ```markdown
 - Item 1
 - Item 2
@@ -164,7 +155,7 @@ usa dos espacios al final.
 + O con signo más
 ```
 
-**Listas ordenadas:**
+**Listas ordenadas**
 ```markdown
 1. Primer paso
 2. Segundo paso
@@ -174,14 +165,14 @@ usa dos espacios al final.
 4. Cuarto paso
 ```
 
-**Listas de tareas (GitHub):**
+**Listas de tareas (GitHub)**
 ```markdown
 - [x] Tarea completada
 - [ ] Tarea pendiente
 - [ ] Otra tarea pendiente
 ```
 
-**💻 Ejercicio Práctico 2 (5 min):**
+**💻 Ejercicio Práctico 2**
 Crear una lista de compras con:
 - 5 categorías (Frutas, Verduras, etc.)
 - Cada categoría con 3-4 items
@@ -189,27 +180,23 @@ Crear una lista de compras con:
 
 ---
 
-## ☕ DESCANSO (10 min)
+## PARTE 3: Enlaces e Imágenes
 
----
+### **Enlaces**
 
-## 📚 PARTE 3: Enlaces e Imágenes (25 min)
-
-### **Enlaces (12 min)**
-
-**Sintaxis básica:**
+**Sintaxis básica**
 ```markdown
 [Texto del enlace](https://www.ejemplo.com)
 [Google](https://www.google.com)
 [GitHub](https://github.com)
 ```
 
-**Con título (tooltip):**
+**Con título (tooltip)**
 ```markdown
 [Google](https://www.google.com "Ir a Google")
 ```
 
-**Enlaces de referencia:**
+**Enlaces de referencia**
 ```markdown
 Este es un [enlace de referencia][1] y otro [enlace][google].
 
@@ -217,13 +204,13 @@ Este es un [enlace de referencia][1] y otro [enlace][google].
 [google]: https://www.google.com "Motor de búsqueda"
 ```
 
-**Enlaces automáticos:**
+**Enlaces automáticos**
 ```markdown
 <https://www.google.com>
 <correo@ejemplo.com>
 ```
 
-**Enlaces a secciones (anclas):**
+**Enlaces a secciones (anclas)**
 ```markdown
 [Ir a la sección de imágenes](#imágenes)
 
@@ -231,38 +218,38 @@ Este es un [enlace de referencia][1] y otro [enlace][google].
 Contenido aquí...
 ```
 
-**Enlaces mailto:**
+**Enlaces mailto**
 ```markdown
 [Contáctame](mailto:correo@ejemplo.com)
 [Enviar email con asunto](mailto:correo@ejemplo.com?subject=Consulta)
 ```
 
-### **Imágenes (13 min)**
+### **Imágenes**
 
-**Sintaxis básica:**
+**Sintaxis básica**
 ```markdown
 ![Texto alternativo](ruta/imagen.jpg)
 ![Logo](https://ejemplo.com/logo.png)
 ```
 
-**Con título:**
+**Con título**
 ```markdown
 ![Paisaje](imagen.jpg "Hermoso paisaje")
 ```
 
-**Imágenes como enlaces:**
+**Imágenes como enlaces**
 ```markdown
 [![Logo](logo.png)](https://www.ejemplo.com)
 ```
 
-**Imágenes de referencia:**
+**Imágenes de referencia**
 ```markdown
 ![Logo][logo]
 
 [logo]: https://ejemplo.com/logo.png "Logo de la empresa"
 ```
 
-**💻 Ejercicio Práctico 3 (8 min):**
+**💻 Ejercicio Práctico 3**
 Crear una mini bio que incluya:
 - Tu nombre como título
 - Párrafo de presentación
@@ -271,17 +258,17 @@ Crear una mini bio que incluya:
 
 ---
 
-## 📚 PARTE 4: Código y Tablas (25 min)
+## PARTE 4: Código y Tablas
 
-### **Bloques de Código (15 min)**
+### **Bloques de Código**
 
-**Código en línea:**
+**Código en línea**
 ```markdown
 Usa el comando `git status` para ver el estado.
 La variable `userName` almacena el nombre.
 ```
 
-**Bloques de código:**
+**Bloques de código**
 ````markdown
 ```
 Código sin sintaxis específica
@@ -289,7 +276,7 @@ Múltiples líneas
 ```
 ````
 
-**Con sintaxis highlighting:**
+**Con sintaxis highlighting**
 ````markdown
 ```javascript
 function saludar(nombre) {
@@ -312,14 +299,14 @@ def saludar(nombre):
 ```
 ````
 
-**Lenguajes comunes:**
+**Lenguajes comunes**
 - `javascript`, `python`, `java`, `csharp`, `cpp`
 - `html`, `css`, `sql`, `bash`, `json`
 - `markdown`, `yaml`, `dockerfile`
 
-### **Tablas (10 min)**
+### **Tablas**
 
-**Sintaxis básica:**
+**Sintaxis básica**
 ```markdown
 | Columna 1 | Columna 2 | Columna 3 |
 |-----------|-----------|-----------|
@@ -327,7 +314,7 @@ def saludar(nombre):
 | Dato 4    | Dato 5    | Dato 6    |
 ```
 
-**Alineación:**
+**Alineación**
 ```markdown
 | Izquierda | Centrado | Derecha |
 |:----------|:--------:|--------:|
@@ -339,7 +326,7 @@ def saludar(nombre):
 - `:---:` = Centrado
 - `---:` = Alineado a la derecha
 
-**Tablas complejas:**
+**Tablas complejas**
 ```markdown
 | Nombre | Edad | Profesión | Ciudad |
 |--------|:----:|-----------|--------|
@@ -348,7 +335,7 @@ def saludar(nombre):
 | Pedro | 28 | DevOps | Valencia |
 ```
 
-**💻 Ejercicio Práctico 4 (5 min):**
+**💻 Ejercicio Práctico 4**
 Crear tabla de lenguajes de programación con:
 - Columnas: Lenguaje, Año, Tipo, Dificultad
 - Al menos 5 lenguajes
@@ -356,7 +343,7 @@ Crear tabla de lenguajes de programación con:
 
 ---
 
-## 📚 PARTE 5: Elementos Avanzados (20 min)
+## PARTE 5: Elementos Avanzados
 
 ### **Líneas Horizontales**
 ```markdown
@@ -388,7 +375,7 @@ Tres formas diferentes de crear una línea horizontal
 ### **Comentarios (no visibles)**
 ```markdown
 <!-- Este es un comentario que no se verá -->
-<!--[//]: # (Este es otro tipo de comentario)
+[//]: # (Este es otro tipo de comentario)
 ```
 
 ### **Emojis (GitHub Markdown)**
@@ -417,7 +404,9 @@ SHA: a1b2c3d (referencia a commit)
 
 ---
 
-## 📚 PARTE 6: Proyecto Práctico Final (20 min)
+
+<!--
+## PARTE 6: Proyecto Práctico Final 
 
 ### **💻 Proyecto: Crear README.md Profesional**
 
@@ -490,39 +479,39 @@ MIT
 - GitHub: [@usuario](https://github.com/usuario)
 - Email: correo@ejemplo.com
 ```
-
+-->
 ---
 
-## 📋 Cheat Sheet - Resumen Rápido---
+## Cheat Sheet - Resumen Rápido---
 
-## 🎯 Recursos Adicionales
+## Recursos Adicionales
 
-### **Guías y Referencias:**
+### **Guías y Referencias**
 - [Markdown Guide](https://www.markdownguide.org/) - Guía completa
 - [GitHub Markdown](https://docs.github.com/es/get-started/writing-on-github) - Documentación oficial
 - [CommonMark](https://commonmark.org/) - Especificación estándar
 
-### **Herramientas:**
+### **Herramientas**
 - [Markdown Tables Generator](https://www.tablesgenerator.com/markdown_tables)
 - [Shields.io](https://shields.io/) - Badges para README
 - [Carbon](https://carbon.now.sh/) - Capturas bonitas de código
 
-### **Práctica:**
+### **Práctica**
 - Crear README para proyectos personales
 - Documentar código con Markdown
 - Tomar notas en Markdown
-- Crear blog con Jekyll o Hugo
+<!-- - Crear blog con Jekyll o Hugo
 
 ---
 
-## 📝 Evaluación y Tareas
+## Evaluación y Tareas
 
-### **Para entregar:**
+### **Para entregar**
 1. README.md completo del proyecto práctico
 2. Documento Markdown con tu CV/portfolio
 3. Cheat sheet personal con comandos más usados
 
-### **Criterios de evaluación:**
+### **Criterios de evaluación**
 - ✅ Uso correcto de sintaxis
 - ✅ Estructura lógica y jerarquía
 - ✅ Formato apropiado
@@ -530,7 +519,8 @@ MIT
 - ✅ Tablas bien formateadas
 - ✅ Código con syntax highlighting
 
-¡Markdown es una habilidad esencial para cualquier desarrollador! Practica creando documentación para tus proyectos y pronto se volverá segunda naturaleza. 🚀
 -->
+
+
 
 
