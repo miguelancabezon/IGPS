@@ -23,9 +23,3 @@ Se recomienda además el leer los artículos contenidos en la carpeta de [docume
 |:-|:-
 
 </div>
-
-:smile: :rocket: :heart: :+1: :tada:
-
-@marcosacevedo-gif
-
-SHA: 4c4ad47
