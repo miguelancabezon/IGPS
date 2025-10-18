@@ -50,3 +50,36 @@ código en bloque
 :smile: Emojis (solo en GitHub)
 
 
+## Bloques de código avanzado
+
+### Formato de sintáxis por lenguaje
+
+```javascript
+const saludar = (nombre) => {
+    console.log(`¡Hola, ${nombre}!`);
+};
+```
+
+```py
+def fibonacci(n):
+    if n <= 1:
+        return n
+    return fibonacci(n-1) + fibonacci(n-2)
+```
+
+```sh
+mkdir nueva_carpeta
+```
+
+**Ejemplos de errores**
+
+```py
+const add = (a, b) => {
+  // Codigo Javascript con py en markdown
+  console.log("La suma es ", a + b);
+}
+```
+
+
+
+
