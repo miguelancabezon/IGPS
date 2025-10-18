@@ -1,6 +1,6 @@
 # Markdown - Parte 2
 
-## Repaso rápido de estilos de Markdown
+## Repaso rápido de estilos de Markdown (ver en la pestaña de códgio para saber más)
 
 # Encabezado 1
 ## Encabezado 2
@@ -48,4 +48,5 @@ código en bloque
 <u>Podéis generar tablas de manera sencilla [aquí](https://www.tablesgenerator.com/markdown_tables)</u>
 
 :smile: Emojis (solo en GitHub)
+
 
