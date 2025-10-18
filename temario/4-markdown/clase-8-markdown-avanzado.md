@@ -1,4 +1,5 @@
 # Markdown - Parte 2
+<a id="begin"></a>
 
 ## Repaso rápido de estilos de Markdown (ver en la pestaña de códgio para saber más)
 
@@ -124,7 +125,8 @@ const add = (a, b) => {
 <https://www.google.com>
 
 ### Enlaces a secciones (anclas)
-[Ir al Inicio](#Markdown - Parte 2)
+[Ir al Inicio](#begin)
+
 
 
 
