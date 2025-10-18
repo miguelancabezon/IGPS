@@ -125,8 +125,20 @@ const add = (a, b) => {
 <https://www.google.com>
 
 ### Enlaces a secciones (anclas)
+
+Las anclas se pueden crear con un simpre `#titulo-seccion` en el enlace pero este formato puede dar errores cuando markdown lo quiere interpretar como enlace. Esto puede provocar que se rompa el enlace y no funcione. 
+Para evitarlo, podemos usar HTML para añadir un enlace en la sección que quermos:
+
+Colocamos el siguiente elemento HTML dónde queramos tener el ancla:
+```html
+  <a id="begin"></a>
+```
+
+Creamos el enlace en MD:
 [Ir al Inicio](#begin)
 
+
+@miguelancabezon
 
 
 
