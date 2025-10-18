@@ -176,6 +176,54 @@ Puedes incluir prácticamente cualquier markdown aquí:
 
 </details>
 
+## Badges
+
+<!-- Badges básicos -->
+![Status](https://img.shields.io/badge/status-active-success.svg)
+![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)
+![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen.svg)
+
+<!-- Badges dinámicos -->
+![GitHub issues](https://img.shields.io/github/issues/usuario/repo)
+![GitHub forks](https://img.shields.io/github/forks/usuario/repo)
+![GitHub stars](https://img.shields.io/github/stars/usuario/repo)
+![Contributors](https://img.shields.io/github/contributors/usuario/repo)
+
+<!-- Badges de tecnologías -->
+![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
+![Node](https://img.shields.io/badge/Node-18+-green.svg)
+![React](https://img.shields.io/badge/React-18-61dafb.svg)
+
+<!-- Crear badges personalizados en https://shields.io -->
+
+
+## Mermaid
+
+Mermaid es una herramienta hecha en javascript que renderiza texto en diagramas.
+
+
+
+## HTML
+
+<!-- Comentarios invisibles en el render -->
+
+<div align="center">
+  <h1>Título Centrado</h1>
+  <img src="logo.png" width="200" alt="Logo">
+</div>
+
+<kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar
+
+<sup>Superíndice</sup> y <sub>subíndice</sub>
+
+<mark>Texto resaltado</mark> (no funciona en todos los parsers)
+
+<table>
+  <tr>
+    <td>Celda con<br>salto de línea</td>
+    <td><img src="icon.png" height="20"></td>
+  </tr>
+</table>
 
 
 
