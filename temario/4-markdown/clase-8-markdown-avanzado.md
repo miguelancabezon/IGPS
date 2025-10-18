@@ -50,6 +50,12 @@ código en bloque
 
 :smile: Emojis (solo en GitHub)
 
+:bug: **Bug Fix**: Corregido problema de memoria :wrench:
+
+:sparkles: **Nueva característica**: Sistema de notificaciones :bell:
+
+[Lista completa de Emojis](https://github.com/ikatyang/emoji-cheat-sheet)
+
 
 ## Bloques de código avanzado
 
@@ -138,7 +144,44 @@ Creamos el enlace en MD:
 [Ir al Inicio](#begin)
 
 
-@miguelancabezon
+## Bloques colapsables
+
+<details>
+<summary>Click para expandir</summary>
+
+Aquí va el contenido oculto que se muestra al hacer click.
+```python
+def codigo_oculto():
+    return "Se puede incluir código"
+```
+
+- También listas
+- Y otros elementos markdown
+
+</details>
+
+
+
+<details>
+<summary>🔍 Información técnica avanzada</summary>
+
+### Subsección dentro del colapsable
+
+Puedes incluir prácticamente cualquier markdown aquí:
+
+| Característica | Valor |
+|----------------|-------|
+| Performance | Alta |
+| Complejidad | Media |
+
+</details>
+
+
+
+
+
+
+
 
 
 
