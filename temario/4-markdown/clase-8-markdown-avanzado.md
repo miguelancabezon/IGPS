@@ -81,5 +81,53 @@ const add = (a, b) => {
 ```
 
 
+## Formato de tablas avanzado
+
+### Tabla básica
+
+| Columna 1 | Columna 2 | Columna 3 |
+|-----------|-----------|-----------|
+| Dato 1    | Dato 2    | Dato 3    |
+| Dato 4    | Dato 5    | Dato 6    |
+
+
+### Tabla con alineación
+
+| Columna 1 | Columna 2 | Columna 3 |
+|:-----------|:-----------:|-----------:|
+| Dato 1    | Dato 2    | Dato 3    |
+| Dato 4    | Dato 5    | Dato 6    |
+
+
+### Tabla con formato interno
+
+| Característica | Descripción | Estado |
+|----------------|-------------|--------|
+| **API REST** | Comunicación HTTP | ✅ Activo |
+| *WebSockets* | Tiempo real | 🚧 En desarrollo |
+| `GraphQL` | Consultas flexibles | ❌ Pendiente |
+
+
+## Enlaces y referencias avanzadas
+
+### Enlaces con referencias
+
+[Texto del enlace][ref1]
+[Otro enlace][ref2]
+
+[ref1]: https://ejemplo.com "Título opcional"
+[ref2]: https://github.com
+
+
+### Enlaces automáticos
+
+<https://www.google.com>
+
+### Enlaces a secciones (anclas)
+[Ir al Inicio](#Markdown - Parte 2)
+
+
+
+
 
 
