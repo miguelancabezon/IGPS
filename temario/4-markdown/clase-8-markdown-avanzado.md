@@ -1,6 +1,11 @@
 # Markdown - Parte 2
 <a id="begin"></a>
 
+<div align="center" height="40">
+  
+![Mardown Logo](../images/markdown-mark-white.svg)
+</div>
+
 ## Repaso rápido de estilos de Markdown (ver en la pestaña de códgio para saber más)
 
 # Encabezado 1
@@ -209,7 +214,7 @@ Mermaid es una herramienta hecha en javascript que renderiza texto en diagramas.
 
 <div align="center">
   <h1>Título Centrado</h1>
-  <img src="logo.png" width="200" alt="Logo">
+    <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
 </div>
 
 <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar
@@ -221,9 +226,10 @@ Mermaid es una herramienta hecha en javascript que renderiza texto en diagramas.
 <table>
   <tr>
     <td>Celda con<br>salto de línea</td>
-    <td><img src="icon.png" height="20"></td>
+    <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
   </tr>
 </table>
+
 
 
 
