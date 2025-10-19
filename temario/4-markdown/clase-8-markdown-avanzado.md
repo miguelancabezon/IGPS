@@ -207,6 +207,15 @@ Puedes incluir prácticamente cualquier markdown aquí:
 Mermaid es una herramienta hecha en javascript que renderiza texto en diagramas.
 
 
+## Rechazar carácteres especiales de Markdown
+
+\# Esto ya no es encabezado 1
+
+\[No es enlace\]
+\`No es código\`
+
+Y si queréis poner es barra -> `\\`
+
 
 ## HTML
 
@@ -229,6 +238,7 @@ Mermaid es una herramienta hecha en javascript que renderiza texto en diagramas.
     <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
   </tr>
 </table>
+
 
 
 
