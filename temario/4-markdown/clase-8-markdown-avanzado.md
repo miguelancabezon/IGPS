@@ -206,6 +206,90 @@ Puedes incluir prácticamente cualquier markdown aquí:
 
 Mermaid es una herramienta hecha en javascript que renderiza texto en diagramas.
 
+### Diagrama de flujo
+```mermaid
+graph TD
+    A[Inicio] --> B{¿Decisión?}
+    B -->|Sí| C[Acción 1]
+    B -->|No| D[Acción 2]
+    C --> E[Fin]
+    D --> E
+```
+
+### Diagrama de secuencia
+```mermaid
+sequenceDiagram
+    participant Usuario
+    participant Frontend
+    participant Backend
+    participant DB
+    
+    Usuario->>Frontend: Solicita datos
+    Frontend->>Backend: GET /api/datos
+    Backend->>DB: Query
+    DB-->>Backend: Resultados
+    Backend-->>Frontend: JSON
+    Frontend-->>Usuario: Muestra datos
+```
+
+
+### Diagrama de Gantt
+```mermaid
+gantt
+    title Cronograma del Proyecto
+    dateFormat  YYYY-MM-DD
+    section Fase 1
+    Diseño           :a1, 2024-01-01, 30d
+    Desarrollo       :a2, after a1, 45d
+    section Fase 2
+    Testing          :a3, after a2, 20d
+    Deploy           :a4, after a3, 10d
+```
+
+
+### Git Graph
+```mermaid
+    gitGraph
+       commit
+       commit
+       branch develop
+       commit
+       commit
+       commit
+       checkout main
+       commit
+       commit
+```
+
+
+### Gráfica de cuadrantes
+```mermaid
+quadrantChart
+    title Reach and engagement of campaigns
+    x-axis Low Reach --> High Reach
+    y-axis Low Engagement --> High Engagement
+    quadrant-1 We should expand
+    quadrant-2 Need to promote
+    quadrant-3 Re-evaluate
+    quadrant-4 May be improved
+    Campaign A: [0.3, 0.6]
+    Campaign B: [0.45, 0.23]
+    Campaign C: [0.57, 0.69]
+    Campaign D: [0.78, 0.34]
+    Campaign E: [0.40, 0.34]
+    Campaign F: [0.35, 0.78]
+```
+
+### Gráfica de barras
+```mermaid
+xychart-beta
+    title "Sales Revenue"
+    x-axis [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
+    y-axis "Revenue (in $)" 4000 --> 11000
+    bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+    line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
+```
+
 
 ## Rechazar carácteres especiales de Markdown
 
@@ -238,6 +322,7 @@ Y si queréis poner es barra -> `\\`
     <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
   </tr>
 </table>
+
 
 
 
