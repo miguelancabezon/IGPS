@@ -265,27 +265,27 @@ gantt
 ### Gráfica de cuadrantes
 ```mermaid
 quadrantChart
-    title Reach and engagement of campaigns
-    x-axis Low Reach --> High Reach
-    y-axis Low Engagement --> High Engagement
-    quadrant-1 We should expand
-    quadrant-2 Need to promote
-    quadrant-3 Re-evaluate
-    quadrant-4 May be improved
-    Campaign A: [0.3, 0.6]
-    Campaign B: [0.45, 0.23]
-    Campaign C: [0.57, 0.69]
-    Campaign D: [0.78, 0.34]
-    Campaign E: [0.40, 0.34]
-    Campaign F: [0.35, 0.78]
+    title Alcance y engagement de las campañas
+    x-axis Bajo Alcance --> Alto Alcance
+    y-axis Bajo Engagement --> Alto Engagement
+    quadrant-1 Deberíamos expandirnos
+    quadrant-2 Necesitamos promover
+    quadrant-3 Reevaluar
+    quadrant-4 Deberíamos mejorar
+    Campaña A: [0.3, 0.6]
+    Campaña B: [0.45, 0.23]
+    Campaña C: [0.57, 0.69]
+    Campaña D: [0.78, 0.34]
+    Campaña E: [0.40, 0.34]
+    Campaña F: [0.35, 0.78]
 ```
 
 ### Gráfica de barras
 ```mermaid
 xychart-beta
-    title "Sales Revenue"
-    x-axis [jan, feb, mar, apr, may, jun, jul, aug, sep, oct, nov, dec]
-    y-axis "Revenue (in $)" 4000 --> 11000
+    title "Beneficio en Ventas"
+    x-axis [ene, feb, mar, abr, may, jun, jul, ago, sep, oct, nov, dic]
+    y-axis "Beneficio (en €)" 4000 --> 11000
     bar [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
     line [5000, 6000, 7500, 8200, 9500, 10500, 11000, 10200, 9200, 8500, 7000, 6000]
 ```
@@ -322,6 +322,7 @@ Y si queréis poner es barra -> `\\`
     <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
   </tr>
 </table>
+
 
 
 
