@@ -3,7 +3,7 @@
 
 <div align="center" height="40">
   
-![Mardown Logo](../images/markdown-mark-white.svg)
+![Mardown Logo](../../images/markdown-mark-white.svg)
 </div>
 
 ## Repaso rápido de estilos de Markdown (ver en la pestaña de códgio para saber más)
@@ -229,6 +229,7 @@ Mermaid es una herramienta hecha en javascript que renderiza texto en diagramas.
     <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
   </tr>
 </table>
+
 
 
 
