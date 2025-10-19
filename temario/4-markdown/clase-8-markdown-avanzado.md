@@ -3,7 +3,7 @@
 
 <div align="center" height="40">
   
-![Mardown Logo](../../images/markdown-mark-white.svg)
+![Mardown Logo](../../images/markdown-mark-white.svg "Markdown Logo")
 </div>
 
 ## Repaso rápido de estilos de Markdown (ver en la pestaña de códgio para saber más)
@@ -30,7 +30,7 @@ Texto normal
 - [x] Tarea completada 
 
 [Texto del enlace](https://ejemplo.com "Texto Tooltip")
-![Texto alternativo](url-imagen.jpg)
+![Texto alternativo](../../images/markdown-mark-white.svg)
 
 > Cita en bloque
 > Continúa aquí
@@ -238,6 +238,7 @@ Y si queréis poner es barra -> `\\`
     <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
   </tr>
 </table>
+
 
 
 
