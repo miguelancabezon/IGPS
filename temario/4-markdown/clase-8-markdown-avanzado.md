@@ -268,7 +268,7 @@ quadrantChart
     title Alcance y engagement de las campañas
     x-axis Bajo Alcance --> Alto Alcance
     y-axis Bajo Engagement --> Alto Engagement
-    quadrant-1 Deberíamos expandirnos
+    quadrant-1 Deberiamos expandirnos
     quadrant-2 Necesitamos promover
     quadrant-3 Reevaluar
     quadrant-4 Deberíamos mejorar
@@ -322,6 +322,7 @@ Y si queréis poner es barra -> `\\`
     <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
   </tr>
 </table>
+
 
 
 
