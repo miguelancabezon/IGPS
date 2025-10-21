@@ -189,10 +189,10 @@ Puedes incluir prácticamente cualquier markdown aquí:
 ![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen.svg)
 
 <!-- Badges dinámicos -->
-![GitHub issues](https://img.shields.io/github/issues/usuario/repo)
+![GitHub issues](https://img.shields.io/github/issues/miguelancabezon/25-26-igps)
 ![GitHub forks](https://img.shields.io/github/forks/miguelancabezon/25-26-igps)
-![GitHub stars](https://img.shields.io/github/stars/miguelancabezon/repo)
-![Contributors](https://img.shields.io/github/contributors/usuario/repo)
+![GitHub stars](https://img.shields.io/github/stars/miguelancabezon/25-26-igps)
+![Contributors](https://img.shields.io/github/contributors/miguelancabezon/25-26-igps)
 
 <!-- Badges de tecnologías -->
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
@@ -351,6 +351,7 @@ Y si queréis poner es barra -> `\\`
     <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
   </tr>
 </table>
+
 
 
 
