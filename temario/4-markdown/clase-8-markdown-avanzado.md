@@ -266,7 +266,7 @@ gantt
     Diseño y Desarrollo           :a1, 2025-11-01, 30d
     section Fase 2 - Beta
     Diseño           :a2, after a1, 30d
-    Narrativa        :a3, after a2, 30d
+    Narrativa        :a3, 2025-12-20, 15d
     Desarrollo       :a4, after a3, 30d
     Pruebas          :a5, after a4, 30d
     section Fase 3 - 1.0
@@ -351,6 +351,7 @@ Y si queréis poner es barra -> `\\`
     <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
   </tr>
 </table>
+
 
 
 
