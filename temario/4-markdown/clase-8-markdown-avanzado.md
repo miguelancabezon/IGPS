@@ -128,7 +128,7 @@ const add = (a, b) => {
 [Otro enlace][ref2]
 
 [ref1]: https://ejemplo.com "Título opcional"
-[ref2]: https://github.com
+[ref2]: https://github.com "Enlace a Github"
 
 
 ### Enlaces automáticos
@@ -190,8 +190,8 @@ Puedes incluir prácticamente cualquier markdown aquí:
 
 <!-- Badges dinámicos -->
 ![GitHub issues](https://img.shields.io/github/issues/usuario/repo)
-![GitHub forks](https://img.shields.io/github/forks/usuario/repo)
-![GitHub stars](https://img.shields.io/github/stars/usuario/repo)
+![GitHub forks](https://img.shields.io/github/forks/miguelancabezon/25-26-igps)
+![GitHub stars](https://img.shields.io/github/stars/miguelancabezon/repo)
 ![Contributors](https://img.shields.io/github/contributors/usuario/repo)
 
 <!-- Badges de tecnologías -->
@@ -322,6 +322,7 @@ Y si queréis poner es barra -> `\\`
     <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
   </tr>
 </table>
+
 
 
 
