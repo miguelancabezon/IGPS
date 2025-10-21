@@ -216,6 +216,18 @@ graph TD
     D --> E
 ```
 
+```mermaid
+graph TD
+    A[Entramos tienda] --> B{¿Es Nike?}
+    B --> |Sí| D{Talla}
+    B --> |No| C[Fin]
+    D --> |>40| E{Precio}
+    D --> |<40| C
+    E --> |<50€| F[Compramos]
+    E --> |>50#| C
+    F --> C
+```
+
 ### Diagrama de secuencia
 ```mermaid
 sequenceDiagram
@@ -322,6 +334,7 @@ Y si queréis poner es barra -> `\\`
     <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
   </tr>
 </table>
+
 
 
 
