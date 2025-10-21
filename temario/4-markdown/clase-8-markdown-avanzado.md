@@ -294,19 +294,19 @@ gantt
 ### Gráfica de cuadrantes
 ```mermaid
 quadrantChart
-    title Alcance y engagement de las campañas
+    title Alcance y engagement de las campanhas
     x-axis Bajo Alcance --> Alto Alcance
     y-axis Bajo Engagement --> Alto Engagement
     quadrant-1 Deberiamos expandirnos
     quadrant-2 Necesitamos promover
     quadrant-3 Reevaluar
-    quadrant-4 Deberíamos mejorar
-    Campaña A: [0.3, 0.6]
-    Campaña B: [0.45, 0.23]
-    Campaña C: [0.57, 0.69]
-    Campaña D: [0.78, 0.34]
-    Campaña E: [0.40, 0.34]
-    Campaña F: [0.35, 0.78]
+    quadrant-4 Deberiamos mejorar
+    Campanha A: [0.3, 0.6]
+    Campanha B: [0.45, 0.23]
+    Campanha C: [0.57, 0.69]
+    Campanha D: [0.78, 0.34]
+    Campanha E: [0.40, 0.34]
+    Campanha F: [0.35, 0.78]
 ```
 
 ### Gráfica de barras
@@ -351,6 +351,7 @@ Y si queréis poner es barra -> `\\`
     <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
   </tr>
 </table>
+
 
 
 
