@@ -204,7 +204,7 @@ Puedes incluir prácticamente cualquier markdown aquí:
 
 ## Mermaid
 
-Mermaid es una herramienta hecha en javascript que renderiza texto en diagramas.
+[Mermaid](https://mermaid.js.org/intro/ "Enlace a Mermaid") es una herramienta hecha en javascript que renderiza texto en diagramas.
 
 ### Diagrama de flujo
 ```mermaid
@@ -322,6 +322,7 @@ Y si queréis poner es barra -> `\\`
     <td><img src="https://www.markdownguide.org/assets/images/markdown-mark-white.svg" height="20"></td>
   </tr>
 </table>
+
 
 
 
