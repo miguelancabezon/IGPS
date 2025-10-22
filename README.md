@@ -6,7 +6,7 @@
   - [x] [Ingeniería del Software](/temario/3-ingenieria-software/clase-5-ingenieria_software.md)
   - [x] [Procesos del Software](/temario/3-ingenieria-software/clase-6-proceso_software.md)
 - **Lenguajes de marcado**
-  - [ ] [Markdown](/temario/4-markdown)
+  - [x] [Markdown](/temario/4-markdown)
   - [ ] [Plant UML - No UML](/temario/5-plantuml)
   - [ ] [Plant UML - UML](/temario/5-plantuml)
 - [ ] [Innovación](/temario/6-innovacion-calidad/clase-16-innovacion.md)
