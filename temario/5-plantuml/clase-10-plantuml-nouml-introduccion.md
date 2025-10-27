@@ -73,6 +73,8 @@ Los mapas mentales (mindmaps) son diagramas utilizados para plasmar distintas id
 
 [![Mindmap aprendizaje](../../images/modelosUML/plantuml-mindmap-aprendizaje.png "Mindmap aprendizaje")](../../documentos/modelosUML/mindmap/mindmap-aprendizaje.puml)
 
+<!--
+
 **Ejemplo 2: Planificación de Proyecto**
 
 ```plantuml
@@ -853,3 +855,4 @@ plantuml' ========================================
 
 ```
 ````
+-->
