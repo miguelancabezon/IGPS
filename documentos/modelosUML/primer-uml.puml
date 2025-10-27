@@ -1,0 +1,4 @@
+@startuml
+' Tu código aquí '
+Juan->María: Hola
+@enduml

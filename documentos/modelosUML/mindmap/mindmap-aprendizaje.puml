@@ -1,0 +1,44 @@
+@startmindmap
+<style>
+mindmapDiagram {
+  .frontStyle * {
+    BackgroundColor lightgreen
+  }
+  .jsStyle * {
+    BackgroundColor lightyellow
+  }
+    .backStyle * {
+    BackgroundColor lightblue
+  }
+    .redStyle * {
+    BackgroundColor #FFBBCC
+  }
+}
+</style>
+
++ Aprender Programación
+
+++ Frontend <<frontStyle>>
++++ HTML 
+++++ Estructura
++++ Semántica 
++++ CSS
+++++ Flexbox 
+++++ Grid
+++ JavaScript <<jsStyle>>
++++ ES6
++++ DOM
+-- Backend <<backStyle>>
+--- Node.js
+--- Express
+--- APIs
+--- Bases de Datos
+---- SQL
+---- MongoDB
+-- DevOps <<redStyle>>
+--- Git
+---- Branches
+---- Merge
+--- Docker
+--- CI/CD
+@endmindmap
