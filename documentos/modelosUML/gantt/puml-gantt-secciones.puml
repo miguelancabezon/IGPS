@@ -1,0 +1,9 @@
+@startgantt
+-- Fase 1: Planificación --
+[Reunión inicial] lasts 1 day
+[Análisis requisitos] lasts 3 days
+
+-- Fase 2: Desarrollo --
+[Setup proyecto] lasts 1 day
+[Desarrollo] lasts 10 days
+@endgantt

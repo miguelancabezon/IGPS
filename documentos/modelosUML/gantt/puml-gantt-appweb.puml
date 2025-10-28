@@ -1,0 +1,44 @@
+@startgantt
+title Desarrollo Aplicación E-commerce
+printscale daily
+
+Project starts 2025-11-01
+
+-- Fase 1: Planificación (1 semana) --
+[Reunión kick-off] lasts 1 day
+[Definir requisitos] lasts 3 days and starts at [Reunión kick-off]'s end
+[Diseño UX/UI] lasts 5 days and starts at [Definir requisitos]'s end
+[Aprobación diseño] happens at [Diseño UX/UI]'s end
+
+-- Fase 2: Setup (1 semana) --
+[Setup repositorio] lasts 1 day and starts at [Aprobación diseño]'s end
+[Configurar CI/CD] lasts 2 days and starts at [Setup repositorio]'s end
+[Setup base de datos] lasts 2 days and starts at [Setup repositorio]'s end
+
+-- Fase 3: Desarrollo (3 semanas) --
+[Autenticación] lasts 5 days and starts at [Setup base de datos]'s end
+[Autenticación] is colored in Green
+[Autenticación] is 100% completed
+
+[Catálogo productos] lasts 7 days and starts at [Autenticación]'s end
+[Catálogo productos] is colored in Blue
+[Catálogo productos] is 70% completed
+
+[Carrito de compras] lasts 5 days and starts at [Catálogo productos]'s end
+[Carrito de compras] is colored in Orange
+[Carrito de compras] is 30% completed
+
+[Sistema de pago] lasts 4 days and starts at [Carrito de compras]'s end
+[Sistema de pago] is colored in Red
+
+-- Fase 4: Testing (1 semana) --
+[Testing unitario] lasts 3 days and starts at [Sistema de pago]'s end
+[Testing integración] lasts 3 days and starts at [Testing unitario]'s end
+[Testing e2e] lasts 2 days and starts at [Testing integración]'s end
+
+-- Fase 5: Deployment --
+[Deploy staging] happens at [Testing e2e]'s end
+[Testing producción] lasts 2 days and starts at [Deploy staging]'s end
+[Deploy producción] happens at [Testing producción]'s end
+
+@endgantt

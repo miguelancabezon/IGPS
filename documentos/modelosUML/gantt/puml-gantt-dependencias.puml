@@ -1,0 +1,4 @@
+@startgantt
+[Tarea 1] lasts 3 days
+[Tarea 2] starts at [Tarea 1]'s end and lasts 2 days
+@endgantt

@@ -1,0 +1,7 @@
+@startgantt
+[Tarea completada] lasts 3 days and is colored in Green
+[Tarea completada] is 100% completed
+[Tarea en progreso] lasts 5 days and is colored in Blue
+[Tarea en progreso] is 60% completed
+[Tarea pendiente] lasts 4 days and is colored in Red
+@endgantt

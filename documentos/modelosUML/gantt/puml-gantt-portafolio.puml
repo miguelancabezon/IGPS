@@ -1,0 +1,38 @@
+@startgantt
+title Creación de Portfolio Personal
+printscale weekly
+
+Project starts 2025-11-01
+
+-- Diseño --
+[Investigar portfolios] lasts 2 days
+[Bocetos papel] lasts 1 day and starts at [Investigar portfolios]'s end
+[Diseño Figma] lasts 5 days and starts at [Bocetos papel]'s end
+[Revisión diseño] happens at [Diseño Figma]'s end
+
+-- Desarrollo Frontend --
+[Setup React] lasts 1 day and starts at [Revisión diseño]'s end
+[Página inicio] lasts 3 days and starts at [Setup React]'s end
+[Página inicio] is 100% completed and is colored in Green
+
+[Sección proyectos] lasts 4 days and starts at [Página inicio]'s end
+[Sección proyectos] is 80% completed and is colored in Blue
+
+[Sección sobre mí] lasts 2 days and starts at [Sección proyectos]'s end
+[Sección sobre mí] is 50% completed and is colored in Orange
+
+[Contacto] lasts 2 days and starts at [Sección sobre mí]'s end
+[Contacto] is colored in Red
+
+-- Contenido --
+[Escribir descripciones] lasts 3 days and starts at [Página inicio]'s end
+[Capturas proyectos] lasts 2 days and starts at [Escribir descripciones]'s end
+[Bio y CV] lasts 1 day and starts at [Capturas proyectos]'s end
+
+-- Deploy --
+[Configurar dominio] lasts 1 day and starts at [Contacto]'s end
+[Deploy Vercel] lasts 1 day and starts at [Configurar dominio]'s end
+[Testing final] lasts 2 days and starts at [Deploy Vercel]'s end
+[Lanzamiento] happens at [Testing final]'s end
+
+@endgantt

@@ -164,176 +164,46 @@ Al menos 5 campos principales
 1 array
 Diferentes tipos de datos
 
-<!--
 ## Diagramas de Gantt
 
-Fundamentos de Gantt
-Sintaxis básica:
-plantuml@startgantt
-[Tarea 1] lasts 5 days
-[Tarea 2] lasts 3 days
-[Tarea 3] lasts 4 days
-@endgantt
-Configurar inicio del proyecto:
-plantuml@startgantt
-Project starts 2025-11-01
-[Tarea 1] lasts 5 days
-@endgantt
-Dependencias entre tareas:
-plantuml@startgantt
-[Tarea 1] lasts 3 days
-[Tarea 2] starts at [Tarea 1]'s end and lasts 2 days
-@endgantt
-Elementos Avanzados
-Separadores y secciones:
-plantuml@startgantt
--- Fase 1: Planificación --
-[Reunión inicial] lasts 1 day
-[Análisis requisitos] lasts 3 days
+[Perimer gantt puml](../../documentos/modelosUML/gantt/puml-gantt-primer.puml "Ir a")
 
--- Fase 2: Desarrollo --
-[Setup proyecto] lasts 1 day
-[Desarrollo] lasts 10 days
-@endgantt
-Hitos (milestones):
-plantuml@startgantt
-[Desarrollo] lasts 10 days
-[Entrega Beta] happens at [Desarrollo]'s end
-[Testing] lasts 5 days
-[Release] happens at [Testing]'s end
-@endgantt
-Colores y completado:
+**Configurar inicio del proyecto**
 
-```plantuml@startgantt
-[Tarea completada] lasts 3 days and is colored in Green
-[Tarea completada] is 100% completed
-[Tarea en progreso] lasts 5 days and is colored in Blue
-[Tarea en progreso] is 60% completed
-[Tarea pendiente] lasts 4 days and is colored in Red
-@endgantt
-Ejemplos Prácticos
-Ejemplo 1: Desarrollo de Aplicación Web
-plantuml@startgantt
-title Desarrollo Aplicación E-commerce
-printscale daily
+[Ir a Configurar inicio del proyecto](../../documentos/modelosUML/gantt/puml-gantt-inicio.puml "Ir a")
 
-Project starts 2025-11-01
+**Dependencias entre tareas**
 
--- Fase 1: Planificación (1 semana) --
-[Reunión kick-off] lasts 1 day
-[Definir requisitos] lasts 3 days and starts at [Reunión kick-off]'s end
-[Diseño UX/UI] lasts 5 days and starts at [Definir requisitos]'s end
-[Aprobación diseño] happens at [Diseño UX/UI]'s end
+[Ir a Dependencias entre tareas](../../documentos/modelosUML/gantt/puml-gantt-dependencias.puml "Ir a")
 
--- Fase 2: Setup (1 semana) --
-[Setup repositorio] lasts 1 day and starts at [Aprobación diseño]'s end
-[Configurar CI/CD] lasts 2 days and starts at [Setup repositorio]'s end
-[Setup base de datos] lasts 2 days and starts at [Setup repositorio]'s end
+**Separadores y secciones**
 
--- Fase 3: Desarrollo (3 semanas) --
-[Autenticación] lasts 5 days and starts at [Setup base de datos]'s end
-[Autenticación] is colored in Green
-[Autenticación] is 100% completed
+[Ir a Separadores y secciones](../../documentos/modelosUML/gantt/puml-gantt-secciones.puml "Ir a")
 
-[Catálogo productos] lasts 7 days and starts at [Autenticación]'s end
-[Catálogo productos] is colored in Blue
-[Catálogo productos] is 70% completed
+**Hitos (milestones)**
 
-[Carrito de compras] lasts 5 days and starts at [Catálogo productos]'s end
-[Carrito de compras] is colored in Orange
-[Carrito de compras] is 30% completed
+[Ir a Hitos](../../documentos/modelosUML/gantt/puml-gantt-hitos.puml "Ir a")
 
-[Sistema de pago] lasts 4 days and starts at [Carrito de compras]'s end
-[Sistema de pago] is colored in Red
+**Colores y completado**
 
--- Fase 4: Testing (1 semana) --
-[Testing unitario] lasts 3 days and starts at [Sistema de pago]'s end
-[Testing integración] lasts 3 days and starts at [Testing unitario]'s end
-[Testing e2e] lasts 2 days and starts at [Testing integración]'s end
+[Ir a Colores y completado](../../documentos/modelosUML/gantt/puml-gantt-completado.puml "Ir a")
 
--- Fase 5: Deployment --
-[Deploy staging] happens at [Testing e2e]'s end
-[Testing producción] lasts 2 days and starts at [Deploy staging]'s end
-[Deploy producción] happens at [Testing producción]'s end
+### Ejemplos Prácticos
 
-@endgantt
-Ejemplo 2: Proyecto Personal - Portafolio
-plantuml@startgantt
-title Creación de Portfolio Personal
-printscale weekly
+**Ejemplo 1: Desarrollo de Aplicación Web**
 
-Project starts 2025-11-01
+[Ir a Ejemplo 1](../../documentos/modelosUML/gantt/puml-gantt-appweb.puml "Ir a")
 
--- Diseño --
-[Investigar portfolios] lasts 2 days
-[Bocetos papel] lasts 1 day and starts at [Investigar portfolios]'s end
-[Diseño Figma] lasts 5 days and starts at [Bocetos papel]'s end
-[Revisión diseño] happens at [Diseño Figma]'s end
+**Ejemplo 2: Proyecto Personal - Portafolio**
 
--- Desarrollo Frontend --
-[Setup React] lasts 1 day and starts at [Revisión diseño]'s end
-[Página inicio] lasts 3 days and starts at [Setup React]'s end
-[Página inicio] is 100% completed and is colored in Green
+[Ir a Ejemplo 2](../../documentos/modelosUML/gantt/puml-gantt-portafolio.puml "Ir a")
 
-[Sección proyectos] lasts 4 days and starts at [Página inicio]'s end
-[Sección proyectos] is 80% completed and is colored in Blue
+**Ejemplo 3: Sprint de Desarrollo Ágil**
 
-[Sección sobre mí] lasts 2 days and starts at [Sección proyectos]'s end
-[Sección sobre mí] is 50% completed and is colored in Orange
+[Ir a Ejemplo 3](../../documentos/modelosUML/gantt/puml-gantt-sprint.puml "Ir a")
 
-[Contacto] lasts 2 days and starts at [Sección sobre mí]'s end
-[Contacto] is colored in Red
+### Ejercicio Práctico 3
 
--- Contenido --
-[Escribir descripciones] lasts 3 days and starts at [Página inicio]'s end
-[Capturas proyectos] lasts 2 days and starts at [Escribir descripciones]'s end
-[Bio y CV] lasts 1 day and starts at [Capturas proyectos]'s end
-
--- Deploy --
-[Configurar dominio] lasts 1 day and starts at [Contacto]'s end
-[Deploy Vercel] lasts 1 day and starts at [Configurar dominio]'s end
-[Testing final] lasts 2 days and starts at [Deploy Vercel]'s end
-[Lanzamiento] happens at [Testing final]'s end
-
-@endgantt
-Ejemplo 3: Sprint de Desarrollo Ágil
-plantuml@startgantt
-title Sprint 5 - Equipo Development
-printscale daily
-
-Project starts 2025-11-04
-
--- Sprint Planning --
-[Sprint Planning] lasts 1 day
-[Sprint Planning] is colored in Purple
-
--- Desarrollo (2 semanas) --
-[USER-101: Login social] lasts 3 days and starts at [Sprint Planning]'s end
-[USER-101: Login social] is 100% completed and is colored in Green
-
-[USER-102: Dashboard] lasts 5 days and starts at [USER-101: Login social]'s end
-[USER-102: Dashboard] is 60% completed and is colored in Blue
-
-[BUG-045: Header mobile] lasts 2 days and starts at [Sprint Planning]'s end
-[BUG-045: Header mobile] is 100% completed and is colored in Green
-
-[FEAT-201: Notificaciones] lasts 4 days and starts at [BUG-045: Header mobile]'s end
-[FEAT-201: Notificaciones] is 40% completed and is colored in Orange
-
--- Testing & Review --
-[Code Review] lasts 2 days and starts at [USER-102: Dashboard]'s end
-[Testing QA] lasts 2 days and starts at [Code Review]'s end
-
--- Ceremonias Ágiles --
-[Daily Stand-up 1] happens 2025-11-05
-[Daily Stand-up 2] happens 2025-11-06
-[Daily Stand-up 3] happens 2025-11-07
-[Mid-Sprint Review] happens 2025-11-11
-[Sprint Review] happens at [Testing QA]'s end
-[Retrospectiva] happens at [Sprint Review]'s end
-
-@endgantt
-💻 Ejercicio Práctico 3
 Crear un diagrama de Gantt para:
 
 Estudiar para exámenes (4-5 materias)
@@ -347,6 +217,7 @@ Mínimo 2 secciones
 1 hito importante
 Usar colores y porcentajes
 
+<!--
 📚 PARTE 5: Mockups/Salt
 Fundamentos de Salt (Wireframes)
 Sintaxis básica:
@@ -689,10 +560,15 @@ plantuml' ========================================
 !include interfaz.salt
 @endsalt
 
-````
+```
+
+```
 
 ```
 
 ```
-````
 -->
+
+```
+
+```

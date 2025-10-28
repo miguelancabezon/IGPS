@@ -1,0 +1,36 @@
+@startgantt
+title Sprint 5 - Equipo Development
+printscale daily
+
+Project starts 2025-11-04
+
+-- Sprint Planning --
+[Sprint Planning] lasts 1 day
+[Sprint Planning] is colored in Purple
+
+-- Desarrollo (2 semanas) --
+[USER-101: Login social] lasts 3 days and starts at [Sprint Planning]'s end
+[USER-101: Login social] is 100% completed and is colored in Green
+
+[USER-102: Dashboard] lasts 5 days and starts at [USER-101: Login social]'s end
+[USER-102: Dashboard] is 60% completed and is colored in Blue
+
+[BUG-045: Header mobile] lasts 2 days and starts at [Sprint Planning]'s end
+[BUG-045: Header mobile] is 100% completed and is colored in Green
+
+[FEAT-201: Notificaciones] lasts 4 days and starts at [BUG-045: Header mobile]'s end
+[FEAT-201: Notificaciones] is 40% completed and is colored in Orange
+
+-- Testing & Review --
+[Code Review] lasts 2 days and starts at [USER-102: Dashboard]'s end
+[Testing QA] lasts 2 days and starts at [Code Review]'s end
+
+-- Ceremonias Ágiles --
+[Daily Stand-up 1] happens 2025-11-05
+[Daily Stand-up 2] happens 2025-11-06
+[Daily Stand-up 3] happens 2025-11-07
+[Mid-Sprint Review] happens 2025-11-11
+[Sprint Review] happens at [Testing QA]'s end
+[Retrospectiva] happens at [Sprint Review]'s end
+
+@endgantt

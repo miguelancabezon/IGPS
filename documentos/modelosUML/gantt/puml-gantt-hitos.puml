@@ -1,0 +1,8 @@
+
+
+@startgantt
+[Desarrollo] lasts 10 days
+[Entrega Beta] happens at [Desarrollo]'s end
+[Testing] lasts 5 days
+[Release] happens at [Testing]'s end
+@endgantt
