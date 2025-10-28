@@ -73,85 +73,13 @@ Los mapas mentales (mindmaps) son diagramas utilizados para plasmar distintas id
 
 [![Mindmap aprendizaje](../../images/modelosUML/plantuml-mindmap-aprendizaje.png "Mindmap aprendizaje")](../../documentos/modelosUML/mindmap/mindmap-aprendizaje.puml)
 
-<!--
-
 **Ejemplo 2: Planificación de Proyecto**
 
-```plantuml
-@startmindmap
-title Proyecto Web E-commerce
-
-- E-commerce
-
-** Funcionalidades \*** Autenticación \***\* Login
-\*\*** Registro \***_ Recuperar contraseña
-_** Catálogo \***\* Búsqueda
-\*\*** Filtros \***_ Categorías
-_** Carrito \***\* Agregar productos
-\*\*** Eliminar productos
-\*\*\*\* Calcular total
-
-left side
-
-** Tecnologías \*** Frontend \***\* React
-\*\*** Tailwind CSS
-**\* Backend
-\*\*** Node.js \***\* Express
-\*\*** MongoDB
-**\* Deployment
-\*\*** Vercel
-\*\*\*\* Heroku
-
-** Equipo \*** Desarrolladores \***\* Frontend (2)
-\*\*** Backend (2)
-**_ Diseño (1)
-_** QA (1)
-
-@endmindmap
-```
+[![Mindmap planificacion](../../images/modelosUML/plantuml-mindmap-planificacion.png "Mindmap planificacion")](../../documentos/modelosUML/mindmap/mindmap-planificacion.puml)
 
 **Ejemplo 3: Organización Personal**
 
-```plantuml
-@startmindmap
-
-- Mi Semana
-
-** Lunes \*** Trabajo \***\* Reunión equipo (9:00)
-\*\*** Desarrollo feature (10:00-18:00)
-**\* Personal
-\*\*** Gimnasio (19:00)
-
-** Martes \*** Trabajo \***\* Code Review (9:00)
-\*\*** Sprint Planning (11:00)
-**\* Personal
-\*\*** Clase inglés (20:00)
-
-** Miércoles \*** Trabajo \***\* Desarrollo
-\*\*** Testing
-**\* Personal
-\*\*** Compras
-
-left side
-
-** Jueves \*** Trabajo \***\* Reunión cliente
-\*\*** Documentación
-**\* Personal
-\*\*** Cine
-
-** Viernes \*** Trabajo \***\* Deploy
-\*\*** Retrospectiva
-**\* Personal
-\*\*** Cena amigos
-
-** Fin de Semana \*** Sábado \***\* Proyecto personal
-\*\*** Deporte
-**\* Domingo
-\*\*** Familia
-\*\*\*\* Descanso
-
-@endmindmap
-```
+[![Mindmap semana](../../images/modelosUML/plantuml-mindmap-semana.png "Mindmap semana")](../../documentos/modelosUML/mindmap/mindmap-semana.puml)
 
 ### Ejercicio Práctico 1
 
@@ -171,148 +99,58 @@ Debe tener:
 
 ## JSON Visualizer
 
-Fundamentos de JSON en PlantUML
-Sintaxis básica:
-plantuml@startjson
-{
-"nombre": "Juan",
-"edad": 25,
-"activo": true
-}
-@endjson
-Tipos de datos:
-plantuml@startjson
-{
-"string": "texto",
-"numero": 42,
-"decimal": 3.14,
-"booleano": true,
-"nulo": null,
-"array": [1, 2, 3],
-"objeto": {
-"clave": "valor"
-}
-}
-@endjson
-Ejemplos Prácticos
-Ejemplo 1: Configuración de Usuario
-plantuml@startjson
-title Perfil de Usuario
+JSON (acrónimo de JavaScript Object Notation, 'notación de objeto de JavaScript') es un formato de texto sencillo para el intercambio de datos.
 
-{
-"id": "user_123",
-"nombre": "María García",
-"email": "maria@ejemplo.com",
-"edad": 28,
-"activo": true,
-"roles": ["usuario", "editor", "admin"],
-"preferencias": {
-"tema": "oscuro",
-"idioma": "es",
-"notificaciones": {
-"email": true,
-"push": false,
-"sms": false
-}
-},
-"direccion": {
-"calle": "Calle Mayor 123",
-"ciudad": "Madrid",
-"codigoPostal": "28001",
-"pais": "España"
-},
-"estadisticas": {
-"loginCount": 245,
-"ultimoAcceso": "2025-10-27T10:30:00Z",
-"proyectosCreados": 12
-}
-}
-@endjson
-Ejemplo 2: Respuesta de API
-plantuml@startjson
-title Respuesta API - Lista de Productos
+**Ejemplo JSON**
 
+```json
 {
-"status": "success",
-"timestamp": "2025-10-27T14:30:00Z",
-"totalResultados": 150,
-"pagina": 1,
-"resultadosPorPagina": 3,
-"datos": [
-{
-"id": "prod_001",
-"nombre": "Laptop HP",
-"precio": 899.99,
-"moneda": "EUR",
-"stock": 15,
-"disponible": true,
-"categorias": ["electrónica", "computadoras"],
-"especificaciones": {
-"ram": "16GB",
-"procesador": "Intel i7",
-"almacenamiento": "512GB SSD"
+  "nombre": "Ana",
+  "edad": 30,
+  "es_empleado": true,
+  "hobbies": ["leer", "caminar", "cocinar"],
+  "direccion": {
+    "calle": "Calle Falsa 123",
+    "ciudad": "Ciudad Ejemplo",
+    "codigo_postal": "12345"
+  }
 }
-},
-{
-"id": "prod_002",
-"nombre": "Mouse Logitech",
-"precio": 29.99,
-"moneda": "EUR",
-"stock": 50,
-"disponible": true,
-"categorias": ["electrónica", "accesorios"]
-},
-{
-"id": "prod_003",
-"nombre": "Teclado Mecánico",
-"precio": 79.99,
-"moneda": "EUR",
-"stock": 0,
-"disponible": false,
-"categorias": ["electrónica", "accesorios"]
-}
-]
-}
-@endjson
-Ejemplo 3: Configuración de Proyecto
-plantuml@startjson
-title package.json - Proyecto Node.js
+```
 
+<u>_Tipos de datos_</u>
+
+```json
 {
-"name": "mi-aplicacion-web",
-"version": "1.2.3",
-"description": "Aplicación web moderna",
-"main": "index.js",
-"scripts": {
-"start": "node index.js",
-"dev": "nodemon index.js",
-"test": "jest",
-"build": "webpack --mode production"
-},
-"dependencies": {
-"express": "^4.18.2",
-"mongoose": "^7.0.0",
-"dotenv": "^16.0.3",
-"cors": "^2.8.5"
-},
-"devDependencies": {
-"nodemon": "^2.0.20",
-"jest": "^29.0.0",
-"eslint": "^8.36.0"
-},
-"author": {
-"name": "Tu Nombre",
-"email": "tu@email.com",
-"url": "https://tuportfolio.com"
-},
-"license": "MIT",
-"repository": {
-"type": "git",
-"url": "https://github.com/usuario/proyecto.git"
+  "string": "texto",
+  "numero": 42,
+  "decimal": 3.14,
+  "booleano": true,
+  "nulo": null,
+  "array": [1, 2, 3],
+  "objeto": {
+    "clave": "valor"
+  }
 }
-}
-@endjson
-💻 Ejercicio Práctico 2
+```
+
+### Ejemplos Prácticos
+
+[![JSON Basico](../../images/modelosUML/plantuml-json-primer.png "JSON Basico")](../../documentos/modelosUML/json-visualizer/puml-json-primer.puml)
+
+**Ejemplo 1: Configuración de Usuario**
+
+[![JSON Usuario](../../images/modelosUML/plantuml-json-usuario.png "JSON Usuario")](../../documentos/modelosUML/json-visualizer/puml-json-usuario.puml)
+
+**Ejemplo 2: Respuesta de API**
+
+[![JSON API](../../images/modelosUML/plantuml-json-api.png "JSON API")](../../documentos/modelosUML/json-visualizer/puml-json-api.puml)
+
+**Ejemplo 3: Configuración de Proyecto**
+
+[![JSON Proyecto](../../images/modelosUML/plantuml-json-proyecto.png "JSON Proyecto")](../../documentos/modelosUML/json-visualizer/puml-json-proyecto.puml)
+
+### Ejercicio Práctico 2
+
 Crear una visualización JSON para uno de estos casos:
 
 Tu perfil (nombre, edad, habilidades, proyectos)
@@ -326,6 +164,7 @@ Al menos 5 campos principales
 1 array
 Diferentes tipos de datos
 
+<!--
 ## Diagramas de Gantt
 
 Fundamentos de Gantt
@@ -364,7 +203,8 @@ plantuml@startgantt
 [Release] happens at [Testing]'s end
 @endgantt
 Colores y completado:
-plantuml@startgantt
+
+```plantuml@startgantt
 [Tarea completada] lasts 3 days and is colored in Green
 [Tarea completada] is 100% completed
 [Tarea en progreso] lasts 5 days and is colored in Blue

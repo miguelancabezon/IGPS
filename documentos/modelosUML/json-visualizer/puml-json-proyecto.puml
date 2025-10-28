@@ -1,0 +1,53 @@
+@startjson
+title package.json - Proyecto Node.js
+
+<style>
+  .h1 {
+    BackGroundColor green
+    FontColor white
+    FontStyle italic
+  }
+  .h2 {
+    BackGroundColor red
+    FontColor white
+    FontStyle bold
+  }
+</style>
+#highlight "name"
+#highlight "author" / "name" <<h1>>
+#highlight "author" / "email" <<h2>>
+
+{
+"name": "mi-aplicacion-web",
+"version": "1.2.3",
+"description": "Aplicación web moderna",
+"main": "index.js",
+"scripts": {
+"start": "node index.js",
+"dev": "nodemon index.js",
+"test": "jest",
+"build": "webpack --mode production"
+},
+"dependencies": {
+"express": "^4.18.2",
+"mongoose": "^7.0.0",
+"dotenv": "^16.0.3",
+"cors": "^2.8.5"
+},
+"devDependencies": {
+"nodemon": "^2.0.20",
+"jest": "^29.0.0",
+"eslint": "^8.36.0"
+},
+"author": {
+"name": "Tu Nombre",
+"email": "tu@email.com",
+"url": "https://tuportfolio.com"
+},
+"license": "MIT",
+"repository": {
+"type": "git",
+"url": "https://github.com/usuario/proyecto.git"
+}
+}
+@endjson

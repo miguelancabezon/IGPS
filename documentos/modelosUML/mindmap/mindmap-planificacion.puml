@@ -1,0 +1,42 @@
+@startmindmap
+title Planificacion de E-commerce
+
++ Ecommerce
+++ Funcionalidades
++++ Autenticación
+++++ Login
+++++ Registro 
+++++ Recuperar contraseña
+
+++ Catálogo
++++ Búsqueda
+++++ Filtros
+++++ Categorias
+++ Carrito
++++ Agregar productos
++++ Eliminar productos
+++ Calcular total
+
+
+-- Tecnologias
+--- Frontend
+---- React
+---- Tailwind CSS
+--- Backend
+---- Node.js
+---- Express
+---- MongoDB
+--- Deployment
+--- Vercel
+-- Heroku
+
+
+-- Equipo
+--- Desarrolladores
+---- Frontend (2)
+---- Backend (2)
+---- Diseño (1)
+---- QA (1)
+
+
+@endmindmap

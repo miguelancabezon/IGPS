@@ -1,0 +1,32 @@
+@startjson
+title Perfil de Usuario
+
+{
+"id": "user_123",
+"nombre": "María García",
+"email": "maria@ejemplo.com",
+"edad": 28,
+"activo": true,
+"roles": ["usuario", "editor", "admin"],
+"preferencias": {
+"tema": "oscuro",
+"idioma": "es",
+"notificaciones": {
+"email": true,
+"push": false,
+"sms": false
+}
+},
+"direccion": {
+"calle": "Calle Mayor 123",
+"ciudad": "Madrid",
+"codigoPostal": "28001",
+"pais": "España"
+},
+"estadisticas": {
+"loginCount": 245,
+"ultimoAcceso": "2025-10-27T10:30:00Z",
+"proyectosCreados": 12
+}
+}
+@endjson

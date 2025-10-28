@@ -1,0 +1,7 @@
+@startjson
+{
+"nombre": "Juan",
+"edad": 25,
+"activo": true
+}
+@endjson

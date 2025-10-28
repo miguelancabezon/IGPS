@@ -1,0 +1,45 @@
+@startjson
+title Respuesta API - Lista de Productos
+
+{
+"status": "success",
+"timestamp": "2025-10-27T14:30:00Z",
+"totalResultados": 150,
+"pagina": 1,
+"resultadosPorPagina": 3,
+"datos": [
+{
+"id": "prod_001",
+"nombre": "Laptop HP",
+"precio": 899.99,
+"moneda": "EUR",
+"stock": 15,
+"disponible": true,
+"categorias": ["electrónica", "computadoras"],
+"especificaciones": {
+"ram": "16GB",
+"procesador": "Intel i7",
+"almacenamiento": "512GB SSD"
+}
+},
+{
+"id": "prod_002",
+"nombre": "Mouse Logitech",
+"precio": 29.99,
+"moneda": "EUR",
+"stock": 50,
+"disponible": true,
+"categorias": ["electrónica", "accesorios"]
+},
+{
+"id": "prod_003",
+"nombre": "Teclado Mecánico",
+"precio": 79.99,
+"moneda": "EUR",
+"stock": 0,
+"disponible": false,
+"categorias": ["electrónica", "accesorios"]
+}
+]
+}
+@endjson
