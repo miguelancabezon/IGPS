@@ -8,7 +8,7 @@ Es un lenguaje gráfico para visualizar, graficar, contruir y documentar un sist
 
 ## ¿Qué es PlantUML?
 
-PlantUML es una herramienta que permite crear diagramas usando un lenguaje de texto simple. En lugar de arrastrar y soltar elementos, escribes código que se convierte en diagramas.
+[PlantUML](https://plantuml.com/es/) es una herramienta que permite crear diagramas usando un lenguaje de texto simple. En lugar de arrastrar y soltar elementos, escribes código que se convierte en diagramas.
 Esta forma de actuar sobre el diseño de un diagrama ayuda a crear diagramas completos de manera más rápida y con menos errores.
 
 Las principales ventajas que tiene, aparte de las dos mencionadas, es que, al tratarse de texto, es fácilmente versionable en Git, porque es rápido de crear y modificar.
