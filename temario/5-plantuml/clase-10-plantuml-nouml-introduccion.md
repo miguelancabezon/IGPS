@@ -1,5 +1,11 @@
 # PlantUML
 
+## ¿Qué es UML?
+
+UML o Unified Modeling Language o Lenguaje Unificado de Modelado, es uno de los lenguajes de modelado de sistemas de software más conocidos actualmente.
+Es un lenguaje gráfico para visualizar, graficar, contruir y documentar un sistema en todas sus vertientes. Se usa a modo de plano para diseñar y construir sus funciones, variables, entradas, salidas, procesos...
+
+
 ## ¿Qué es PlantUML?
 
 PlantUML es una herramienta que permite crear diagramas usando un lenguaje de texto simple. En lugar de arrastrar y soltar elementos, escribes código que se convierte en diagramas.
@@ -291,3 +297,8 @@ Debe incluir:
 - Al menos 5 elementos interactivos
 - Layout organizado
 - Botones de acción
+
+
+## Bibliografía
+
+- [Guía de Referencia de PlantUML](https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_es.pdf)
