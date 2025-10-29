@@ -1,0 +1,50 @@
+@startsalt
+title Perfil de Usuario
+
+{+
+{/ <b>Información | Seguridad | Preferencias | Notificaciones }
+.
+{
+{
+<b>Foto de Perfil</b>
+{SI
+[ FOTO ]
+[ 150x150 ]
+}
+[Cambiar foto]
+} | {
+<b>Datos Personales</b>
+{
+Nombre: | "Juan Pérez "
+Email: | "juan@ejemplo.com "
+Teléfono: | "+34 600 000 000 "
+País: | ^España^
+Ciudad: | ^Madrid^
+.
+Biografía:
+{SI
+"Desarrollador full-stack "
+"con 5 años de experiencia. "
+" "
+" "
+}
+}
+}
+}
+.
+
+---
+
+.
+<b>Redes Sociales</b>
+{
+GitHub: | "github.com/usuario " | [🔗]
+LinkedIn: | "linkedin.com/in/usuario " | [🔗]
+Twitter: | "@usuario " | [🔗]
+}
+.
+{
+[ Guardar Cambios ] | [ Cancelar ]
+}
+}
+@endsalt

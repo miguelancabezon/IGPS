@@ -1,0 +1,38 @@
+@startsalt
+title Dashboard - Panel de Control
+
+{+
+{/ <b>Dashboard | Proyectos | Tareas | Equipo | Configuración }
+.
+{
+{T + <b>Resumen</b>
+++ Proyectos activos: 5
+++ Tareas pendientes: 23
+++ Miembros del equipo: 12 + <b>Actividad Reciente</b>
+++ Juan completó "Diseño UI"
+++ María inició "API Rest"
+++ Pedro comentó en "Bug #123"
+} | {
+<b>Gráfico de Progreso</b>
+{SI
+==
+==
+Proyecto A ||||||||||||| 75%
+Proyecto B |||||||||| 50%
+Proyecto C ||||||| 35%
+Proyecto D |||||| 30%
+==
+==
+}
+.
+<b>Próximos Deadlines</b>
+{#
+Proyecto | Tarea | Fecha | [...]
+App Mobile | Testing | 2025-11-15 | [Ver]
+Web Admin | Deploy | 2025-11-20 | [Ver]
+API v2 | Documentación | 2025-11-25 | [Ver]
+}
+}
+}
+}
+@endsalt

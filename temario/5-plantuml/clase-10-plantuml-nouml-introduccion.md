@@ -217,358 +217,77 @@ Mínimo 2 secciones
 1 hito importante
 Usar colores y porcentajes
 
-<!--
-📚 PARTE 5: Mockups/Salt
-Fundamentos de Salt (Wireframes)
-Sintaxis básica:
-plantuml@startsalt
-{
-Texto simple
-[Botón]
-^Checkbox^
-Radio button
-}
-@endsalt
-Layout con Grid:
-plantuml@startsalt
-{
-Título | Botón
-Campo 1 | [Input 1]
-Campo 2 | [Input 2]
-}
-@endsalt
-Elementos de formulario:
-plantuml@startsalt
-{
-Usuario | "Juan"
-Contraseña | "\*\*\*\*"
-^Recordarme^
-[Login] | [Cancelar]
-}
-@endsalt
-Elementos Avanzados
-Listas desplegables y scroll:
-plantuml@startsalt
-{
-País | ^España^
-Ciudad | ^Madrid^
-.
-Lista de tareas
-{SI + Tarea 1 + Tarea 2 + Tarea 3 + Tarea 4 + Tarea 5
-}
-}
-@endsalt
-Tabs y navegación:
-plantuml@startsalt
-{+
-{/ <b>Inicio | Perfil | Configuración | Ayuda }
-{
-Contenido de la pestaña seleccionada
-.
-[Botón de acción]
-}
-}
-@endsalt
-Tablas de datos:
-plantuml@startsalt
-{#
-ID | Nombre | Email | Acciones
-001 | Juan | juan@mail.com | [Editar] [Borrar]
-002 | María | maria@mail.com | [Editar] [Borrar]
-003 | Pedro | pedro@mail.com | [Editar] [Borrar]
-}
-@endsalt
-Ejemplos Prácticos
-Ejemplo 1: Formulario de Login
-plantuml@startsalt
-title Pantalla de Login
 
-{+
-<b><size:16>Iniciar Sesión</size></b>
-.
-.
-{
-Usuario: | " "
-Contraseña: | "\*\*\*\* "
-}
-.
-^Recordarme en este dispositivo^
-.
-{
-[ Iniciar Sesión ] | [ Cancelar ]
-}
-.
+## Mockups/Salt/Wireframes
 
----
+[Ir a Base](../../documentos/modelosUML/mockups/puml-wf-primero.puml "Ir a")
 
-.
-¿Olvidaste tu contraseña? | <u>Recuperar</u>
-¿No tienes cuenta? | <u>Registrarse</u>
-}
-@endsalt
-Ejemplo 2: Dashboard Principal
-plantuml@startsalt
-title Dashboard - Panel de Control
 
-{+
-{/ <b>Dashboard | Proyectos | Tareas | Equipo | Configuración }
-.
-{
-{T + <b>Resumen</b>
-++ Proyectos activos: 5
-++ Tareas pendientes: 23
-++ Miembros del equipo: 12 + <b>Actividad Reciente</b>
-++ Juan completó "Diseño UI"
-++ María inició "API Rest"
-++ Pedro comentó en "Bug #123"
-} | {
-<b>Gráfico de Progreso</b>
-{SI
-==
-==
-Proyecto A ||||||||||||| 75%
-Proyecto B |||||||||| 50%
-Proyecto C ||||||| 35%
-Proyecto D |||||| 30%
-==
-==
-}
-.
-<b>Próximos Deadlines</b>
-{#
-Proyecto | Tarea | Fecha | [...]
-App Mobile | Testing | 2025-11-15 | [Ver]
-Web Admin | Deploy | 2025-11-20 | [Ver]
-API v2 | Documentación | 2025-11-25 | [Ver]
-}
-}
-}
-}
-@endsalt
-Ejemplo 3: Aplicación de Tareas (To-Do)
-plantuml@startsalt
-title Gestor de Tareas
+**Layout con Grid**
 
-{
-{\* <b>Mis Tareas</b> }
-.
-{
-Buscar... | " " | [🔍]
-}
-.
-{/ Todas | Pendientes | Completadas | Importantes }
-.
+[Ir a Layout con Grid](../../documentos/modelosUML/mockups/puml-wf-grid.puml "Ir a")
 
----
 
-.
-<b>Hoy - 27 Oct 2025</b>
-.
-{SI
-[X] Reunión de equipo (9:00 AM)
-[ ] Completar informe mensual
-[X] Code review del PR #234
-[ ] Actualizar documentación
-[ ] Preparar presentación cliente
-.
+**Elementos de formulario**
 
----
+[Ir a Elementos de formulario](../../documentos/modelosUML/mockups/puml-wf-formulario.puml "Ir a")
 
-.
-<b>Mañana - 28 Oct 2025</b>
-.
-[ ] Deploy a producción
-[ ] Testing de la nueva feature
-[ ] Reunión con stakeholders
-}
-.
 
----
+**Listas desplegables y scroll**
 
-.
-{
-[ Nueva Tarea ] | Categoría: ^Trabajo^ | [+ Agregar]
-}
-}
-@endsalt
-Ejemplo 4: Perfil de Usuario
-plantuml@startsalt
-title Perfil de Usuario
+[Ir a Listas desplegables y scroll](../../documentos/modelosUML/mockups/puml-wf-listas.puml "Ir a")
 
-{+
-{/ <b>Información | Seguridad | Preferencias | Notificaciones }
-.
-{
-{
-<b>Foto de Perfil</b>
-{SI
-[ FOTO ]
-[ 150x150 ]
-}
-[Cambiar foto]
-} | {
-<b>Datos Personales</b>
-{
-Nombre: | "Juan Pérez "
-Email: | "juan@ejemplo.com "
-Teléfono: | "+34 600 000 000 "
-País: | ^España^
-Ciudad: | ^Madrid^
-.
-Biografía:
-{SI
-"Desarrollador full-stack "
-"con 5 años de experiencia. "
-" "
-" "
-}
-}
-}
-}
-.
 
----
+**Tabs y navegación**
 
-.
-<b>Redes Sociales</b>
-{
-GitHub: | "github.com/usuario " | [🔗]
-LinkedIn: | "linkedin.com/in/usuario " | [🔗]
-Twitter: | "@usuario " | [🔗]
-}
-.
-{
-[ Guardar Cambios ] | [ Cancelar ]
-}
-}
-@endsalt
-Ejemplo 5: Configuración de Aplicación
-plantuml@startsalt
-title Configuración
+[Ir a Tabs y navegación](../../documentos/modelosUML/mockups/puml-wf-tabs.puml "Ir a")
 
-{
-{T + <b>General</b>
-++ Apariencia
-++ Idioma
-++ Zona horaria + <b>Cuenta</b>
-++ Información personal
-++ Privacidad
-++ Seguridad + <b>Notificaciones</b>
-++ Email
-++ Push
-++ SMS + <b>Avanzado</b>
-++ Importar/Exportar
-++ API Keys
-++ Logs
-} | {
-<b>Apariencia</b>
-.
-Tema:
-Claro
-(X)Oscuro
-Automático
-.
 
----
+**Tablas de datos**
 
-.
-<b>Idioma y Región</b>
-.
-{
-Idioma: | ^Español^
-Formato fecha: | ^DD/MM/YYYY^
-Zona horaria: | ^(GMT+1) Madrid^
-}
-.
+[Ir a Tablas de datos](../../documentos/modelosUML/mockups/puml-wf-tablas.puml "Ir a")
 
----
 
-.
-<b>Accesibilidad</b>
-.
-^Modo alto contraste^
-^Aumentar tamaño de fuente^
-^Reducir animaciones^
-.
-.
-[Restablecer a valores por defecto]
-}
-}
-@endsalt
-💻 Ejercicio Práctico 4
+
+### Ejemplos Prácticos
+
+**Ejemplo 1: Formulario de Login**
+
+[Ir a Ejemplo 1](../../documentos/modelosUML/mockups/puml-wf-login.puml "Ir a")
+
+
+**Ejemplo 2: Dashboard Principal**
+
+[Ir a Ejemplo 2](../../documentos/modelosUML/mockups/puml-wf-dashboard.puml "Ir a")
+
+
+**Ejemplo 3: Aplicación de Tareas (To-Do)**
+
+[Ir a Ejemplo 3](../../documentos/modelosUML/mockups/puml-wf-todo.puml "Ir a")
+
+
+**Ejemplo 4: Perfil de Usuario**
+
+[Ir a Ejemplo 4](../../documentos/modelosUML/mockups/puml-wf-perfil.puml "Ir a")
+
+
+**Ejemplo 5: Configuración de Aplicación**
+
+[Ir a Ejemplo 5](../../documentos/modelosUML/mockups/puml-wf-configuracion.puml "Ir a")
+
+
+
+
+### Ejercicio Práctico 4
+
 Crear un mockup para:
 
-Formulario de registro (nombre, email, contraseña, términos)
-Página de búsqueda (barra de búsqueda, filtros, resultados)
-Carrito de compras (lista de productos, total, botones)
+- Formulario de registro (nombre, email, contraseña, términos)
+- Página de búsqueda (barra de búsqueda, filtros, resultados)
+- Carrito de compras (lista de productos, total, botones)
 
 Debe incluir:
-
-Título de la página
-Al menos 5 elementos interactivos
-Layout organizado
-Botones de acción
-
-📋 Proyecto Final Integrador
-🎯 Crear Documentación Completa de Proyecto
-Crear un documento PlantUML que incluya:
-
-1. Mindmap del proyecto
-
-Estructura general
-Funcionalidades principales
-Tecnologías
-
-2. JSON de configuración
-
-Configuración de la aplicación
-O respuesta de API ejemplo
-
-3. Gantt de planificación
-
-Fases del proyecto
-Tareas principales
-Hitos importantes
-
-4. Mockup de interfaz
-
-Pantalla principal
-O formulario clave
-
-Ejemplo de estructura:
-plantuml' ========================================
-' PROYECTO: Sistema de Gestión de Biblioteca
-' ========================================
-
-' 1. MINDMAP - Estructura del Proyecto
-@startmindmap
-!include mindmap_proyecto.puml
-@endmindmap
-
-' 2. JSON - Configuración
-@startjson
-!include config.json
-@endjson
-
-' 3. GANTT - Planificación
-@startgantt
-!include planificacion.gantt
-@endgantt
-
-' 4. MOCKUP - Interfaz
-@startsalt
-!include interfaz.salt
-@endsalt
-
-```
-
-```
-
-```
-
-```
--->
-
-```
-
-```
+- Título de la página
+- Al menos 5 elementos interactivos
+- Layout organizado
+- Botones de acción

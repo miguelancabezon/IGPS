@@ -1,0 +1,45 @@
+@startsalt
+title Gestor de Tareas
+
+{
+{\* <b>Mis Tareas</b> }
+.
+{
+Buscar... | " " | [🔍]
+}
+.
+{/ Todas | Pendientes | Completadas | Importantes }
+.
+
+---
+
+.
+<b>Hoy - 27 Oct 2025</b>
+.
+{SI
+[X] Reunión de equipo (9:00 AM)
+[ ] Completar informe mensual
+[X] Code review del PR #234
+[ ] Actualizar documentación
+[ ] Preparar presentación cliente
+.
+
+---
+
+.
+<b>Mañana - 28 Oct 2025</b>
+.
+[ ] Deploy a producción
+[ ] Testing de la nueva feature
+[ ] Reunión con stakeholders
+}
+.
+
+---
+
+.
+{
+[ Nueva Tarea ] | Categoría: ^Trabajo^ | [+ Agregar]
+}
+}
+@endsalt

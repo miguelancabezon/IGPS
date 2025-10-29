@@ -1,0 +1,52 @@
+@startsalt
+title Configuración
+
+{
+{T + <b>General</b>
+++ Apariencia
+++ Idioma
+++ Zona horaria + <b>Cuenta</b>
+++ Información personal
+++ Privacidad
+++ Seguridad + <b>Notificaciones</b>
+++ Email
+++ Push
+++ SMS + <b>Avanzado</b>
+++ Importar/Exportar
+++ API Keys
+++ Logs
+} | {
+<b>Apariencia</b>
+.
+Tema:
+Claro
+(X)Oscuro
+Automático
+.
+
+---
+
+.
+<b>Idioma y Región</b>
+.
+{
+Idioma: | ^Español^
+Formato fecha: | ^DD/MM/YYYY^
+Zona horaria: | ^(GMT+1) Madrid^
+}
+.
+
+---
+
+.
+<b>Accesibilidad</b>
+.
+^Modo alto contraste^
+^Aumentar tamaño de fuente^
+^Reducir animaciones^
+.
+.
+[Restablecer a valores por defecto]
+}
+}
+@endsalt

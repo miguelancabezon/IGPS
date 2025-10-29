@@ -1,0 +1,8 @@
+@startsalt
+{#
+ID | Nombre | Email | Acciones
+001 | Juan | juan@mail.com | [Editar] [Borrar]
+002 | María | maria@mail.com | [Editar] [Borrar]
+003 | Pedro | pedro@mail.com | [Editar] [Borrar]
+}
+@endsalt

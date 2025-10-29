@@ -1,0 +1,10 @@
+@startsalt
+{+
+{/ <b>Inicio | Perfil | Configuración | Ayuda }
+{
+Contenido de la pestaña seleccionada
+.
+[Botón de acción]
+}
+}
+@endsalt

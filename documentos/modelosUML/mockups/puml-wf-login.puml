@@ -1,0 +1,26 @@
+@startsalt
+title Pantalla de Login
+
+{+
+<b><size:16>Iniciar Sesión</size></b>
+.
+.
+{
+Usuario: | " "
+Contraseña: | "\*\*\*\* "
+}
+.
+^Recordarme en este dispositivo^
+.
+{
+[ Iniciar Sesión ] | [ Cancelar ]
+}
+.
+
+---
+
+.
+¿Olvidaste tu contraseña? | <u>Recuperar</u>
+¿No tienes cuenta? | <u>Registrarse</u>
+}
+@endsalt

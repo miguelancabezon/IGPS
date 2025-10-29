@@ -1,0 +1,8 @@
+@startsalt
+{
+Usuario | "Juan"
+Contraseña | "\*\*\*\*"
+^Recordarme^
+[Login] | [Cancelar]
+}
+@endsalt
