@@ -166,7 +166,7 @@ Diferentes tipos de datos
 
 ## Diagramas de Gantt
 
-[Perimer gantt puml](../../documentos/modelosUML/gantt/puml-gantt-primer.puml "Ir a")
+[Primer gantt puml](../../documentos/modelosUML/gantt/puml-gantt-primer.puml "Ir a")
 
 **Configurar inicio del proyecto**
 
