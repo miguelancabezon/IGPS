@@ -1,0 +1,234 @@
+@startjson
+title REST API Response - Advanced Structure
+
+#highlight "data" / "items" / "0"
+#highlight "pagination"
+#highlight "meta" / "performance"
+
+{
+"status": "success",
+"code": 200,
+"timestamp": "2025-11-03T14:30:45.123Z",
+"requestId": "req_a1b2c3d4e5f6",
+"version": "v2.1.0",
+
+"meta": {
+"server": "api-prod-01",
+"region": "eu-west-1",
+"performance": {
+"queryTime": 0.045,
+"renderTime": 0.012,
+"totalTime": 0.057,
+"cacheHit": true,
+"cacheTTL": 3600
+},
+"rateLimit": {
+"limit": 1000,
+"remaining": 987,
+"reset": "2025-11-03T15:00:00Z"
+}
+},
+
+"pagination": {
+"currentPage": 1,
+"perPage": 10,
+"totalPages": 45,
+"totalItems": 448,
+"hasNext": true,
+"hasPrevious": false,
+"links": {
+"first": "/api/v2/products?page=1",
+"last": "/api/v2/products?page=45",
+"next": "/api/v2/products?page=2",
+"prev": null
+}
+},
+
+"filters": {
+"applied": [
+{
+"field": "category",
+"operator": "in",
+"value": ["electronics", "computers"]
+},
+{
+"field": "price",
+"operator": "between",
+"value": [100, 1000]
+},
+{
+"field": "inStock",
+"operator": "equals",
+"value": true
+}
+],
+"available": [
+"category", "brand", "price", "rating",
+"inStock", "featured", "dateAdded"
+]
+},
+
+"data": {
+"items": [
+{
+"id": "prod_1a2b3c4d",
+"sku": "LAPTOP-HP-001",
+"name": "HP Spectre x360 14",
+"slug": "hp-spectre-x360-14",
+"description": "Premium 2-in-1 laptop with touchscreen",
+
+        "pricing": {
+          "currency": "EUR",
+          "basePrice": 1299.99,
+          "discount": {
+            "type": "percentage",
+            "value": 15,
+            "code": "BLACKFRIDAY",
+            "validUntil": "2025-11-30T23:59:59Z"
+          },
+          "finalPrice": 1104.99,
+          "vat": {
+            "rate": 0.21,
+            "amount": 231.84
+          },
+          "priceWithVat": 1336.83
+        },
+
+        "inventory": {
+          "inStock": true,
+          "quantity": 45,
+          "warehouse": {
+            "id": "WH-EU-01",
+            "location": "Madrid, Spain",
+            "lastUpdated": "2025-11-03T10:15:00Z"
+          },
+          "reorderLevel": 10,
+          "reorderQuantity": 50
+        },
+
+        "specifications": {
+          "processor": {
+            "brand": "Intel",
+            "model": "Core i7-1255U",
+            "cores": 10,
+            "threads": 12,
+            "baseClock": "1.7 GHz",
+            "turboClock": "4.7 GHz"
+          },
+          "memory": {
+            "size": "16 GB",
+            "type": "LPDDR4x",
+            "speed": "4266 MHz",
+            "upgradeable": false
+          },
+          "storage": [
+            {
+              "type": "SSD",
+              "interface": "NVMe",
+              "capacity": "512 GB",
+              "speed": "3500 MB/s read"
+            }
+          ],
+          "display": {
+            "size": "13.5 inches",
+            "resolution": "1920x1280",
+            "technology": "OLED",
+            "touchscreen": true,
+            "refreshRate": 60,
+            "brightness": 400
+          },
+          "graphics": {
+            "integrated": "Intel Iris Xe",
+            "dedicated": null
+          },
+          "connectivity": {
+            "wifi": "Wi-Fi 6E",
+            "bluetooth": "5.2",
+            "ports": [
+              "2x Thunderbolt 4",
+              "1x USB-A 3.2",
+              "1x HDMI 2.0",
+              "3.5mm audio jack"
+            ]
+          },
+          "battery": {
+            "capacity": "66 Wh",
+            "estimatedLife": "up to 11 hours",
+            "fastCharging": true
+          },
+          "dimensions": {
+            "width": 298,
+            "depth": 220,
+            "height": 17,
+            "unit": "mm"
+          },
+          "weight": {
+            "value": 1.34,
+            "unit": "kg"
+          }
+        },
+
+        "media": {
+          "images": [
+            {
+              "url": "https://cdn.example.com/products/laptop-hp-001-main.jpg",
+              "type": "main",
+              "alt": "HP Spectre x360 front view",
+              "width": 1200,
+              "height": 800
+            },
+            {
+              "url": "https://cdn.example.com/products/laptop-hp-001-side.jpg",
+              "type": "gallery",
+              "alt": "HP Spectre x360 side view",
+              "width": 1200,
+              "height": 800
+            }
+          ],
+          "videos": [
+            {
+              "url": "https://cdn.example.com/videos/laptop-hp-001-review.mp4",
+              "type": "review",
+              "duration": 180,
+              "thumbnail": "https://cdn.example.com/thumbs/laptop-hp-001-vid.jpg"
+            }
+          ]
+        },
+
+        "categories": [
+          {
+            "id": "cat_electronics",
+            "name": "Electronics",
+            "slug": "electronics",
+            "level": 1
+          },
+          {
+            "id": "cat_computers",
+            "name": "Computers",
+            "slug": "computers",
+            "level": 2,
+            "parent": "cat_electronics"
+          },
+          {
+            "id": "cat_laptops",
+            "name": "Laptops",
+            "slug": "laptops",
+            "level": 3,
+            "parent": "cat_computers"
+          }
+        ],
+
+        "brand": {
+          "id": "brand_hp",
+          "name": "HP",
+          "slug": "hp",
+          "logo": "https://cdn.example.com/brands/hp-logo.png",
+          "country": "USA",
+          "website": "https://www.hp.com"
+        }
+      }
+    ]
+
+}
+}
+@endjson

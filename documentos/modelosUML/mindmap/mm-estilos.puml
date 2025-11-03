@@ -1,0 +1,41 @@
+@startmindmap
+
+<style>
+mindmapDiagram {
+  node {
+    BackgroundColor lightblue
+    LineColor darkblue
+    FontColor white
+    FontSize 14
+    FontStyle bold
+  }
+  rootNode {
+    BackgroundColor darkblue
+    LineColor black
+    FontColor white
+    FontSize 18
+  }
+  leafNode {
+    BackgroundColor lightgreen
+    LineColor green
+  }
+  arrow {
+    LineColor red
+    LineThickness 2
+  }
+}
+</style>
+
+- Proyecto IA
+  ** Machine Learning 
+  *** Supervisado
+  *** No supervisado
+  ** Deep Learning
+  *** CNN
+  *** RNN
+
+left side
+** Data Science 
+*** Análisis
+*** Visualización
+@endmindmap

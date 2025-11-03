@@ -1,10 +1,9 @@
-# PlantUML
+# PlantUML - NoUML - Parte 1
 
 ## ¿Qué es UML?
 
 UML o Unified Modeling Language o Lenguaje Unificado de Modelado, es uno de los lenguajes de modelado de sistemas de software más conocidos actualmente.
 Es un lenguaje gráfico para visualizar, graficar, contruir y documentar un sistema en todas sus vertientes. Se usa a modo de plano para diseñar y construir sus funciones, variables, entradas, salidas, procesos...
-
 
 ## ¿Qué es PlantUML?
 
@@ -223,37 +222,29 @@ Mínimo 2 secciones
 1 hito importante
 Usar colores y porcentajes
 
-
 ## Mockups/Salt/Wireframes
 
 [Ir a Base](../../documentos/modelosUML/mockups/puml-wf-primero.puml "Ir a")
-
 
 **Layout con Grid**
 
 [Ir a Layout con Grid](../../documentos/modelosUML/mockups/puml-wf-grid.puml "Ir a")
 
-
 **Elementos de formulario**
 
 [Ir a Elementos de formulario](../../documentos/modelosUML/mockups/puml-wf-formulario.puml "Ir a")
-
 
 **Listas desplegables y scroll**
 
 [Ir a Listas desplegables y scroll](../../documentos/modelosUML/mockups/puml-wf-listas.puml "Ir a")
 
-
 **Tabs y navegación**
 
 [Ir a Tabs y navegación](../../documentos/modelosUML/mockups/puml-wf-tabs.puml "Ir a")
 
-
 **Tablas de datos**
 
 [Ir a Tablas de datos](../../documentos/modelosUML/mockups/puml-wf-tablas.puml "Ir a")
-
-
 
 ### Ejemplos Prácticos
 
@@ -261,28 +252,21 @@ Usar colores y porcentajes
 
 [Ir a Ejemplo 1](../../documentos/modelosUML/mockups/puml-wf-login.puml "Ir a")
 
-
 **Ejemplo 2: Dashboard Principal**
 
 [Ir a Ejemplo 2](../../documentos/modelosUML/mockups/puml-wf-dashboard.puml "Ir a")
-
 
 **Ejemplo 3: Aplicación de Tareas (To-Do)**
 
 [Ir a Ejemplo 3](../../documentos/modelosUML/mockups/puml-wf-todo.puml "Ir a")
 
-
 **Ejemplo 4: Perfil de Usuario**
 
 [Ir a Ejemplo 4](../../documentos/modelosUML/mockups/puml-wf-perfil.puml "Ir a")
 
-
 **Ejemplo 5: Configuración de Aplicación**
 
 [Ir a Ejemplo 5](../../documentos/modelosUML/mockups/puml-wf-configuracion.puml "Ir a")
-
-
-
 
 ### Ejercicio Práctico 4
 
@@ -293,11 +277,11 @@ Crear un mockup para:
 - Carrito de compras (lista de productos, total, botones)
 
 Debe incluir:
+
 - Título de la página
 - Al menos 5 elementos interactivos
 - Layout organizado
 - Botones de acción
-
 
 ## Bibliografía
 

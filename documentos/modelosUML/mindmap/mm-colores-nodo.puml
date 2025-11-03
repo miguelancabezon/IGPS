@@ -1,0 +1,41 @@
+@startmindmap
+
+- Sistema E-commerce
+
+**[#lightblue] Frontend 
+***[#87CEEB] React 
+****[#4682B4] Components
+****[#4682B4] Hooks 
+***[#4682B4] Context
+
+**[#87CEEB] Next.js 
+***[#4682B4] SSR
+***[#4682B4] API Routes
+
+**[#lightgreen] Backend 
+***[#90EE90] Node.js 
+****[#32CD32] Express
+****[#32CD32] Middleware
+***[#90EE90] Bases de Datos
+****[#32CD32] PostgreSQL
+****[#32CD32] Redis Cache
+
+left side
+
+**[#FFB6C1] DevOps 
+***[#FF69B4] Docker 
+****[#C71585] Containers
+****[#C71585] Compose
+***[#FF69B4] CI/CD
+****[#C71585] GitHub Actions
+****[#C71585] Jenkins
+
+**[#FFD700] Testing 
+***[#FFA500] Unit Tests 
+****[#FF8C00] Jest
+****[#FF8C00] Vitest
+***[#FFA500] E2E Tests
+****[#FF8C00] Cypress
+****[#FF8C00] Playwright
+
+@endmindmap
