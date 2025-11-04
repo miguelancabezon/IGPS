@@ -1,4 +1,4 @@
-# IGPS ![Progress](https://progress-bar.xyz/60/?width=300&style=square)
+# IGPS ![Progress](https://progress-bar.xyz/65/?width=300&style=square)
 
 
 - [x] [IDEs](temario/1-ides/clase-1-ides.md)
@@ -8,7 +8,7 @@
   - [x] [Procesos del Software](/temario/3-ingenieria-software/clase-6-proceso_software.md)
 - **Lenguajes de marcado**
   - [x] [Markdown](/temario/4-markdown)
-  - [ ] [Plant UML - No UML](/temario/5-plantuml)
+  - [x] [Plant UML - No UML](/temario/5-plantuml)
   - [ ] [Plant UML - UML](/temario/5-plantuml)
 - [ ] [Innovación](/temario/6-innovacion-calidad/clase-16-innovacion.md)
 - [ ] [Calidad del Software](/temario/6-innovacion-calidad/clase-17-calidad_software.md)
