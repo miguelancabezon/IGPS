@@ -1,0 +1,100 @@
+@startsalt
+title Design System - Component Library
+
+{+
+{/ <b>Buttons | Forms | Cards | Tables | Modals | Navigation }
+==
+<b><size:14>Button Components</size></b>
+.
+{
+<b>Primary Buttons</b>
+{ [Primary Button] | [<b>Primary Bold</b>] | [<color:white><back:blue> Primary Blue </back></color>] }
+.
+<b>Secondary Buttons</b>
+{ [Secondary] | [Secondary Outline] | [<s>Disabled</s>] }
+.
+<b>Sizes</b>
+{ [Small] | [ Medium ] | [ Large ] | [ Extra Large ] }
+.
+<b>States</b>
+{ [Normal] | [<color:blue>Hover</color>] | [<color:purple>Active</color>] | [<s>Disabled</s>] }
+.
+<b>With Icons</b>
+{ [<:1F4E5:> Download] | [<:274E:> Delete] | [<:270D:> Edit] | [<:2795:> Add New] | [<:1F4BE:> Save] }
+}
+==
+<b><size:14>Form Elements</size></b>
+.
+{
+<b>Text Inputs</b>
+{
+Label: | "Default input "
+Email: | "user@example.com "
+Error: | "<color:red>Invalid format!</color> "
+}
+.
+<b>Select Dropdowns</b>
+{
+Country: | ^Spain^
+City: | ^Madrid^
+Language:| ^Spanish^
+}
+.
+<b>Checkboxes & Radio</b>
+{
+^Option 1^
+^Option 2^  
+ ^Option 3^
+}
+{
+(X) Selected
+( ) Unselected
+(X) Another selected
+}
+.
+<b>Text Areas</b>
+{SI
+"Multi-line text input "
+"Can contain multiple lines "
+"Useful for comments "
+}
+}
+==
+<b><size:14>Card Components</size></b>
+.
+{
+{^
+<b>Basic Card</b>
+--
+Card content goes here
+with multiple lines
+--
+[Action Button]
+} | {^
+<b><:1F4CA:> Metric Card</b>
+--
+<b><size:18>1,234</size></b>
+<color:green>↗ +12.5%</color>
+--
+Total Users
+} | {^
+<b><:1F3A8:> Image Card</b>
+--
+[ IMAGE PLACEHOLDER ]
+[ 300x200 ]
+--
+<b>Card Title</b>
+Description text
+--
+[View Details]
+}
+}
+==
+<b><size:14>Alert Messages</size></b>
+.
+<color:green><back:lightgreen>✓ Success!</back></color> Operation completed successfully
+<color:blue><back:lightblue>ℹ Info:</back></color> This is an informational message
+<color:orange><back:lightyellow>⚠ Warning:</back></color> Please review before continuing
+<color:red><back:lightpink>✖ Error!</back></color> Something went wrong
+}
+@endsalt

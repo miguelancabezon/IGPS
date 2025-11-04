@@ -1,0 +1,89 @@
+@startsalt
+title Checkout Process - Step 2 of 4
+
+{+
+{
+<b><size:14><:1F6D2:> Shopping Cart Checkout</size></b>
+}
+.
+{
+[●━━━━○━━━━○━━━━○]
+<b>1. Cart</b> → <b><color:blue>2. Shipping</color></b> → 3. Payment → 4. Confirm
+}
+==
+{
+{SI
+<b><:1F4E6:> Order Summary</b>
+--
+{#
+Item | Qty | Price
+Laptop Pro | 1 | €899.00
+Mouse Wireless | 2 | €58.00
+Keyboard Mech | 1 | €79.00
+}
+--
+Subtotal: | €1,036.00
+Tax (21%): | €217.56
+Shipping: | €0.00
+--
+<b>Total: €1,253.56</b>
+--
+.
+^Apply promo code^
+{ "SUMMER2025" | [Apply] }
+.
+<color:green>✓ Free shipping applied!</color>
+} | {
+<b><:1F69A:> Shipping Information</b>
+.
+<b>Delivery Address</b>
+{
+First Name _ | "John "
+Last Name _ | "Doe "
+Email _ | "john.doe@email.com "
+Phone _ | "+34 600 000 000 "
+}
+.
+{
+Address Line 1 _ | "Calle Mayor 123 "
+Address Line 2 | "Piso 2, Puerta B "
+}
+.
+{
+City _ | "Madrid "
+State/Province* | ^Madrid^
+Postal Code * | "28001 "
+Country \* | ^Spain^
+}
+.
+^Save this address for future orders^
+.
+--
+.
+<b><:1F69A:> Shipping Method</b>
+.
+(X) <b>Standard Shipping (FREE)</b>
+Delivery in 3-5 business days
+.
+( ) <b>Express Shipping (€9.99)</b>
+Delivery in 1-2 business days
+.
+( ) <b>Next Day Delivery (€19.99)</b>
+Order before 2 PM for next day delivery
+.
+--
+.
+<b><:1F4DD:> Additional Notes</b>
+{SI
+"Leave package at door "
+"Call before delivery "
+" "
+}
+.
+{
+[← Back to Cart] | [Continue to Payment →]
+}
+}
+}
+}
+@endsalt

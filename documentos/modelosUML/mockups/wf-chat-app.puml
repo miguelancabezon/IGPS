@@ -1,0 +1,57 @@
+@startsalt
+title Messaging Application
+
+{
+{T + <:1F4AC:> <b>Messages</b>
+++ <:1F50D:> Search
+++ <:1F465:> All Chats (23)
+++ <:2B50:> Favorites (5)
+++ <:1F507:> Muted (3)
+++ <:1F5D1:> Archived
+-- + <:1F465:> Contacts
+++ <:1F4CB:> All
+++ <:2795:> Add New
+-- + <:2699:> Settings + <:1F464:> Profile
+} | {SI
+<b><:1F4AC:> Chats</b> | "Search conversations..." | [<:1F50D:>]
+==
+{#
+| Contact | Last Message | Time
+<color:blue>●</color> | <b>Alice Johnson</b> | Hey, are you free tomorrow? | 2m
+| Bob Smith | Thanks for the update! | 15m
+<color:blue>●</color> | <b>Team Dev</b> | @john please review PR #234 | 1h
+| Sarah Williams | 👍 | 2h
+| Mike Brown | See you at the meeting | Yesterday
+<color:green>●</color> | <b>Mom</b> | Love you! <:2764:> | Yesterday
+| Project Alpha | Meeting rescheduled | Monday
+| John Davis | Perfect, let's do it | Monday
+}
+} | {
+<b><:1F465:> Alice Johnson</b> | <:1F3A5:> <:1F4DE:> <:2139:>
+==
+{SI
+<i>Today, 14:30</i>
+.
+{ . | Alice: Hey! How are you? | 14:30 }
+.
+{ You: Hi Alice! I'm good, thanks! | . | 14:31 }
+.
+{ . | Alice: Are you free tomorrow for coffee? <:2615:> | 14:32 }
+.
+{ You: Sure! What time works for you? | . | 14:33 }
+.
+{ . | Alice: How about 10 AM at the usual place? | 14:35 }
+.
+{ You: Perfect! See you there <:1F44D:> | . | 14:36 }
+.
+<i>Alice is typing...</i>
+.
+.
+.
+.
+}
+==
+{ "Type a message..." | [<:1F60A:>] | [<:1F4CE:>] | [<:1F3A4:>] | [<:1F4E4:>] }
+}
+}
+@endsalt

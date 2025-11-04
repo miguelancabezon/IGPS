@@ -1,0 +1,173 @@
+@startgantt
+title DevOps Pipeline Implementation - Infrastructure Roadmap
+printscale daily
+projectscale weekly
+
+Project starts 2025-11-01
+
+<style>
+ganttDiagram {
+  .infra {
+    BackGroundColor #FF9800
+    LineColor #E65100
+  }
+  .cicd {
+    BackGroundColor #2196F3
+    LineColor #0D47A1
+  }
+  .monitoring {
+    BackGroundColor #4CAF50
+    LineColor #1B5E20
+  }
+  .security {
+    BackGroundColor #F44336
+    LineColor #B71C1C
+  }
+}
+</style>
+
+-- FASE 1: Infrastructure as Code --
+[IaC-001: Setup Terraform] lasts 3 days
+[IaC-001: Setup Terraform] is colored in #FF9800
+[IaC-001: Setup Terraform] is 100% completed
+note bottom
+Owner: DevOps Lead
+Tools: Terraform, AWS
+end note
+
+[IaC-002: VPC & Networking] lasts 5 days and starts at [IaC-001: Setup Terraform]'s end
+[IaC-002: VPC & Networking] is colored in #FF9800
+[IaC-002: VPC & Networking] is 100% completed
+
+[IaC-003: EKS Cluster] lasts 7 days and starts at [IaC-002: VPC & Networking]'s end
+[IaC-003: EKS Cluster] is colored in #FF9800
+[IaC-003: EKS Cluster] is 80% completed
+
+[IaC-004: RDS Databases] lasts 5 days and starts at [IaC-003: EKS Cluster]'s end
+[IaC-004: RDS Databases] is colored in #FF9800
+[IaC-004: RDS Databases] is 50% completed
+
+[IaC-005: S3 & CloudFront] lasts 3 days and starts at [IaC-003: EKS Cluster]'s end
+[IaC-005: S3 & CloudFront] is colored in #FF9800
+[IaC-005: S3 & CloudFront] is 30% completed
+
+[<:2705:> Infrastructure Ready] happens at [IaC-005: S3 & CloudFront]'s end
+
+-- FASE 2: CI/CD Pipeline --
+[CICD-001: GitHub Actions Setup] lasts 2 days and starts at [IaC-001: Setup Terraform]'s end
+[CICD-001: GitHub Actions Setup] is colored in #2196F3
+[CICD-001: GitHub Actions Setup] is 100% completed
+
+[CICD-002: Build Pipeline] lasts 5 days and starts at [CICD-001: GitHub Actions Setup]'s end
+[CICD-002: Build Pipeline] is colored in #2196F3
+[CICD-002: Build Pipeline] is 100% completed
+note bottom
+• Docker build
+• Unit tests
+• Linting
+end note
+
+[CICD-003: Test Automation] lasts 7 days and starts at [CICD-002: Build Pipeline]'s end
+[CICD-003: Test Automation] is colored in #2196F3
+[CICD-003: Test Automation] is 60% completed
+
+[CICD-004: Deploy to Staging] lasts 5 days and starts at [CICD-003: Test Automation]'s end
+[CICD-004: Deploy to Staging] is colored in #2196F3
+[CICD-004: Deploy to Staging] is 40% completed
+
+[CICD-005: Deploy to Production] lasts 3 days and starts at [CICD-004: Deploy to Staging]'s end
+[CICD-005: Deploy to Production] is colored in #2196F3
+[CICD-005: Deploy to Production] is 20% completed
+
+[CICD-006: Rollback Strategy] lasts 3 days and starts at [CICD-004: Deploy to Staging]'s end
+[CICD-006: Rollback Strategy] is colored in #2196F3
+[CICD-006: Rollback Strategy] is 10% completed
+
+[<:2705:> CI/CD Operational] happens at [CICD-006: Rollback Strategy]'s end
+
+-- FASE 3: Monitoring & Observability --
+[MON-001: Prometheus Setup] lasts 3 days and starts at [IaC-003: EKS Cluster]'s end
+[MON-001: Prometheus Setup] is colored in #4CAF50
+[MON-001: Prometheus Setup] is 100% completed
+
+[MON-002: Grafana Dashboards] lasts 5 days and starts at [MON-001: Prometheus Setup]'s end
+[MON-002: Grafana Dashboards] is colored in #4CAF50
+[MON-002: Grafana Dashboards] is 70% completed
+
+[MON-003: ELK Stack (Logs)] lasts 7 days and starts at [MON-001: Prometheus Setup]'s end
+[MON-003: ELK Stack (Logs)] is colored in #4CAF50
+[MON-003: ELK Stack (Logs)] is 50% completed
+note bottom
+• Elasticsearch
+• Logstash
+• Kibana
+end note
+
+[MON-004: APM (Datadog)] lasts 5 days and starts at [MON-002: Grafana Dashboards]'s end
+[MON-004: APM (Datadog)] is colored in #4CAF50
+[MON-004: APM (Datadog)] is 30% completed
+
+[MON-005: Alerting Rules] lasts 3 days and starts at [MON-004: APM (Datadog)]'s end
+[MON-005: Alerting Rules] is colored in #4CAF50
+[MON-005: Alerting Rules] is 10% completed
+
+[<:2705:> Monitoring Live] happens at [MON-005: Alerting Rules]'s end
+
+-- FASE 4: Security & Compliance --
+[SEC-001: Vault Setup] lasts 3 days and starts at [IaC-002: VPC & Networking]'s end
+[SEC-001: Vault Setup] is colored in #F44336
+[SEC-001: Vault Setup] is 100% completed
+
+[SEC-002: SSL Certificates] lasts 2 days and starts at [SEC-001: Vault Setup]'s end
+[SEC-002: SSL Certificates] is colored in #F44336
+[SEC-002: SSL Certificates] is 100% completed
+
+[SEC-003: WAF Configuration] lasts 5 days and starts at [IaC-005: S3 & CloudFront]'s end
+[SEC-003: WAF Configuration] is colored in #F44336
+[SEC-003: WAF Configuration] is 40% completed
+
+[SEC-004: Security Scanning] lasts 7 days and starts at [CICD-002: Build Pipeline]'s end
+[SEC-004: Security Scanning] is colored in #F44336
+[SEC-004: Security Scanning] is 50% completed
+note bottom
+• Snyk
+• Trivy
+• OWASP ZAP
+end note
+
+[SEC-005: Penetration Testing] lasts 5 days and starts at [SEC-003: WAF Configuration]'s end
+[SEC-005: Penetration Testing] is colored in #F44336
+[SEC-005: Penetration Testing] is 10% completed
+
+[SEC-006: Compliance Audit] lasts 3 days and starts at [SEC-005: Penetration Testing]'s end
+[SEC-006: Compliance Audit] is colored in #F44336
+
+[<:2705:> Security Approved] happens at [SEC-006: Compliance Audit]'s end
+
+-- MILESTONES PRINCIPALES --
+[<:1F3AF:> Infrastructure Complete] happens 2025-11-25
+[<:1F3AF:> CI/CD Complete] happens 2025-12-10
+[<:1F3AF:> Monitoring Complete] happens 2025-12-20
+[<:1F3AF:> Security Complete] happens 2025-12-27
+[<:1F680:> GO-LIVE] happens 2025-12-30
+
+note bottom
+<b><:1F4CA:> Project Overview:</b>
+• Duration: 8 semanas
+• Team Size: 3 DevOps Engineers
+• Budget: €75,000
+• Cloud Provider: AWS
+
+<b><:1F3AF:> Success Criteria:</b>
+• 99.9% uptime SLA
+• < 5 min deployment time
+• Automated rollbacks
+• Zero-downtime deployments
+
+<b><:26A0:> Dependencies:</b>
+• AWS account setup
+• Domain DNS configuration
+• Third-party integrations approval
+end note
+
+@endgantt

@@ -1,0 +1,109 @@
+@startsalt
+title Dashboard Analítico Empresarial
+
+{+
+{/ <b><:1F4CA:> Dashboard | <:1F4C8:> Analytics | <:1F465:> Users | <:2699:> Settings | <:1F514:> Notifications (3) }
+==
+{
+{T + <:1F3E0:> Home
+++ <:1F4CA:> Overview
+++ <:1F4C8:> Sales
+++ <:1F4B0:> Revenue + <:1F4E6:> Products
+++ <:1F4CB:> List
+++ <:2795:> Add New
+++ <:1F3F7:> Categories + <:1F465:> Customers
+++ <:1F4CB:> All Customers
+++ <:2B50:> VIP Clients
+++ <:1F382:> Birthdays + <:1F4CA:> Reports
+++ <:1F4C5:> Daily
+++ <:1F4C6:> Weekly
+++ <:1F4C8:> Monthly
+++ <:1F4CA:> Custom
+-- + <:2699:> Settings + <:1F6AA:> Logout
+} | {
+<b><size:16>Dashboard Overview</size></b>
+<i>Last updated: 2 min ago</i>
+==
+{
+{^"<:1F4CA:> Total Sales"
+<b><size:20>€245,890</size></b>
+<color:green>↗ +12.5%</color> vs last month
+} | {^"<:1F465:> Active Users"
+<b><size:20>1,234</size></b>
+<color:green>↗ +8.3%</color> vs last month
+} | {^"<:1F4E6:> Orders"
+<b><size:20>456</size></b>
+<color:red>↘ -3.2%</color> vs last month
+} | {^"<:2B50:> Conversion"
+<b><size:20>3.2%</size></b>
+<color:green>↗ +0.5%</color> vs last month
+}
+}
+==
+{
+{SI
+<b><:1F4C8:> Revenue Trend (Last 12 months)</b>
+==
+||||||||||||||||||||||||||||||||||||||||||||| Jan: €20K
+|||||||||||||||||||||||||||||||||||||||||||||||| Feb: €22K
+||||||||||||||||||||||||||||||||||||||||||||||||||||| Mar: €24K
+||||||||||||||||||||||||||||||||||||||||||||||||||| Apr: €23K
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||| May: €26K
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||| Jun: €25K
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| Jul: €27K
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| Aug: €28K
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| Sep: €27K
+||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| Oct: €29K
+|||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||| Nov: €30K
+==
+} | {^
+<b><:1F3AF:> Top Products</b>
+{#
+Rank | Product | Sales | Revenue
+<:1F947:> 1 | Laptop Pro | 156 | €124K
+<:1F948:> 2 | Mouse Wireless | 423 | €12K
+<:1F949:> 3 | Keyboard Mech | 234 | €18K
+4 | Monitor 4K | 89 | €35K
+5 | Webcam HD | 167 | €8K
+}
+}
+}
+==
+{
+{SI
+<b><:1F4CB:> Recent Orders</b>
+{#
+Order ID | Customer | Product | Amount | Status | [...]
+#ORD-1234 | John Doe | Laptop Pro | €899 | <:2705:> Delivered | [<:1F441:>]
+#ORD-1235 | Jane Smith | Mouse | €29 | <:1F69A:> Shipping | [<:1F441:>]
+#ORD-1236 | Bob Johnson | Keyboard | €79 | <:23F3:> Processing | [<:1F441:>]
+#ORD-1237 | Alice Brown | Monitor | €399 | <:2705:> Delivered | [<:1F441:>]
+#ORD-1238 | Charlie Wilson | Webcam | €49 | <:23F3:> Processing | [<:1F441:>]
+}
+[View All Orders →]
+} | {SI
+<b><:26A0:> Alerts & Notifications</b>
+.
+<:1F534:> <b>Low Stock Alert</b>
+Product "Mouse Wireless" has only 5 units left
+<i>2 hours ago</i>
+.
+<:1F7E1:> <b>Pending Reviews</b>
+15 customer reviews waiting for approval
+<i>5 hours ago</i>
+.
+<:1F7E2:> <b>Payment Received</b>
+Invoice #INV-4567 paid by ACME Corp
+<i>1 day ago</i>
+.
+[View All Notifications →]
+}
+}
+}
+}
+==
+{
+© 2025 Company Name | Terms | Privacy | Support: support@company.com
+}
+}
+@endsalt

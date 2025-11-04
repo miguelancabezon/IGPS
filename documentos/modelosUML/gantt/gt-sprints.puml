@@ -1,0 +1,203 @@
+@startgantt
+title Desarrollo Ágil - Product Roadmap 2025
+printscale weekly
+projectscale weekly
+
+Project starts 2025-11-01
+
+<style>
+ganttDiagram {
+  .sprint1 {
+    BackGroundColor #E3F2FD
+    LineColor #1976D2
+  }
+  .sprint2 {
+    BackGroundColor #F3E5F5
+    LineColor #7B1FA2
+  }
+  .sprint3 {
+    BackGroundColor #FFF3E0
+    LineColor #F57C00
+  }
+  .sprint4 {
+    BackGroundColor #E8F5E9
+    LineColor #388E3C
+  }
+  .epic {
+    BackGroundColor #FFE0B2
+    LineColor #E65100
+    FontStyle bold
+  }
+}
+</style>
+
+-- EPIC 1: Sistema de Autenticación --
+[EPIC-1: Auth System] as [E1] lasts 35 days
+[E1] is colored in #FFE0B2
+
+-- Sprint 1 (2 semanas) --
+[Sprint 1 Planning] happens 2025-11-01
+
+[USER-101: Login básico] lasts 5 days and starts 2025-11-02
+[USER-101: Login básico] is 100% completed
+[USER-101: Login básico] is colored in #E3F2FD
+note bottom 
+    Story Points: 5 | Dev: Alice 
+end note
+
+[USER-102: Registro usuarios] lasts 5 days and starts at [USER-101: Login básico]'s end
+[USER-102: Registro usuarios] is 100% completed
+[USER-102: Registro usuarios] is colored in #E3F2FD
+note bottom 
+    Story Points: 8 | Dev: Bob 
+end note
+
+[USER-103: Recuperar password] lasts 4 days and starts at [USER-101: Login básico]'s end
+[USER-103: Recuperar password] is 100% completed
+[USER-103: Recuperar password] is colored in #E3F2FD
+note bottom 
+    Story Points: 5 | Dev: Alice 
+end note
+
+[Sprint 1 Review] happens 2025-11-15
+[Sprint 1 Retro] happens 2025-11-15
+
+-- Sprint 2 (2 semanas) --
+[Sprint 2 Planning] happens 2025-11-16
+
+[USER-104: OAuth Google] lasts 7 days and starts 2025-11-17
+[USER-104: OAuth Google] is 80% completed
+[USER-104: OAuth Google] is colored in #F3E5F5
+note bottom 
+    Story Points: 8 | Dev: Charlie 
+end note
+
+[USER-105: OAuth GitHub] lasts 7 days and starts at [USER-104: OAuth Google]'s start
+[USER-105: OAuth GitHub] is 60% completed
+[USER-105: OAuth GitHub] is colored in #F3E5F5
+note bottom 
+    Story Points: 8 | Dev: Diana 
+end note
+
+[USER-106: 2FA Setup] lasts 7 days and starts at [USER-104: OAuth Google]'s start
+[USER-106: 2FA Setup] is 40% completed
+[USER-106: 2FA Setup] is colored in #F3E5F5
+note bottom 
+    Story Points: 13 | Dev: Alice 
+end note
+
+[Sprint 2 Review] happens 2025-11-29
+[Sprint 2 Retro] happens 2025-11-29
+
+-- EPIC 2: Dashboard de Usuario --
+[EPIC-2: User Dashboard] as [E2] lasts 42 days and starts 2025-11-10
+[E2] is colored in #FFE0B2
+
+-- Sprint 3 (2 semanas) --
+[Sprint 3 Planning] happens 2025-12-01
+
+[USER-201: Diseño Dashboard] lasts 5 days and starts 2025-12-02
+[USER-201: Diseño Dashboard] is 100% completed
+[USER-201: Diseño Dashboard] is colored in #FFF3E0
+note bottom 
+    Story Points: 5 | Designer: Eve 
+end note
+
+[USER-202: Layout Principal] lasts 7 days and starts at [USER-201: Diseño Dashboard]'s end
+[USER-202: Layout Principal] is 30% completed
+[USER-202: Layout Principal] is colored in #FFF3E0
+note bottom 
+    Story Points: 8 | Dev: Bob 
+end note
+
+[USER-203: Widgets Configurables] lasts 7 days and starts at [USER-202: Layout Principal]'s start
+[USER-203: Widgets Configurables] is 20% completed
+[USER-203: Widgets Configurables] is colored in #FFF3E0
+note bottom 
+    Story Points: 13 | Dev: Charlie 
+end note
+
+[Sprint 3 Review] happens 2025-12-13
+[Sprint 3 Retro] happens 2025-12-13
+
+-- Sprint 4 (2 semanas) --
+[Sprint 4 Planning] happens 2025-12-14
+
+[USER-204: Gráficos Analytics] lasts 10 days and starts 2025-12-15
+[USER-204: Gráficos Analytics] is colored in #E8F5E9
+note bottom 
+    Story Points: 13 | Dev: Alice, Bob 
+end note
+
+[USER-205: Filtros & Búsqueda] lasts 7 days and starts at [USER-204: Gráficos Analytics]'s start
+[USER-205: Filtros & Búsqueda] is colored in #E8F5E9
+note bottom 
+    Story Points: 8 | Dev: Diana 
+end note
+
+[USER-206: Export Datos] lasts 5 days and starts at [USER-204: Gráficos Analytics]'s start
+[USER-206: Export Datos] is colored in #E8F5E9
+note bottom 
+    Story Points: 5 | Dev: Charlie 
+end note
+
+[Sprint 4 Review] happens 2025-12-27
+[Sprint 4 Retro] happens 2025-12-27
+
+-- EPIC 3: Notificaciones --
+[EPIC-3: Notifications] as [E3] lasts 28 days and starts 2025-12-01
+[E3] is colored in #FFE0B2
+
+-- Sprint 5 (2 semanas) --
+[Sprint 5 Planning] happens 2026-01-01
+
+[USER-301: Sistema Email] lasts 7 days and starts 2026-01-02
+[USER-301: Sistema Email] is colored in #E3F2FD
+note bottom 
+    Story Points: 8 | Dev: Eve 
+end note
+
+[USER-302: Push Notifications] lasts 10 days and starts at [USER-301: Sistema Email]'s start
+[USER-302: Push Notifications] is colored in #E3F2FD
+note bottom 
+    Story Points: 13 | Dev: Alice 
+end note
+
+[USER-303: Preferencias Usuario] lasts 5 days and starts at [USER-301: Sistema Email]'s start
+[USER-303: Preferencias Usuario] is colored in #E3F2FD
+note bottom
+    Story Points: 5 | Dev: Bob 
+end note
+
+[Sprint 5 Review] happens 2026-01-15
+[Sprint 5 Retro] happens 2026-01-15
+
+-- HITOS DE RELEASE --
+[<:1F680:> Alpha Release] happens 2025-11-30
+[<:1F680:> Beta Release] happens 2025-12-27
+[<:1F680:> Production Release] happens 2026-01-15
+
+-- CEREMONIAS RECURRENTES --
+[Daily Standup] happens 2025-11-03
+[Daily Standup] happens 2025-11-04
+[Daily Standup] happens 2025-11-05
+[Daily Standup] happens 2025-11-06
+[Daily Standup] happens 2025-11-07
+[Daily Standup] happens 2025-11-10
+[Daily Standup] happens 2025-11-11
+
+note bottom
+<b><:1F3AF:> Métricas del Proyecto:</b>
+• Velocidad promedio: 40 SP/sprint
+• Team capacity: 5 developers
+• Sprint duration: 2 semanas
+• Total Epics: 3
+• Total Story Points: ~120 SP
+
+<b><:1F6D1:> Riesgos Identificados:</b>
+• OAuth integration complexity
+• Third-party API dependencies
+• Holiday season (Dec 20–31)
+end note
+
+@endgantt

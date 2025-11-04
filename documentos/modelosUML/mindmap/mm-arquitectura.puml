@@ -1,0 +1,133 @@
+@startmindmap
+
+<style>
+mindmapDiagram {
+  .frontend {
+    BackgroundColor #61DAFB
+    LineColor #282C34
+  }
+  .backend {
+    BackgroundColor #68A063
+    LineColor #303030
+  }
+  .database {
+    BackgroundColor #336791
+    LineColor red
+  }
+  .infrastructure {
+    BackgroundColor #FF9900
+    LineColor #232F3E
+  }
+  .security {
+    BackgroundColor #DD0031
+    LineColor red
+  }
+}
+</style>
+
+- 🏗️ Arquitectura Microservicios Sistema Bancario Online
+
+**[#61DAFB] 🎨 Capa de Presentación <<frontend>> 
+*** Web Application (React) 
+**** Components Library
+***** Atomic Design
+****** Atoms
+****** Molecules
+****** Organisms 
+**** State Management
+***** Redux Toolkit
+***** React Query (Cache) 
+**** Routing & Navigation
+***** React Router v6
+***** Protected Routes
+*** Mobile App (React Native)
+**** iOS & Android 
+***** Offline Mode
+***** Biometric Auth
+
+**[#68A063] ⚙️ Capa de Servicios <<backend>> 
+*** API Gateway (Kong) 
+**** Rate Limiting
+**** Authentication 
+***_ Load Balancing
+** Microservicios 
+*** Auth Service (Node.js)
+**** JWT + Refresh Tokens
+**** OAuth2 / OIDC
+**** 2FA Implementation 
+*** Account Service (Java Spring)
+**** CRUD Cuentas
+**** Transacciones
+**** Saldos & Movimientos 
+*** Payment Service (Go)
+**** Pagos nacionales
+**** SEPA / SWIFT
+**** Integración TPV 
+*** Notification Service (Python)
+**** Email (SendGrid)
+**** SMS (Twilio)
+**** Push Notifications 
+*** Analytics Service (Node.js)
+**** Tracking eventos
+**** Dashboards
+**** Reports
+
+left side
+
+**[#336791] 🗄️ Capa de Datos <<database>> 
+*** Bases de Datos 
+**** PostgreSQL (Principal)
+***** Particionamiento
+***** Replicación Master-Slave
+***** Backups automáticos 
+**** MongoDB (Logs & Analytics)
+***** Time-series data
+***** Agregaciones 
+**** Redis (Cache & Sessions)
+***** Cache distribuido
+***** Pub/Sub
+***** Rate limiting
+
+**[#FF9900] ☁️ Infraestructura <<infrastructure>> 
+*** Cloud Provider (AWS) 
+**** Compute
+***** ECS Fargate (Containers)
+***** Lambda (Serverless)
+***** Auto Scaling Groups 
+**** Storage
+***** S3 (Documentos)
+***** EFS (Shared storage) 
+**** Networking
+***** VPC & Subnets
+***** Load Balancers (ALB)
+***** CloudFront (CDN)
+*** Monitoring & Observability
+**** Prometheus + Grafana 
+**** ELK Stack (Logs)
+**** Sentry (Error tracking)
+*** CI/CD Pipeline
+**** GitHub Actions
+***** Tests automatizados
+***** Security scanning
+***** Build & Deploy
+**** ArgoCD (GitOps)
+
+**[#DD0031] 🔐 Seguridad <<security>> 
+***_ __Autenticación & Autorización__
+**** Multi-factor Auth (2FA)
+**** Role-based Access Control 
+***_ __API Key Management__
+***_ __Encriptación__
+**** TLS 1.3
+**** Encryption at rest 
+***_ __Vault (Secrets)__
+***_ __Compliance__ 
+**** PCI-DSS
+**** GDPR 
+***_ __Auditoría & Logs__
+***_ __Security Testing__
+**** OWASP Top 10
+**** Penetration Testing
+**** Dependency Scanning
+
+@endmindmap

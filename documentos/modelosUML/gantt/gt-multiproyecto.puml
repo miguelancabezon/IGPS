@@ -1,0 +1,168 @@
+@startgantt
+title Portfolio de Proyectos Q4 2025
+printscale weekly
+
+Project starts 2025-10-01
+
+<style>
+ganttDiagram {
+  task {
+    BackGroundColor lightblue
+    LineColor blue
+  }
+  milestone {
+    BackGroundColor gold
+    LineColor orange
+  }
+  separator {
+    BackGroundColor lightgray
+    LineColor gray
+    FontColor black
+    FontStyle bold
+  }
+}
+</style>
+
+-- PROYECTO A: Migración Cloud --
+[A1: Análisis infraestructura] as [PA1] lasts 5 days
+[PA1] is colored in LightBlue
+[PA1] is 100% completed
+note bottom
+Equipo: DevOps (2)
+Budget: €10K
+end note
+
+[A2: Diseño arquitectura] as [PA2] lasts 7 days and starts at [PA1]'s end
+[PA2] is colored in LightBlue
+[PA2] is 100% completed
+
+[A3: Setup AWS] as [PA3] lasts 10 days and starts at [PA2]'s end
+[PA3] is colored in Blue
+[PA3] is 80% completed
+note bottom
+Equipo: DevOps (3)
+Recursos: AWS Credits
+end note
+
+[A4: Migración datos] as [PA4] lasts 15 days and starts at [PA3]'s end
+[PA4] is colored in Orange
+[PA4] is 40% completed
+
+[A5: Testing & Optimización] as [PA5] lasts 7 days and starts at [PA4]'s end
+[PA5] is colored in Red
+
+[Milestone A: Go-Live Cloud] as [MA1] happens at [PA5]'s end
+
+-- PROYECTO B: Nueva App Mobile --
+[B1: Research & Discovery] as [PB1] lasts 5 days and starts at [PA1]'s end
+[PB1] is colored in LightGreen
+[PB1] is 100% completed
+
+[B2: UX/UI Design] as [PB2] lasts 10 days and starts at [PB1]'s end
+[PB2] is colored in LightGreen
+[PB2] is 100% completed
+
+[B3: Setup React Native] as [PB3] lasts 3 days and starts at [PB2]'s end
+[PB3] is colored in Green
+[PB3] is 100% completed
+
+[B4: Dev - Autenticación] as [PB4] lasts 7 days and starts at [PB3]'s end
+[PB4] is colored in Green
+[PB4] is 70% completed
+note bottom
+Equipo: Mobile (2)
+Sprint 1
+end note
+
+[B5: Dev - Features Core] as [PB5] lasts 14 days and starts at [PB4]'s end
+[PB5] is colored in Orange
+[PB5] is 30% completed
+
+[B6: Integración APIs] as [PB6] lasts 7 days and starts at [PB5]'s end
+[PB6] is colored in Red
+
+[B7: Testing & QA] as [PB7] lasts 7 days and starts at [PB6]'s end
+[PB7] is colored in Red
+
+[Milestone B: Beta Release] as [MB1] happens at [PB7]'s end
+
+-- PROYECTO C: Refactor Backend --
+[C1: Code Audit] as [PC1] lasts 5 days and starts 2025-10-15
+[PC1] is colored in LightCoral
+[PC1] is 100% completed
+
+[C2: Planificación Refactor] as [PC2] lasts 3 days and starts at [PC1]'s end
+[PC2] is colored in LightCoral
+[PC2] is 100% completed
+
+[C3: Refactor Módulo Auth] as [PC3] lasts 10 days and starts at [PC2]'s end
+[PC3] is colored in Coral
+[PC3] is 60% completed
+note bottom
+Equipo: Backend (3)
+Crítico: No breaking changes
+end note
+
+[C4: Refactor Módulo Pagos] as [PC4] lasts 10 days and starts at [PC3]'s end
+[PC4] is colored in Orange
+[PC4] is 20% completed
+
+[C5: Migración DB] as [PC5] lasts 5 days and starts at [PC4]'s end
+[PC5] is colored in Red
+
+[C6: Deploy Gradual] as [PC6] lasts 7 days and starts at [PC5]'s end
+[PC6] is colored in Red
+
+[Milestone C: Refactor Complete] as [MC1] happens at [PC6]'s end
+
+-- PROYECTO D: Analytics Dashboard --
+[D1: Requirements] as [PD1] lasts 3 days and starts 2025-11-01
+[PD1] is colored in Lavender
+[PD1] is 100% completed
+
+[D2: Data Model Design] as [PD2] lasts 5 days and starts at [PD1]'s end
+[PD2] is colored in Lavender
+[PD2] is 100% completed
+
+[D3: Backend APIs] as [PD3] lasts 10 days and starts at [PD2]'s end
+[PD3] is colored in Violet
+[PD3] is 50% completed
+
+[D4: Frontend Dashboard] as [PD4] lasts 14 days and starts at [PD2]'s end
+[PD4] is colored in Orange
+[PD4] is 30% completed
+note bottom
+Equipo: Frontend (2)
+Tech: React + D3.js
+end note
+
+[D5: Integración & Testing] as [PD5] lasts 5 days
+[PD5] starts at [PD3]'s end
+[PD5] starts at [PD4]'s end
+[PD5] is colored in Red
+
+[Milestone D: Dashboard Live] as [MD1] happens at [PD5]'s end
+
+-- HITOS GENERALES --
+[Sprint Review #1] happens 2025-10-25
+[Sprint Review #2] happens 2025-11-15
+[Sprint Review #3] happens 2025-12-06
+[Q4 Review Meeting] happens 2025-12-20
+
+-- RECURSOS Y DEPENDENCIAS --
+note bottom
+<b>Recursos Totales Q4:</b>
+• DevOps Team: 3 personas
+• Backend Team: 3 personas
+• Frontend Team: 2 personas
+• Mobile Team: 2 personas
+• QA Team: 1 persona
+
+<b>Budget Total: €150K</b>
+
+<b>Dependencias Críticas:</b>
+⚠ Proyecto A bloquea parte de Proyecto C
+⚠ Proyecto B requiere APIs de Proyecto D
+end note
+
+@endgantt

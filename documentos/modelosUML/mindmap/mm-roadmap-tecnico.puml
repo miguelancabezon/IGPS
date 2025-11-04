@@ -1,0 +1,156 @@
+@startmindmap
+title Roadmap de Aprendizaje Full-Stack Developer
+caption 12 meses - De Junior a Mid-Level
+
+<style>
+mindmapDiagram {
+  .q1 {
+    BackgroundColor #E3F2FD
+    LineColor #1976D2
+  }
+  .q2 {
+    BackgroundColor #F3E5F5
+    LineColor #7B1FA2
+  }
+  .q3 {
+    BackgroundColor #FFF3E0
+    LineColor #F57C00
+  }
+  .q4 {
+    BackgroundColor #E8F5E9
+    LineColor #388E3C
+  }
+  .completed {
+    BackgroundColor #C8E6C9
+    LineColor #2E7D32
+    FontStyle italic
+  }
+  .inprogress {
+    BackgroundColor #FFF9C4
+    LineColor #F9A825
+    FontStyle bold
+  }
+}
+</style>
+
+- 🎯 Full-Stack Developer Journey 2025 Learning Path
+
+**[#E3F2FD] 📅 Q1: Fundamentos <<q1>> 
+*** ✅ HTML5 & CSS3 Avanzado <<completed>> 
+**** Flexbox & Grid mastery
+**** Responsive Design 
+**** Animations & Transitions
+**** Accessibility (a11y)
+*** ✅ JavaScript ES6+ <<completed>>
+**** Async/Await 
+**** Promises
+**** Modules 
+***_ Destructuring & Spread
+** ⏳ Git & GitHub <<inprogress>> 
+*** Branching strategies
+*** Pull Requests 
+*** GitHub Actions básico
+** 📚 Algoritmos & Estructuras de Datos 
+*** Arrays & Objects
+*** Linked Lists 
+*** Stacks & Queues
+*** Big O Notation
+
+**[#F3E5F5] 📅 Q2: Frontend Moderno <<q2>> 
+*** React.js Profundo 
+**** Hooks avanzados
+***** useReducer, useContext
+***** Custom Hooks 
+**** Component Patterns
+***** Compound Components
+***** Render Props
+***** HOCs 
+**** Performance Optimization
+***** React.memo
+***** useMemo, useCallback
+***** Code Splitting
+*** State Management
+**** Redux Toolkit 
+**** Zustand / Jotai
+**** React Query (Server State)
+*** Testing Frontend
+**** Jest & React Testing Library 
+****_ E2E con Playwright
+***_ TypeScript 
+**** Tipos básicos y avanzados
+**** Generics
+**** Utility Types
+
+left side
+
+**[#FFF3E0] 📅 Q3: Backend & Databases <<q3>> 
+*** Node.js & Express 
+**** REST APIs
+***** CRUD operations
+***** Middleware
+***** Error handling 
+**** Authentication & Authorization
+***** JWT
+***** OAuth2
+***** Sessions 
+**** Security Best Practices
+***** Helmet.js
+***** Rate limiting
+***** Input validation
+*** Bases de Datos
+**** SQL (PostgreSQL)
+***** Queries complejas
+***** Joins & Subqueries
+***** Indexes
+***** Transactions 
+**** NoSQL (MongoDB)
+***** Document design
+***** Aggregation pipeline
+***** Replication
+*** ORMs & Query Builders
+**** Prisma 
+**** TypeORM
+**** Sequelize
+
+**[#E8F5E9] 📅 Q4: DevOps & Avanzado <<q4>> 
+*** Containerización 
+**** Docker
+***** Dockerfile
+***** Docker Compose
+***** Multi-stage builds 
+**** Kubernetes básico
+***** Pods & Services
+***** Deployments
+***** ConfigMaps & Secrets
+*** CI/CD
+**** GitHub Actions avanzado 
+**** Testing automation
+**** Deployment pipelines
+*** Cloud Platforms
+**** AWS
+***** EC2, S3, RDS
+***** Lambda
+***** CloudFront 
+***_ Vercel / Netlify
+**_ Monitoring & Logging 
+*** Application logs
+*** Error tracking (Sentry) 
+***_ Performance monitoring
+**_ Arquitectura
+*** Microservices patterns
+*** API Gateway 
+*** Message Queues (RabbitMQ)
+*** Caching strategies (Redis)
+
+** 🎓 Certificaciones Objetivo 
+*** AWS Certified Developer
+**_ MongoDB Associate
+**_ GitHub Actions Certification
+
+** 📊 KPIs de Progreso 
+*** 5 proyectos portfolio
+**_ 100+ commits en open source
+**_ 2 artículos técnicos/mes
+*** 1 charla técnica
+
+@endmindmap
