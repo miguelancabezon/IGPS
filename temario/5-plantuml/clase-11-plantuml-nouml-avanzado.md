@@ -16,7 +16,7 @@
 
 **Íconos y símbolos especiales**
 
-[Ir a Iconos](../../documentos/modelosUML/mindmap/mm-colores-nodo.puml "Ir a Iconos")
+[Ir a Iconos](../../documentos/modelosUML/mindmap/mm-iconos.puml "Ir a Iconos")
 
 Tenéis una lista de íconos unicode [aquí](#biblio-1 "Lista iconos unicode")
 
@@ -28,7 +28,7 @@ Tenéis una lista de íconos unicode [aquí](#biblio-1 "Lista iconos unicode")
 
 **Mindmap de Roadmap Técnico**
 
-[Ir a Roadmap Técnico](../../documentos/modelosUML/mindmap/mm-arquitectura.puml "Ir a Roadmap Técnico")
+[Ir a Roadmap Técnico](../../documentos/modelosUML/mindmap/mm-roadmap-tecnico.puml "Ir a Roadmap Técnico")
 
 ### 💻 Ejercicio Práctico 1
 
