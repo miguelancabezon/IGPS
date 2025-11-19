@@ -81,7 +81,7 @@ Las **revisiones técnicas y de configuración** también sono importantes para 
 ### Proceso Lineal
 El proceso lineal sigue la línea "natural" de las actividades y cada actividad comienza cuando acaba la otra.
 
-![Proceso Lineal](../../images/proceso_lineal.jpg, "Proceso Lineal")
+![Proceso Lineal](../../images/proceso_lineal.jpg "Proceso Lineal")
 
 ### Proceso Iterativo
 El proceso iterativo tiene la ventaja de poder mejorar cada actividad y volver a ella antes de pasar a la siguiente. Muy útil para crear entregables con calidad.
@@ -174,6 +174,7 @@ Estos cinco puntos deben equilibrarse para que todos queden satisfechos.
 1. [Wikipedia - Software](https://es.wikipedia.org/wiki/Software)
 2. [Wikipedia - Sistema Formal](https://es.wikipedia.org/wiki/Sistema_formal)
 3. [Medium - Procesos desarrollo Software](https://medium.com/@ramiroec/procesos-de-desarrollo-de-software-d06d18ebd78f)
+
 
 
 
