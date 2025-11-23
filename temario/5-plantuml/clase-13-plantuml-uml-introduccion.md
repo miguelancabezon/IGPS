@@ -27,10 +27,12 @@ En la programación orientada a objetos (POO), se establece una relación intrí
 
 Podemos empezar a crear nuestros objetos con la palabra reservada `object`:
 
+```
 @startuml
 object primerObjeto
 object "Mi segundo Objeto" as o2
 @enduml
+```
 
 ### Relaciones entre objetos
 
@@ -118,6 +120,7 @@ Para saber más sobre los diagramas de estado, podéis ver más en la documentac
 ## Bibliografía
 <div id="bibliografia"></div>
 - [Guía de Referencia de PlantUML](https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_es.pdf)
+
 
 
 
