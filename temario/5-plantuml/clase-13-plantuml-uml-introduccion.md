@@ -11,7 +11,7 @@
 ---
 
 <div align="center">
-![UML](../../images/uml-img.jpg "UML")
+<!--![UML](../../images/uml-img.jpg "UML")-->
 </div>
 
 ---
@@ -126,6 +126,7 @@ Para saber más sobre los diagramas de estado, podéis ver más en la documentac
 ## Bibliografía
 <div id="bibliografia"></div>
 - [Guía de Referencia de PlantUML](https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_es.pdf)
+
 
 
 
