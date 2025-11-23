@@ -77,6 +77,7 @@ Ejemplo
 
 Adicionalmente, se puede **añadir una etiqueta a la relación** con `:` y la cardinalidad se puede añadir entre comillas `""` al lado que quieras de la relación.
 
+```
 @startuml
 object Objeto01
 object Objeto02
@@ -85,6 +86,7 @@ object Objeto04
 Objeto01 o-- "4" Objeto02
 Objeto03 .. Objeto04 : Etiqueta
 @enduml
+```
 
 
 
@@ -116,6 +118,7 @@ Para saber más sobre los diagramas de estado, podéis ver más en la documentac
 ## Bibliografía
 <div id="bibliografia"></div>
 - [Guía de Referencia de PlantUML](https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_es.pdf)
+
 
 
 
