@@ -3,14 +3,21 @@
 ## Índice
 - [¿Qué es UML?](#que-es-uml "Ir a ¿Qué es UML?")
 - [Diagrama de Objetos](#diagrama-objetos "Ir a Diagrama de Objetos")
+  - [Relaciones entre objetos](#relaciones "Ir a Relaciones entre objetos")
+  - - [Dependencia](#relaciones-dependencia "Ir a Dependencia")
+    - [Extensión/Herencia](#relaciones-extension "Ir a Extensión/Herencia")
+    - [Implementación](#relaciones-implementacion "Ir a Implementación")
+    - [Composición](#relaciones-composicion "Ir a Composición")
+    - [Agregación](#relaciones-agregacion "Ir a Agregación")
+  - [Cardinalidad](#cardinalidad "Ir a Cardinalidad")
 - [Recursos](#recursos "Ir a Recursos")
 - [Bibliografía](#que-es-uml "Ir a Bibliografía")
 
 ---
 
-<div align="center">
-<!--![UML](../../images/uml-img.jpg "UML")-->
-</div>
+
+![UML](../../images/uml-img.jpg "UML")
+
 
 ---
 
@@ -39,6 +46,9 @@ object "Mi segundo Objeto" as o2
 ```
 
 ### Relaciones entre objetos
+<div id="relaciones"></div>
+
+![Relaciones UML](../../images/relations-in-uml.png "Relaciones en UML")
 
 |**Tipo**|**Símbolo**|**Finalidad**|
 |--------|:-----------:|-------------|
@@ -49,7 +59,23 @@ object "Mi segundo Objeto" as o2
 |Dependencia|-->|El objeto utiliza otro objeto|
 |Dependencia|..>|Una forma más débil de dependencia|
 
+#### Dependencia
+<div id="relaciones-dependencia"></div>
+
+La relación de **dependencia** es la relación más básica y se podría entender como la base de todas las relaciones. Indica que un objeto necesita de otro objeto para lograr un comportamiento deseado en un momento de tiempo.
+
+**Ejemplo**
+```
+@startuml
+object Mecanico
+object Herramienta
+
+Mecanico --> Herramienta  : usa
+@enduml
+```
+
 #### Extensión/Herencia
+<div id="relaciones-extension"></div>
 
 La relación de **extensión** describe que un elemento base (un objeto, un caso de uso, etc...) incorpora de manera implícita el comportamiento de otro elemento. Este otro elemento es el que va añadir un comportamiento extra dependiendo de aspectos como reglas de negocio (lo que te describe el cliente), validaciones, etc...
 Se podría decir que el objeto/caso de uso dónde se origina esta relación *extiende* o amplía el comportamiento del elemento base.
@@ -67,6 +93,7 @@ CuentaBancaria <|-- CuentaInversiones
 ```
 
 #### Implementación
+<div id="relaciones-implementacion"></div>
 
 La relación de **implementación** muestra el paso de un ente abstracto a uno concreto. En programación podemos replicar este comportamiento mediante el uso de interfaces. Con esto conseguimos que el elemento raíz transfiera el comportamiento a los hijos.
 
@@ -93,6 +120,7 @@ Avion : - altitud = 10000ft
 ```
 
 #### Composición
+<div id="relaciones-composicion"></div>
 
 La relación de **composición** describe cuando un objeto adicional no puede existir sin su objeto base.
 
@@ -111,6 +139,7 @@ Persona *-- Mano
 ```
 
 #### Agregación
+<div id="relaciones-agregacion"></div>
 
 La relación de **agregación** explica cuando un objeto adicional puede existir sin su objeto base.
 
@@ -124,24 +153,43 @@ Libreria o-- Libro
 @enduml
 ```
 
+### Cardinalidad o multiplicidad de una relación
+<div id="cardinalidad"></div>
 
-#### Dependencia
+La **cardinalidad** o **multiplicidad** de una relación indica cuantas veces va a ocurrir una relación entre dos objetos. Esta cardinalidad se indica únicamente y si es necesario a cada lado de la relación, así que habrá como máximo 2 por relación.
 
-La relación de **dependencia** es la relación más básica y se podría entender como la base de todas las relaciones. Indica que un objeto necesita de otro objeto para lograr un comportamiento deseado en un momento de tiempo.
+Las posibles relaciones son las siguientes:
 
-**Ejemplo**
+
+|**Cardinalidad**|**Significado**
+|:--------:|-----------|
+|1|Uno y sólo uno (también puedes poner cualquier número para indicar que sólo ocurres ese número de veces)|
+|0..1|Cero o uno|
+|0..*|Cero a muchos|
+|1..*|Uno a muchos|
+|n..m|Desde *n* hasta *m*|
+
+**Ejemplo de cardinalidad**
 ```
 @startuml
-object Mecanico
-object Herramienta
+object Cliente
+object CarritoCompras
+object Pedido
+object InfoEnvio
+object DetallesPedido
 
-Mecanico --> Herramienta  : usa
+Cliente "1" *-- "0..*" CarritoCompras
+Cliente "1" *-- "0..*" Pedido
+Pedido "1" *-- "1" InfoEnvio
+Pedido "1" *-- "1" DetallesPedido
 @enduml
 ```
 
+En este ejemplo, vemos que un **cliente** puede tener **muchos pedidos**, pero **un pedido concreto** solo puede ser de **un cliente**.
 
 
-Adicionalmente, se puede **añadir una etiqueta a la relación** con `:` y la cardinalidad se puede añadir entre comillas `""` al lado que quieras de la relación.
+
+Adicionalmente, se puede **añadir una etiqueta a la relación** con `:` y la cardinalidad se puede añadir entre comillas `""` al lado que quieras de la relación. Aquí tenéis un resumen con la sintáxis:
 
 ```
 @startuml
@@ -153,12 +201,6 @@ Objeto01 o-- "4" Objeto02
 Objeto03 .. Objeto04 : Etiqueta
 @enduml
 ```
-
-#### Cardinalidad o multiplicidad de una relación
-
-La **cardinalidad** o **multiplicidad** de una relación
-
-
 
 Para saber más sobre los diagramas de objetos, podéis ver más en la documentación oficial -> [Enlace](https://plantuml.com/es/object-diagram "Ir a PlantUML - Diagrama de Objetos")
 
@@ -173,6 +215,7 @@ Para saber más sobre los diagramas de objetos, podéis ver más en la documenta
 ## Bibliografía
 <div id="bibliografia"></div>
 - [Guía de Referencia de PlantUML](https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_es.pdf)
+
 
 
 
