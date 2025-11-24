@@ -208,13 +208,16 @@ Para saber más sobre los diagramas de objetos, podéis ver más en la documenta
 
 ## Recursos
 <div id="recursos"></div>
+
 - [Editor PlantUML Online](https://shorturl.at/elELo)
 - [Editor PlantUML Oficial](https://editor.plantuml.com)
 
 
 ## Bibliografía
 <div id="bibliografia"></div>
+
 - [Guía de Referencia de PlantUML](https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_es.pdf)
+
 
 
 
