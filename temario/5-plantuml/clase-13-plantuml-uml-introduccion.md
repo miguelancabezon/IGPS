@@ -49,35 +49,95 @@ object "Mi segundo Objeto" as o2
 |Dependencia|-->|El objeto utiliza otro objeto|
 |Dependencia|..>|Una forma más débil de dependencia|
 
-#### Extensión
+#### Extensión/Herencia
 
-Explicación
+La relación de **extensión** describe que un elemento base (un objeto, un caso de uso, etc...) incorpora de manera implícita el comportamiento de otro elemento. Este otro elemento es el que va añadir un comportamiento extra dependiendo de aspectos como reglas de negocio (lo que te describe el cliente), validaciones, etc...
+Se podría decir que el objeto/caso de uso dónde se origina esta relación *extiende* o amplía el comportamiento del elemento base.
 
-Ejemplo
+**Ejemplo**
+```
+@startuml
+object CuentaBancaria
+object CuentaAhorros
+object CuentaInversiones
+
+CuentaBancaria <|-- CuentaAhorros
+CuentaBancaria <|-- CuentaInversiones
+@enduml
+```
 
 #### Implementación
 
-Explicación
+La relación de **implementación** muestra el paso de un ente abstracto a uno concreto. En programación podemos replicar este comportamiento mediante el uso de interfaces. Con esto conseguimos que el elemento raíz transfiera el comportamiento a los hijos.
 
-Ejemplo 
+**Ejemplo**
+```
+@startuml
+object Vehiculo
+object Coche
+object Barco
+object Avion
+
+Vehiculo <|.. Coche
+Vehiculo <|.. Barco
+Vehiculo <|.. Avion
+
+Vehiculo : + run()
+Coche : + run()
+Coche : - numRuedas = 4
+Barco : + run()
+Barco : - tieneVelas = true
+Avion : + run()
+Avion : - altitud = 10000ft
+@enduml
+```
 
 #### Composición
 
-Explicación
+La relación de **composición** describe cuando un objeto adicional no puede existir sin su objeto base.
 
-Ejemplo 
+**Ejemplo**
+```
+@startuml
+object Persona
+object Cabeza
+object Pierna
+object Mano
+
+Persona *-- Cabeza
+Persona *-- Pierna
+Persona *-- Mano
+@enduml
+```
 
 #### Agregación
 
-Explicación
+La relación de **agregación** explica cuando un objeto adicional puede existir sin su objeto base.
 
-Ejemplo 
+**Ejemplo**
+```
+@startuml
+object Libreria
+object Libro
+
+Libreria o-- Libro
+@enduml
+```
+
 
 #### Dependencia
 
-Explicación
+La relación de **dependencia** es la relación más básica y se podría entender como la base de todas las relaciones. Indica que un objeto necesita de otro objeto para lograr un comportamiento deseado en un momento de tiempo.
 
-Ejemplo 
+**Ejemplo**
+```
+@startuml
+object Mecanico
+object Herramienta
+
+Mecanico --> Herramienta  : usa
+@enduml
+```
 
 
 
@@ -94,6 +154,9 @@ Objeto03 .. Objeto04 : Etiqueta
 @enduml
 ```
 
+#### Cardinalidad o multiplicidad de una relación
+
+La **cardinalidad** o **multiplicidad** de una relación
 
 
 
@@ -110,6 +173,7 @@ Para saber más sobre los diagramas de objetos, podéis ver más en la documenta
 ## Bibliografía
 <div id="bibliografia"></div>
 - [Guía de Referencia de PlantUML](https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_es.pdf)
+
 
 
 
