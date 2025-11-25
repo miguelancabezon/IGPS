@@ -265,6 +265,20 @@ Un **condicional** nos sirve para bifurcar de manera lógica un camino estableci
 En PlantUML se utiliza `<<choice>>`.
 
 **Ejemplo**
+```
+@startuml
+state "Req(DNI)" as ReqDNI
+state "Es Menor de Edad" as EsMenor
+state "Es Mayor de Edad" as EsMayor
+ 
+state c <<choice>>
+ 
+[*] --> ReqDNI
+ReqDNI --> c
+c --> EsMenor : [Id < 18]
+c --> EsMayor : [Id >= 18]
+@enduml
+```
 
 Para saber más sobre los diagramas de estado, podéis ver más en la documentación oficial -> [Enlace](https://plantuml.com/es/state-diagram "Ir a PlantUML - Diagramas de Estado")
 
@@ -281,6 +295,7 @@ Para saber más sobre los diagramas de estado, podéis ver más en la documentac
 <div id="bibliografia"></div>
 
 - [Guía de Referencia de PlantUML](https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_es.pdf)
+
 
 
 
