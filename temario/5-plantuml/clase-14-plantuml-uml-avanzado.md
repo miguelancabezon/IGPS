@@ -164,6 +164,108 @@ Para saber más sobre los diagramas de casos de uso, podéis ver más en la docu
 ## Diagramas de Estado
 <div id="diagrama-estados"></div>
 
+Los diagramas de **estado** proporcionan una representación visual de los distintos estados en los que puede encontrarse un sistema o un objeto, así como de las transiciones entre esos estados. 
+Son esenciales para **modelar el comportamiento dinámico de los sistemas**, ya que reflejan cómo responden a diferentes eventos a lo largo del tiempo. 
+Los diagramas de estado representan el ciclo de vida del sistema, lo que facilita la comprensión, el diseño y la optimización de su comportamiento.
+
+### Estado simple
+Se puede representar la salida y el final de un diagrama de estados con `[*]`. Las relaciones se escriben con `-->`.
+
+**Ejemplo**
+```
+@startuml
+hide empty description
+[*] --> Estado1
+Estado1 --> [*]
+Estado1 : esto es un texto
+Estado1 : esto es otro texto
+
+Estado1 -> Estado2
+Estado2 --> [*]
+@enduml
+```
+
+Con `hide empty description` eliminamos los recuadros vacíos dentro de los estados cuando no tienen descripción.
+
+### Estado complejo
+
+```
+@startuml
+scale 400 width
+[*] --> SinDisparar
+
+state SinDisparar {
+  [*] --> Idle
+  Idle --> Configuración : Evaluar Config
+  Configuración --> Idle : Evaluar Config
+}
+
+state Configuración {
+  [*] --> SelecciónNuevoValor
+  SelecciónNuevoValor --> PrevisualizaciónNuevoValor : EvalNuevoValor
+  PrevisualizaciónNuevoValor --> SelecciónNuevoValor : EvalNuevoValorRechazado
+  PrevisualizaciónNuevoValor --> SelecciónNuevoValor : EvalNuevoValorGuardado
+
+  state PrevisualizaciónNuevoValor {
+     Estado1 -> Estado2
+  }
+
+}
+@enduml
+```
+
+```
+@startuml
+scale 600 width
+
+[*] -> Estado1
+Estado1 --> Estado2 : Éxito
+Estado1 --> [*] : Terminado
+Estado2 --> Estado3 : Éxito
+Estado2 --> [*] : Terminado
+state Estado3 {
+  state "Acumular los datos durante\nun largo periodo\nde tiempo" as textolargo1
+  textolargo1 : Texto de prueba
+  [*] --> textolargo1
+  textolargo1 --> textolargo1 : Nuevos Datos
+  textolargo1 --> ProcesarDatos : Suficientes Datos
+}
+Estado3 --> Estado3 : Fallo
+Estado3 --> [*] : Éxito / Guardar resultado
+Estado3 --> [*] : Terminado
+
+@enduml
+```
+
+### Bifurcación
+Cuando queremos separar distintos caminos dentro de un mismo camino, podemos usar `<<fork>>` y `<<join>>`.
+
+**Ejemplo**
+```
+@startuml
+left to right direction
+state estado_bifurcado <<fork>>
+[*] --> estado_bifurcado : llegadaPeticion()
+estado_bifurcado --> PendienteValidar1
+estado_bifurcado --> PendienteValidar2
+
+state estado_union <<join>>
+PendienteValidar1 --> Revisada1 : OK1()
+PendienteValidar2 --> Revisada2 : OK2()
+Revisada1 --> estado_union
+Revisada2 --> estado_union
+estado_union --> Pagada
+Pagada --> [*]
+@enduml
+```
+
+### Condicional
+
+Un **condicional** nos sirve para bifurcar de manera lógica un camino estableciendo una condición que llevará el estado de un camino a otro dependiendo del estado previo.
+En PlantUML se utiliza `<<choice>>`.
+
+**Ejemplo**
+
 Para saber más sobre los diagramas de estado, podéis ver más en la documentación oficial -> [Enlace](https://plantuml.com/es/state-diagram "Ir a PlantUML - Diagramas de Estado")
 
 ---
@@ -179,6 +281,7 @@ Para saber más sobre los diagramas de estado, podéis ver más en la documentac
 <div id="bibliografia"></div>
 
 - [Guía de Referencia de PlantUML](https://pdf.plantuml.net/PlantUML_Language_Reference_Guide_es.pdf)
+
 
 
 
