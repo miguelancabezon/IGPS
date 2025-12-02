@@ -85,7 +85,7 @@ Uno de los principales aportes de este modelo, es el hecho de que las ideas que 
 ![Modelo Market-Pull](../../images/innovacion/innovacion_modelo_marquiss.png)
 
 
-#### Modelo Kline o por etapas
+#### Modelo Kline
 
  Por otra parte, Kline, critica el modelo lineal y propone un modelo denominado cadena – eslabón que trata de incorporar la complejidad del proceso innovador. Este modelo está estructurado con cinco rutas que conectan las tres áreas más relevantes del proceso innovador (la investigación, el conocimiento y la cadena central del proceso de innovación tecnológica), y estas son:
 
@@ -95,7 +95,12 @@ Uno de los principales aportes de este modelo, es el hecho de que las ideas que 
 ### Tercera Generación
 <div id="gen3"></div>
 
+A mediados de los 80, Rothwell (junto a un tal Zegveld) vuelve a la carga con un nuevo modelo (el Modelo Mixto) que consiste en una serie de etapas secuencialmente lógicas (pero no necesariamente consecutivas) y que puede ser divididas en series funcionalmente distintas pero ***con etapas interdependientes e interactivas entre sí***. Esto representa una red compleja y extensa de canales de comunicación, tanto internos como externos a la empresa, que unen las diferentes fases del proceso innovativo entre sí. Así, conseguimos que el proceso de innovación esté basado en las capacidades tecnológicas, las necesidades del mercado y el potencial de la empresa.
+
 #### Modelo mixto
+
+![Modelo mixto](../../images/innovacion/innovacion_modelo_gen3.png)
+
 
 
 ### Cuarta Generación
@@ -103,11 +108,17 @@ Uno de los principales aportes de este modelo, es el hecho de que las ideas que 
 
 #### Modelo integrado de procesos
 
+![Modelo integrado de procesos](../../images/innovacion/innovacion_modelo_gen4.png)
+
+
 
 ### Quinta Generación
 <div id="gen5"></div>
 
 #### Modelo en Sistemas y en Red
+
+![Modelo en Sistemas y en Red](../../images/innovacion/innovacion_modelo_gen5.png)
+
 
 
 ## Esquemas de Innovación
@@ -121,5 +132,10 @@ Uno de los principales aportes de este modelo, es el hecho de que las ideas que 
 
 ### Disruptiva
 <div id="disruptiva"></div>
+
+
+## Bibliografía 
+- [Modelos de Innovación](https://www.redalyc.org/journal/290/29055964004/html/ "Ir a más info sobre Modelos de Innovación")
+
 
 
