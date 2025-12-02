@@ -95,9 +95,11 @@ Uno de los principales aportes de este modelo, es el hecho de que las ideas que 
 ### Tercera Generación
 <div id="gen3"></div>
 
-A mediados de los 80, Rothwell (junto a un tal Zegveld) vuelve a la carga con un nuevo modelo (el Modelo Mixto) que consiste en una serie de etapas secuencialmente lógicas (pero no necesariamente consecutivas) y que puede ser divididas en series funcionalmente distintas pero ***con etapas interdependientes e interactivas entre sí***. Esto representa una red compleja y extensa de canales de comunicación, tanto internos como externos a la empresa, que unen las diferentes fases del proceso innovativo entre sí. Así, conseguimos que el proceso de innovación esté basado en las capacidades tecnológicas, las necesidades del mercado y el potencial de la empresa.
+A mediados de los 80, Rothwell (junto a un tal Zegveld) vuelve a la carga con un nuevo modelo: el Modelo Mixto.
 
 #### Modelo mixto
+
+Consiste en una serie de etapas secuencialmente lógicas (pero no necesariamente consecutivas) y que puede ser divididas en series funcionalmente distintas pero ***con etapas interdependientes e interactivas entre sí***. Esto representa una red compleja y extensa de canales de comunicación, tanto internos como externos a la empresa, que unen las diferentes fases del proceso innovativo entre sí. Así, conseguimos que el proceso de innovación esté basado en las capacidades tecnológicas, las necesidades del mercado y el potencial de la empresa.
 
 ![Modelo mixto](../../images/innovacion/innovacion_modelo_gen3.png)
 
@@ -136,6 +138,7 @@ A mediados de los 80, Rothwell (junto a un tal Zegveld) vuelve a la carga con un
 
 ## Bibliografía 
 - [Modelos de Innovación](https://www.redalyc.org/journal/290/29055964004/html/ "Ir a más info sobre Modelos de Innovación")
+
 
 
 
