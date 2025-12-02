@@ -65,8 +65,6 @@ En consecuencia, se produce la creencia de que el proceso de innovación tecnol�
 
 
 
-
-
 ### Segunda Generación
 <div id="gen2"></div>
 
@@ -75,6 +73,7 @@ En consecuencia, se produce la creencia de que el proceso de innovación tecnol�
 En este modelo, también desarrollado por Rothwell durante los años 60, se toma en cuenta las necesidades del público o cliente, consiguiendo un aproximamiento más cercano a la realidad. Con el cliente como generador principal de ideas, el departamento de I+D se convierte en un mero agente reactivo, aunque después tenga un papel esencial en el desarrollo y mejora de productos y procesos.
 
 ![Modelo Market-Pull](../../images/innovacion/innovacion_modelo_gen1-2.png)
+
 
 #### Modelo Marquis
 
@@ -108,6 +107,10 @@ Consiste en una serie de etapas secuencialmente lógicas (pero no necesariamente
 ### Cuarta Generación
 <div id="gen4"></div>
 
+A partir de la segunda mitad de la década de los 80 y la primera de los 90 se comienza a considerar que las fases de la innovación, sobre todo desde el punto de vista operativo o de gestión, deben ser consideradas mediante procesos no secuenciales. Esto quiere decir que debe ser considerado mediante procesos solapados o incluso simultáneos o concurrentes como **consecuencia de la necesidad de acortar el tiempo de desarrollo** del producto para introducirlo al mercado.
+
+Este modelo de innovación, es de lo que luego surgirán metodologías ágiles como Scrum.
+
 #### Modelo integrado de procesos
 
 ![Modelo integrado de procesos](../../images/innovacion/innovacion_modelo_gen4.png)
@@ -117,7 +120,16 @@ Consiste en una serie de etapas secuencialmente lógicas (pero no necesariamente
 ### Quinta Generación
 <div id="gen5"></div>
 
+A finales de los 90, Rothwell vuelve a la carga con una visión más madura de los procesos de innovación. Ahora todos nos beneficiamos de todos y cada individuo es una pieza clave llena de los conocimientos necesarios para impulsar la innovación por sus propios medios gracias al surgimiento de herramientas avanzadas (como los ordenadores, entre otros). La generación de innovación genera en sí mismo experiencia que puede ser usada a largo plazo.
+
+Según Rothwell, la innovación puede considerarse como un proceso de aprendizaje o proceso de acumulación de know-how (saber hacer), que involucra elementos de aprendizaje tanto internos como externos. 
+
 #### Modelo en Sistemas y en Red
+
+
+Este modelo resalta la importancia que tiene la capacitación dentro y entre las organizaciones, y plantea que la innovación es generalmente, y fundamentalmente, un proceso distribuido en red. Gestionar el proceso de innovación bajo el modelo de red supone en sí mismo un aprendizaje considerable, incluyendo el aprendizaje organizacional. Trae consiguo muchos costos (de aprendizaje, de implementación, etc...) pero trae beneficios al largo plazo.
+El modelo en red también enfatiza en las alianzas verticales y horizontales, es decir, con la colaboración de los proveedores, competidores y en la utilización de equipos humanos multifuncionales para el logro de los objetivos innovativos.
+
 
 ![Modelo en Sistemas y en Red](../../images/innovacion/innovacion_modelo_gen5.png)
 
@@ -126,18 +138,45 @@ Consiste en una serie de etapas secuencialmente lógicas (pero no necesariamente
 ## Esquemas de Innovación
 <div id="esquemas"></div>
 
+Los esquemas de innovación se pueden definitr como los tipos de innovación **según el grado de cambio**.
+
 ### Individual
 <div id="individual"></div>
+
+Es un proceso individual de mejora, cambio o transformación con el objetivo de alcanzar tus retos y tu propósito vital. Es un proceso llevado a cabo por los trabajadores mismos y enfocado a sí mismos.
 
 ### Incremental
 <div id="incremental"></div>
 
+Parte de un producto que ya existe, pero que incorpora mejoras muy significativas. Es decir, se genera un valor adicional. 
+
 ### Disruptiva
 <div id="disruptiva"></div>
+
+La innovación disruptiva es la aplicación de nuevas ideas que conducen a la modificación de productos, servicios y procesos, generando cambios drásticos en el mercado, las empresas y el comportamiento de los consumidores.
+
+| Sector | Incremental | Disruptiva | Tipo |
+|--------|-------------|------------|------|
+| **Automóvil** | BMW Serie 3<br>Mercedes Clase C | Tesla Model 3<br>BYD Seal<br>Rivian R1T | Producto / Modelo Negocio |
+| **Telefonía móvil** | Samsung Galaxy S24<br>iPhone 15 Pro | Nothing Phone (2)<br>Fairphone 5<br>Dispositivos plegables | Producto / Tecnológica |
+| **Web** | Windows 11<br>macOS Sonoma | ChatGPT / Claude<br>Notion AI<br>GitHub Copilot | Producto / Tecnológica |
+| **Mobiliario de casa** | IKEA Premium<br>Leroy Merlin | Tylko (personalizado)<br>Made.com<br>Wayfair | Servicio / Modelo Negocio |
+| **Transporte** | Taxis tradicionales<br>Autobuses eléctricos | Uber / Cabify<br>Bolt / FreeNow<br>Lime / Tier (patinetes) | Modelo de Negocio / Proceso |
+| **Venta minorista** | Centros comerciales<br>Tiendas físicas mejoradas | Amazon<br>Shein / Temu<br>Vinted / Wallapop | Proceso / Relación con cliente |
+| **Banca** | BBVA / Santander<br>(banca tradicional digital) | Revolut / N26<br>Wise / PayPal<br>Crypto.com | Modelo Negocio / Relación cliente |
+| **Videoconferencia<br>Telecomunicaciones** | Microsoft Teams<br>Google Meet | Zoom<br>Discord<br>Spatial (VR meetings) | Producto / Tecnológica |
+| **Acomodación** | Hoteles boutique<br>Paradores renovados | Airbnb<br>Booking Homes<br>Selina (coliving) | Transformación Digital / Modelo Negocio |
+| **Streaming** | Netflix mejorado<br>HBO Max | TikTok<br>Twitch<br>YouTube Shorts | Producto / Tecnológica / Modelo Negocio |
+| **Educación** | Universidades online<br>MOOCs tradicionales | Platzi / Udemy<br>Duolingo<br>Khan Academy | Transformación Digital |
+| **Alimentación** | Supermercados con app<br>Carrefour / Mercadona | Glovo / Just Eat<br>Too Good To Go<br>Gorillas (dark stores) | Modelo Negocio / Proceso |
+| **Salud** | Telemedicina básica<br>Hospitales digitalizados | Docplanner<br>Headspace / Calm<br>Oura Ring (wearables) | Producto / Tecnológica |
+| **Fitness** | Gimnasios premium<br>Personal trainers | Peloton<br>Apple Fitness+<br>Strava | Producto / Modelo Negocio |
+| **Música** | Spotify Premium<br>Apple Music | ByteDance (TikTok Music)<br>Splice (producción)<br>Soundcloud (creadores) | Modelo Negocio / Plataforma |
 
 
 ## Bibliografía 
 - [Modelos de Innovación](https://www.redalyc.org/journal/290/29055964004/html/ "Ir a más info sobre Modelos de Innovación")
+
 
 
 
