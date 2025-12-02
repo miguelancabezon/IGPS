@@ -17,26 +17,69 @@
 ## ¿Qué es la Innovación?
 <div id="innovacion"></div>
 
+Es un proceso que tiene como objetivo la creación de un producto nuevo o la modificación de uno existente y su introducción en el mercado.
+
+Por suerte o por desgracia, todo está inventado y nada es nuevo. Todo se basa en otra cosa y se construye una encima de otra.
+Es por eso que los procesos como el brainstorming son esenciales para el surgimiento de nuevas ideas.
+
+El **brainstorming** es un proceso de recopilación de ideas que se caracteriza por su rapidez y falta de filtrado. Durante este proceso se valora generar una gran cantidad de ideas, preferiblemente variadas y originales, que permitan encarar cualquier desafío desde todos los puntos de vista posibles.
+
+Durante una sesión de brainstorming se apunta toda idea surgida sin prejuicio ni escrutinio alguno (quizá los más básicos) y se evalúa su validez al final de la sesión de manera objetiva y argumentada.
+
+
 ### Ejemplo - Videoclub vs Streaming
 <div id="ejemplo"></div>
+
+|Videoclub|vs|Streaming|
+|---|:---:|---|
+|Tiendas físicas|<->|Desde casa|
+|Producto físico|<->|Producto digital|
+|Tiempo definido de reserva|<->|“Es tuyo” mientras lo pagues|
+|Diversificación|<->|Solo productos digitales (películas y series principalmente)|
+|Número limitado de catálogo|<->|Catálogo “ilimitado”|
+|Número limitado de reservas|<->|Puedes un número ilimitado de veces|
+|Puede alquilar quien quiera|<->|Puede contratarlo gente con tarjetas/cuentas bancarias|
+|No pueden alquilar lo que quieran|<->|Cualquiera puede ver cualquier cosa (aunque ahora hay perfil para niños)|
 
 ## Modelos
 <div id="modelos"></div>
 
+Un modelo de innovación busca proyectos deseables por el público (target), técnicamente factibles y que devuelvan un retorno lucrativo (que sean económicamente viables).
+
 ### Primera Generación
 <div id="gen1"></div>
 
+Modelos que toman los procesos llevados a cabo durante las guerras mundiales y se establecen en el mundo empresarial entre los 50 y 60.
+
+
+#### Modelo Technology-Push
+#### Modelo Markt-Pull
+#### Modelo Marquis
+
+
 ### Segunda Generación
-<div id="gen1"></div>
+<div id="gen2"></div>
+
+#### Modelo por etapas
+
 
 ### Tercera Generación
-<div id="gen1"></div>
+<div id="gen3"></div>
+
+#### Modelo mixto
+
 
 ### Cuarta Generación
-<div id="gen1"></div>
+<div id="gen4"></div>
+
+#### Modelo integrado de procesos
+
 
 ### Quinta Generación
-<div id="gen1"></div>
+<div id="gen5"></div>
+
+#### Modelo en Sistemas y en Red
+
 
 ## Esquemas de Innovación
 <div id="esquemas"></div>
@@ -49,3 +92,4 @@
 
 ### Disruptiva
 <div id="disruptiva"></div>
+
