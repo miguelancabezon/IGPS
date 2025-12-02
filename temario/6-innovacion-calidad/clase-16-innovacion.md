@@ -49,18 +49,47 @@ Un modelo de innovación busca proyectos deseables por el público (target), té
 ### Primera Generación
 <div id="gen1"></div>
 
-Modelos que toman los procesos llevados a cabo durante las guerras mundiales y se establecen en el mundo empresarial entre los 50 y 60.
+Modelos que toman los procesos llevados a cabo durante las guerras mundiales y se establecen en el mundo empresarial entre los 50 y 60, donde se consideraba que el cambio tecnológico dependía en gran medidad de la existencia del cúmulo de conocimientos científicos obtenidos a través de la invesitgación básica; llevando a las organizaciones (tanto públicas como privadas) a requerir talento humano científicamente calificado
 
 
 #### Modelo Technology-Push
-#### Modelo Markt-Pull
-#### Modelo Marquis
+
+Este modelo, desarrollado por Roy Rothwell, presenta las siguientes limitaciones: 
+- Observa la innovación tecnológica como un proceso racional que puede ser planificado, programado, controlado y desagregado en actividades independientes para simplificar su gestión.
+- Otorga mucha importancia a la I+D como desencadenante del proceso innovativo.
+- Desconoce que la tecnología dispone de una estructura de conocimientos propios que fueron obtenidos y acumulados durante mucho tiempo a través de la observación empírica.
+
+En consecuencia, se produce la creencia de que el proceso de innovación tecnológica debe comenzar sí o sí por la investigación básica. Cuando pueden surgir innovaciones a través de aprovechar los resultados de investigaciones aplicadas existentes.
+
+![Modelo Technology-Push](../../images/innovacion/innovacion_modelo_gen1.png)
+
+
+
 
 
 ### Segunda Generación
 <div id="gen2"></div>
 
-#### Modelo por etapas
+#### Modelo Market-Pull
+
+En este modelo, también desarrollado por Rothwell durante los años 60, se toma en cuenta las necesidades del público o cliente, consiguiendo un aproximamiento más cercano a la realidad. Con el cliente como generador principal de ideas, el departamento de I+D se convierte en un mero agente reactivo, aunque después tenga un papel esencial en el desarrollo y mejora de productos y procesos.
+
+![Modelo Market-Pull](../../images/innovacion/innovacion_modelo_gen1-2.png)
+
+#### Modelo Marquis
+
+El *modelo Marquis* se basa en que, parte de las ideas que desencadenan el proceso innovador **no proceden necesariamente del departamento de investigación y desarrollo**, sino que pueden emanar de cualquier departamento de la organización: comercialización, ingeniería, comercialización, entre otros
+
+Uno de los principales aportes de este modelo, es el hecho de que las ideas que llevan a la innovación tecnológica provienen en medio de un contacto permanente entre las diferentes áreas de la organización.
+
+![Modelo Market-Pull](../../images/innovacion/innovacion_modelo_marquiss.png)
+
+
+#### Modelo Kline o por etapas
+
+ Por otra parte, Kline, critica el modelo lineal y propone un modelo denominado cadena – eslabón que trata de incorporar la complejidad del proceso innovador. Este modelo está estructurado con cinco rutas que conectan las tres áreas más relevantes del proceso innovador (la investigación, el conocimiento y la cadena central del proceso de innovación tecnológica), y estas son:
+
+![Modelo Kline](../../images/innovacion/innovacion_modelo_kline.png)
 
 
 ### Tercera Generación
@@ -92,4 +121,5 @@ Modelos que toman los procesos llevados a cabo durante las guerras mundiales y s
 
 ### Disruptiva
 <div id="disruptiva"></div>
+
 
