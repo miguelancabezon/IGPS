@@ -7,7 +7,7 @@
 - [Principios SOLID y Buenas Prácticas](#solid "Ir a Principios SOLID y Buenas Prácticas")
   - [Single Responsibility Principle (SRP)](#solid-1 "Ir a Single Responsibility Principle (SRP)")
   - [Open/Closed Principle (OCP)](#solid-2 "Ir a Open/Closed Principle (OCP)")
-  - [Liskov Substitution Principle](#solid-3 "Ir a Liskov Substitution Principle")
+  - [Liskov Substitution Principle (LSP)](#solid-3 "Ir a Liskov Substitution Principle (LSP)")
   - [Interface Segregation Principle (ISP)](#solid-4 "Ir a Interface Segregation Principle (ISP)")
   - [Dependency Inversion Principle (DIP)](#solid-5 "Ir a Single Dependency Inversion Principle (DIP)")
   - [Otras buenas prácticas](#other "Ir a Otras buenas prácticas")
@@ -151,40 +151,459 @@ Los principios SOLID son 5 reglas fundamentales para el diseño orientado a obje
 ###  Single Responsibility Principle (SRP)
 <div id="solid-1"></div>
 
+**Mal Ejemplo**
+```java
+// ❌ MAL: Múltiples responsabilidades
+public class User {
+    private String username;
+    private String email;
+    
+    // Responsabilidad 1: Gestión de datos
+    public String getUsername() { return username; }
+    public void setUsername(String username) { this.username = username; }
+    
+    // Responsabilidad 2: Validación
+    public boolean validateEmail() {
+        return email.contains("@");
+    }
+    
+    // Responsabilidad 3: Persistencia
+    public void saveToDatabase() {
+        // Código SQL directo
+        Connection conn = DriverManager.getConnection("...");
+        // INSERT INTO users...
+    }
+    
+    // Responsabilidad 4: Notificaciones
+    public void sendWelcomeEmail() {
+        // Código de envío de email
+    }
+}
+```
+
+**Buen Ejemplo**
+```java
+// ✅ BIEN: Una responsabilidad por clase
+public class User {
+    private final String username;
+    private final Email email;
+    
+    public User(String username, Email email) {
+        this.username = username;
+        this.email = email;
+    }
+    
+    public String getUsername() { return username; }
+    public Email getEmail() { return email; }
+}
+
+public class Email {
+    private final String value;
+    
+    public Email(String value) {
+        if (!isValid(value)) {
+            throw new IllegalArgumentException("Invalid email");
+        }
+        this.value = value;
+    }
+    
+    private boolean isValid(String email) {
+        return email.matches("^[A-Za-z0-9+_.-]+@(.+)$");
+    }
+    
+    public String getValue() { return value; }
+}
+
+public class UserRepository {
+    private final DataSource dataSource;
+    
+    public void save(User user) {
+        try (Connection conn = dataSource.getConnection()) {
+            String sql = "INSERT INTO users (username, email) VALUES (?, ?)";
+            PreparedStatement stmt = conn.prepareStatement(sql);
+            stmt.setString(1, user.getUsername());
+            stmt.setString(2, user.getEmail().getValue());
+            stmt.executeUpdate();
+        } catch (SQLException e) {
+            throw new RuntimeException("Error saving user", e);
+        }
+    }
+}
+
+public class EmailService {
+    public void sendWelcomeEmail(User user) {
+        String subject = "Welcome to our platform!";
+        String body = "Hello " + user.getUsername() + "...";
+        // Enviar email
+    }
+}
+```
+
 
 ###  **O**pen/Closed Principle (OCP)
 <div id="solid-2"></div>
 
+**Mal Ejemplo**
+```java
+// ❌ MAL: Necesitas modificar la clase para añadir tipos
+public class PaymentProcessor {
+    public void processPayment(String type, double amount) {
+        if (type.equals("CREDIT_CARD")) {
+            // Procesar tarjeta
+            System.out.println("Processing credit card: " + amount);
+        } else if (type.equals("PAYPAL")) {
+            // Procesar PayPal
+            System.out.println("Processing PayPal: " + amount);
+        } else if (type.equals("BITCOIN")) {
+            // Procesar Bitcoin
+            System.out.println("Processing Bitcoin: " + amount);
+        }
+        // ❌ Cada nuevo método de pago requiere modificar esta clase
+    }
+}
+```
 
-###  **L**iskov Substitution Principle
+**Buen Ejemplo**
+```java
+// ✅ BIEN: Extensible sin modificar
+public interface PaymentMethod {
+    void process(double amount);
+    String getName();
+}
+
+public class CreditCardPayment implements PaymentMethod {
+    private final String cardNumber;
+    
+    public CreditCardPayment(String cardNumber) {
+        this.cardNumber = cardNumber;
+    }
+    
+    @Override
+    public void process(double amount) {
+        System.out.println("Processing credit card payment: €" + amount);
+        // Lógica específica de tarjeta
+    }
+    
+    @Override
+    public String getName() { return "Credit Card"; }
+}
+
+public class PayPalPayment implements PaymentMethod {
+    private final String email;
+    
+    public PayPalPayment(String email) {
+        this.email = email;
+    }
+    
+    @Override
+    public void process(double amount) {
+        System.out.println("Processing PayPal payment: €" + amount);
+        // Lógica específica de PayPal
+    }
+    
+    @Override
+    public String getName() { return "PayPal"; }
+}
+
+public class BitcoinPayment implements PaymentMethod {
+    private final String walletAddress;
+    
+    public BitcoinPayment(String walletAddress) {
+        this.walletAddress = walletAddress;
+    }
+    
+    @Override
+    public void process(double amount) {
+        System.out.println("Processing Bitcoin payment: €" + amount);
+        // Lógica específica de Bitcoin
+    }
+    
+    @Override
+    public String getName() { return "Bitcoin"; }
+}
+
+public class PaymentProcessor {
+    public void processPayment(PaymentMethod paymentMethod, double amount) {
+        System.out.println("Processing with: " + paymentMethod.getName());
+        paymentMethod.process(amount);
+        // ✅ Añadir nuevos métodos de pago no requiere modificar esta clase
+    }
+}
+
+// Uso
+public class Main {
+    public static void main(String[] args) {
+        PaymentProcessor processor = new PaymentProcessor();
+        
+        processor.processPayment(new CreditCardPayment("1234-5678"), 100.0);
+        processor.processPayment(new PayPalPayment("user@email.com"), 50.0);
+        processor.processPayment(new BitcoinPayment("1A2b3C..."), 200.0);
+        
+        // ✅ Fácil añadir nuevos métodos sin cambiar código existente
+    }
+}
+```
+
+###  **L**iskov Substitution Principle (LSP)
 <div id="solid-3"></div>
 
+**Mal Ejemplo**
+```java
+// ❌ MAL: Violación del LSP
+public class Bird {
+    public void fly() {
+        System.out.println("Flying...");
+    }
+}
+
+public class Penguin extends Bird {
+    @Override
+    public void fly() {
+        // ❌ Los pingüinos no vuelan!
+        throw new UnsupportedOperationException("Penguins can't fly");
+    }
+}
+
+// Problema en uso
+public class BirdWatcher {
+    public void makeBirdFly(Bird bird) {
+        bird.fly(); // ❌ Falla con Penguin!
+    }
+}
+```
+
+**Buen Ejemplo**
+```java
+// ✅ BIEN: Diseño correcto
+public abstract class Bird {
+    public abstract void move();
+}
+
+public interface Flyable {
+    void fly();
+}
+
+public class Sparrow extends Bird implements Flyable {
+    @Override
+    public void move() {
+        fly();
+    }
+    
+    @Override
+    public void fly() {
+        System.out.println("Sparrow flying...");
+    }
+}
+
+public class Penguin extends Bird {
+    @Override
+    public void move() {
+        swim();
+    }
+    
+    public void swim() {
+        System.out.println("Penguin swimming...");
+    }
+}
+
+// Uso correcto
+public class BirdWatcher {
+    public void observeBird(Bird bird) {
+        bird.move(); // ✅ Funciona para todos los pájaros
+    }
+    
+    public void watchFlight(Flyable flyable) {
+        flyable.fly(); // ✅ Solo para aves que vuelan
+    }
+}
+```
 
 ###  **I**nterface Segregation Principle (ISP)
 <div id="solid-4"></div>
 
+**Mal Ejemplo**
+```java
+// ❌ MAL: Interfaz demasiado grande
+public interface Worker {
+    void work();
+    void eat();
+    void sleep();
+    void attendMeeting();
+    void writeCode();
+}
+
+public class Developer implements Worker {
+    @Override
+    public void work() { /* desarrollar */ }
+    
+    @Override
+    public void eat() { /* comer */ }
+    
+    @Override
+    public void sleep() { /* dormir */ }
+    
+    @Override
+    public void attendMeeting() { /* asistir a reunión */ }
+    
+    @Override
+    public void writeCode() { /* escribir código */ }
+}
+
+public class Robot implements Worker {
+    @Override
+    public void work() { /* trabajar */ }
+    
+    @Override
+    public void eat() { 
+        // ❌ Los robots no comen!
+        throw new UnsupportedOperationException();
+    }
+    
+    @Override
+    public void sleep() { 
+        // ❌ Los robots no duermen!
+        throw new UnsupportedOperationException();
+    }
+    
+    @Override
+    public void attendMeeting() { /* puede asistir */ }
+    
+    @Override
+    public void writeCode() { /* puede programar */ }
+}
+```
+
+**Buen Ejemplo**
+```java
+// ✅ BIEN: Interfaces segregadas
+public interface Workable {
+    void work();
+}
+
+public interface Eatable {
+    void eat();
+}
+
+public interface Sleepable {
+    void sleep();
+}
+
+public interface Attendable {
+    void attendMeeting();
+}
+
+public interface Programmable {
+    void writeCode();
+}
+
+public class Developer implements Workable, Eatable, Sleepable, 
+                                 Attendable, Programmable {
+    @Override
+    public void work() { 
+        System.out.println("Developer working..."); 
+    }
+    
+    @Override
+    public void eat() { 
+        System.out.println("Developer eating..."); 
+    }
+    
+    @Override
+    public void sleep() { 
+        System.out.println("Developer sleeping..."); 
+    }
+    
+    @Override
+    public void attendMeeting() { 
+        System.out.println("Developer attending meeting..."); 
+    }
+    
+    @Override
+    public void writeCode() { 
+        System.out.println("Developer writing code..."); 
+    }
+}
+
+public class Robot implements Workable, Attendable, Programmable {
+    @Override
+    public void work() { 
+        System.out.println("Robot working..."); 
+    }
+    
+    @Override
+    public void attendMeeting() { 
+        System.out.println("Robot attending meeting..."); 
+    }
+    
+    @Override
+    public void writeCode() { 
+        System.out.println("Robot writing code..."); 
+    }
+    // ✅ No necesita implementar eat() ni sleep()
+}
+```
 
 ###  **D**ependency Inversion Principle (DIP)
 <div id="solid-5"></div>
 
+**Mal Ejemplo**
+```java
+```
+
+**Buen Ejemplo**
+```java
+```
+
 ### Otras buenas prácticas
 <div id="other"></div>
+
+**Mal Ejemplo**
+```java
+```
+
+**Buen Ejemplo**
+```java
+```
 
 #### DRY - Don't Repeat Yourself
 <div id="other-dry"></div>
 
+**Mal Ejemplo**
+```java
+```
+
+**Buen Ejemplo**
+```java
+```
+
 #### KISS - Keep It Simple, Stupid
 <div id="other-kiss"></div>
+
+**Mal Ejemplo**
+```java
+```
+
+**Buen Ejemplo**
+```java
+```
 
 #### YAGNI - You Aren't Gonna Need It
 <div id="other-yagni"></div>
 
+**Mal Ejemplo**
+```java
+```
+
+**Buen Ejemplo**
+```java
+```
 
 
 
 
 
    
+
 
 
 
