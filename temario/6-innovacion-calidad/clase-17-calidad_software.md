@@ -548,32 +548,176 @@ public class Robot implements Workable, Attendable, Programmable {
 
 **Mal Ejemplo**
 ```java
+// ❌ MAL: Alto acoplamiento
+public class MySQLDatabase {
+    public void save(String data) {
+        System.out.println("Saving to MySQL: " + data);
+    }
+}
+
+public class UserService {
+    private MySQLDatabase database = new MySQLDatabase();
+    // ❌ Acoplado directamente a MySQL
+    
+    public void registerUser(String username) {
+        database.save(username);
+        // ❌ Si quieres cambiar a PostgreSQL, debes modificar esta clase
+    }
+}
 ```
 
 **Buen Ejemplo**
 ```java
+// ✅ BIEN: Inversión de dependencias
+public interface Database {
+    void save(String data);
+    String find(String id);
+}
+
+public class MySQLDatabase implements Database {
+    @Override
+    public void save(String data) {
+        System.out.println("Saving to MySQL: " + data);
+    }
+    
+    @Override
+    public String find(String id) {
+        return "Data from MySQL: " + id;
+    }
+}
+
+public class PostgreSQLDatabase implements Database {
+    @Override
+    public void save(String data) {
+        System.out.println("Saving to PostgreSQL: " + data);
+    }
+    
+    @Override
+    public String find(String id) {
+        return "Data from PostgreSQL: " + id;
+    }
+}
+
+public class MongoDatabase implements Database {
+    @Override
+    public void save(String data) {
+        System.out.println("Saving to MongoDB: " + data);
+    }
+    
+    @Override
+    public String find(String id) {
+        return "Data from MongoDB: " + id;
+    }
+}
+
+public class UserService {
+    private final Database database;
+    
+    // ✅ Inyección de dependencias
+    public UserService(Database database) {
+        this.database = database;
+    }
+    
+    public void registerUser(String username) {
+        database.save(username);
+        // ✅ Funciona con cualquier implementación de Database
+    }
+    
+    public String getUser(String id) {
+        return database.find(id);
+    }
+}
+
+// Configuración (por ejemplo, con Spring)
+@Configuration
+public class AppConfig {
+    @Bean
+    public Database database() {
+        // ✅ Cambiar de BD solo requiere modificar esta configuración
+        return new PostgreSQLDatabase();
+        // return new MySQLDatabase();
+        // return new MongoDatabase();
+    }
+    
+    @Bean
+    public UserService userService(Database database) {
+        return new UserService(database);
+    }
+}
 ```
 
 ### Otras buenas prácticas
 <div id="other"></div>
 
-**Mal Ejemplo**
-```java
-```
-
-**Buen Ejemplo**
-```java
-```
 
 #### DRY - Don't Repeat Yourself
 <div id="other-dry"></div>
 
 **Mal Ejemplo**
 ```java
+// ❌ MAL: Código duplicado
+public class ReportService {
+    public void generatePDFReport(List<Sale> sales) {
+        // Calcular totales
+        double total = 0;
+        for (Sale sale : sales) {
+            total += sale.getAmount();
+        }
+        
+        // Generar PDF
+        System.out.println("PDF Report - Total: " + total);
+    }
+    
+    public void generateExcelReport(List<Sale> sales) {
+        // Calcular totales (código duplicado)
+        double total = 0;
+        for (Sale sale : sales) {
+            total += sale.getAmount();
+        }
+        
+        // Generar Excel
+        System.out.println("Excel Report - Total: " + total);
+    }
+    
+    public void generateHTMLReport(List<Sale> sales) {
+        // Calcular totales (código duplicado)
+        double total = 0;
+        for (Sale sale : sales) {
+            total += sale.getAmount();
+        }
+        
+        // Generar HTML
+        System.out.println("HTML Report - Total: " + total);
+    }
+}
 ```
 
 **Buen Ejemplo**
 ```java
+// ✅ BIEN: Sin duplicación
+public class ReportService {
+    
+    private double calculateTotal(List<Sale> sales) {
+        return sales.stream()
+                   .mapToDouble(Sale::getAmount)
+                   .sum();
+    }
+    
+    public void generatePDFReport(List<Sale> sales) {
+        double total = calculateTotal(sales);
+        System.out.println("PDF Report - Total: " + total);
+    }
+    
+    public void generateExcelReport(List<Sale> sales) {
+        double total = calculateTotal(sales);
+        System.out.println("Excel Report - Total: " + total);
+    }
+    
+    public void generateHTMLReport(List<Sale> sales) {
+        double total = calculateTotal(sales);
+        System.out.println("HTML Report - Total: " + total);
+    }
+}
 ```
 
 #### KISS - Keep It Simple, Stupid
@@ -581,10 +725,34 @@ public class Robot implements Workable, Attendable, Programmable {
 
 **Mal Ejemplo**
 ```java
+// ❌ MAL: Complejidad innecesaria
+public class StringUtils {
+    public static boolean isNullOrEmpty(String str) {
+        if (str != null) {
+            if (str.length() > 0) {
+                if (!str.trim().isEmpty()) {
+                    return false;
+                } else {
+                    return true;
+                }
+            } else {
+                return true;
+            }
+        } else {
+            return true;
+        }
+    }
+}
 ```
 
 **Buen Ejemplo**
 ```java
+/ ✅ BIEN: Simple y claro
+public class StringUtils {
+    public static boolean isNullOrEmpty(String str) {
+        return str == null || str.trim().isEmpty();
+    }
+}
 ```
 
 #### YAGNI - You Aren't Gonna Need It
@@ -592,17 +760,253 @@ public class Robot implements Workable, Attendable, Programmable {
 
 **Mal Ejemplo**
 ```java
+// ❌ MAL: Funcionalidad prematura
+public class User {
+    private String username;
+    private String email;
+    private String phone; // ¿Necesario ahora?
+    private String address; // ¿Necesario ahora?
+    private String socialSecurityNumber; // ¿Necesario ahora?
+    private List<String> hobbies; // ¿Necesario ahora?
+    private String favoriteColor; // ¿Necesario ahora?
+    
+    // 20+ getters/setters que nadie usa todavía
+}
 ```
 
 **Buen Ejemplo**
 ```java
+// ✅ BIEN: Solo lo necesario ahora
+public class User {
+    private String username;
+    private String email;
+    
+    // Se añadirán más campos cuando realmente sean necesarios
+}
 ```
+
+--- 
+
+## Métricas de Calidad
+<div id="metricas"></div>
+
+### Complejidad Ciclomática
+<div id="metricas-1"></div>
+
+Mide el número de caminos independientes a través del código.
+
+```java
+// Complejidad: 1 (sin bifurcaciones)
+public int sum(int a, int b) {
+    return a + b;
+}
+
+// Complejidad: 2 (1 if)
+public String getGrade(int score) {
+    if (score >= 50) {
+        return "Pass";
+    } else {
+        return "Fail";
+    }
+}
+
+// Complejidad: 4 (3 ifs)
+public String getLetterGrade(int score) {
+    if (score >= 90) {
+        return "A";
+    } else if (score >= 80) {
+        return "B";
+    } else if (score >= 70) {
+        return "C";
+    } else {
+        return "F";
+    }
+}
+
+// ❌ Complejidad: 7 (muy alta - difícil de probar)
+public boolean validateUser(String username, String password, 
+                           boolean isAdmin, int age) {
+    if (username != null && !username.isEmpty()) {
+        if (password != null && password.length() >= 8) {
+            if (isAdmin || age >= 18) {
+                if (username.matches("[a-zA-Z0-9]+")) {
+                    if (!password.contains(username)) {
+                        return true;
+                    }
+                }
+            }
+        }
+    }
+    return false;
+}
+```
+
+
+```java
+// ✅ Complejidad reducida: Refactorizado
+public boolean validateUser(String username, String password, 
+                           boolean isAdmin, int age) {
+    return isUsernameValid(username) &&
+           isPasswordValid(password, username) &&
+           isAuthorized(isAdmin, age);
+}
+
+private boolean isUsernameValid(String username) {
+    return username != null && 
+           !username.isEmpty() && 
+           username.matches("[a-zA-Z0-9]+");
+}
+
+private boolean isPasswordValid(String password, String username) {
+    return password != null && 
+           password.length() >= 8 && 
+           !password.contains(username);
+}
+
+private boolean isAuthorized(boolean isAdmin, int age) {
+    return isAdmin || age >= 18;
+}
+```
+
+**Guía de Complejidad**
+|Grado|Significado|
+|:---:|---|
+|1-10| Simple, fácil de probar ✅|
+|11-20| Moderadamente complejo ⚠️|
+|21-50| Complejo, difícil de mantener ❌|
+|50+| No testeable, *refactorizar urgente* 🚨|
+
+
+
+### Cobertura de Código (Code Coverage)
+<div id="metricas-2"></div>
+
+```java
+public class Calculator {
+    public int divide(int a, int b) {
+        if (b == 0) {
+            throw new IllegalArgumentException("Cannot divide by zero");
+        }
+        return a / b;
+    }
+}
+
+// ❌ Cobertura parcial: 50%
+@Test
+public void testDivideSuccess() {
+    Calculator calc = new Calculator();
+    assertEquals(5, calc.divide(10, 2));
+    // Solo prueba el caso exitoso
+}
+
+// ✅ Cobertura completa: 100%
+@Test
+public void testDivideSuccess() {
+    Calculator calc = new Calculator();
+    assertEquals(5, calc.divide(10, 2));
+}
+
+@Test
+public void testDivideByZero() {
+    Calculator calc = new Calculator();
+    assertThrows(IllegalArgumentException.class, () -> {
+        calc.divide(10, 0);
+    });
+}
+```
+
+<u>**Tipos de Cobertura**</u>
+- Line Coverage: % de líneas ejecutadas
+- Branch Coverage: % de ramas (if/else) ejecutadas
+- Method Coverage: % de métodos ejecutados
+
+<u>**Objetivos recomendados**</u>
+- Proyectos críticos: 80-90%
+- Proyectos normales: 70-80%
+- Proyectos experimentales: 50-70%
+
+
+### Duplicación de Código
+<div id="metricas-3"></div>
+
+**Con duplicación**
+```java
+// ❌ Duplicación: 80%
+public class OrderService {
+    public void processOnlineOrder(Order order) {
+        validateOrder(order);
+        calculateTax(order);
+        applyDiscount(order);
+        chargePayment(order);
+        sendConfirmationEmail(order);
+        updateInventory(order);
+    }
+    
+    public void processPhoneOrder(Order order) {
+        validateOrder(order);
+        calculateTax(order);
+        applyDiscount(order);
+        chargePayment(order);
+        sendConfirmationEmail(order);
+        updateInventory(order);
+        // Mismo código!
+    }
+}
+```
+
+
+**Sin duplicación**
+```java
+// ✅ Sin duplicación
+public class OrderService {
+    public void processOrder(Order order) {
+        validateOrder(order);
+        calculateTax(order);
+        applyDiscount(order);
+        chargePayment(order);
+        sendConfirmationEmail(order);
+        updateInventory(order);
+    }
+}
+```
+
+
+<u>**Calculo final - Maintainability Index**</u>
+
+`(Maintainability Index) MI = 171 - 5.2\*ln(Volumen de Halstead) - 0.23\*(Complejidad Ciclomatica) - 16.2\*ln(Lineas de Código)`
+
+> [!NOTE]
+> El volumen de Halstead es una métrica para calcular el volumen de un software.
+> 
+> La fórmula es: `VH = N * log n`
+> 
+> Siendo `N = Nº total de operaciones + Nº total de operandos`
+> y `n = Nº único de operaciones` + Nº único de operandos`
+>
+> Operandos -> Variables y sus valores.
+> Operaciones -> Símbolos y palabras reservadas del lenguaje.
+
+
+**Resultado**
+|Grado|Significado|
+|:---:|---|
+|85-100| Alta mantenibilidad ✅|
+|65-84| Media mantenibilidad ⚠️|
+|0-64| Baja mantenibilidad ❌|
+
+
+
+
+
+
+
 
 
 
 
 
    
+
 
 
 
