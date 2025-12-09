@@ -978,7 +978,7 @@ public class OrderService {
 ```
 
 
-<u>**Cálculo final - Maintainability Index**</u>
+### Cálculo final - Maintainability Index
 <div id="metricas-4"></div>
 
 `(Maintainability Index) MI = 171 - 5.2\*ln(Volumen de Halstead) - 0.23\*(Complejidad Ciclomatica) - 16.2\*ln(Lineas de Código)`
@@ -1014,6 +1014,7 @@ public class OrderService {
 
 
    
+
 
 
 
