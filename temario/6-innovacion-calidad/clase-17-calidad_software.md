@@ -14,6 +14,13 @@
     - [DRY - Don't Repeat Yourself](#other-dry "Ir a DRY - Don't Repeat Yourself")
     - [KISS - Keep It Simple, Stupid](#other-kiss "Ir a KISS - Keep It Simple, Stupid")
     - [YAGNI - You Aren't Gonna Need It](#other-yagni "Ir a YAGNI - You Aren't Gonna Need It")
+- [Métricas de Calidad](#metricas "Ir a Métricas de Calidad")
+  - [Complejidad Ciclomática](#metricas-1 "Ir a Complejidad Ciclomática")
+  - [Cobertura de Código (Code Coverage)](#metricas-2 "Ir a Cobertura de Código (Code Coverage)")
+  - [Duplicación de Código](#metricas-3 "Ir a Duplicación de Código")
+  - [Cálculo final - Maintainability Index](#metricas-4 "Ir a Calculo final - Maintainability Index") 
+
+
 
 ---
 
@@ -971,7 +978,8 @@ public class OrderService {
 ```
 
 
-<u>**Calculo final - Maintainability Index**</u>
+<u>**Cálculo final - Maintainability Index**</u>
+<div id="metricas-4"></div>
 
 `(Maintainability Index) MI = 171 - 5.2\*ln(Volumen de Halstead) - 0.23\*(Complejidad Ciclomatica) - 16.2\*ln(Lineas de Código)`
 
@@ -1006,6 +1014,7 @@ public class OrderService {
 
 
    
+
 
 
 
