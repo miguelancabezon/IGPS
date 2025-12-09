@@ -4,7 +4,18 @@
 - [Fundamentos de  Calidad del Software](#fundamentos "Ir a Fundamentos de  Calidad del Software")
   - [¿A qué nos referimos con Calidad del Software?](#calidad-definicion "Ir a ¿A qué nos referimos con Calidad del Software?")
   - [Características de la Calidad del Producto](#calidad-stats "Ir a Características de la Calidad del Producto")
-- [Principios SOLID y Buenas Prácticas](#solid "Ir a  Principios SOLID y Buenas Prácticas")
+- [Principios SOLID y Buenas Prácticas](#solid "Ir a Principios SOLID y Buenas Prácticas")
+  - [Single Responsibility Principle (SRP)](#solid-1 "Ir a Single Responsibility Principle (SRP)")
+  - [Open/Closed Principle (OCP)](#solid-2 "Ir a Open/Closed Principle (OCP)")
+  - [Liskov Substitution Principle](#solid-3 "Ir a Liskov Substitution Principle")
+  - [Interface Segregation Principle (ISP)](#solid-4 "Ir a Interface Segregation Principle (ISP)")
+  - [Dependency Inversion Principle (DIP)](#solid-5 "Ir a Single Dependency Inversion Principle (DIP)")
+  - [Otras buenas prácticas](#other "Ir a Otras buenas prácticas")
+    - [DRY - Don't Repeat Yourself](#other-dry "Ir a DRY - Don't Repeat Yourself")
+    - [KISS - Keep It Simple, Stupid](#other-kiss "Ir a KISS - Keep It Simple, Stupid")
+    - [YAGNI - You Aren't Gonna Need It](#other-yagni "Ir a YAGNI - You Aren't Gonna Need It")
+
+---
 
 ## Fundamentos de  Calidad del Software
 <div id="fundamentos"></div>
@@ -126,7 +137,47 @@ public class UserService {
 Una buena calidad interna tiende a lograr una buena calidad externa, PERO una buena calidad externa no significa que exista una buena calidad interna.
 
 
-## Principios SOLID y Buenas Prácticas 
+## Principios SOLID y Buenas Prácticas
+<div id="solid"></div>
+
+Los principios SOLID son 5 reglas fundamentales para el diseño orientado a objetos de calidad. Se basa en un acrónimo de las siguientes palabras:
+
+1. **S**ingle Responsibility Principle (SRP): Una clase debe tener una sola razón para cambiar.
+2. **O**pen/Closed Principle (OCP): Abierto para extensión, cerrado para modificación.
+3. **L**iskov Substitution Principle (LSP): Los objetos de una subclase deben poder sustituir a objetos de la superclase.
+4. **I**nterface Segregation Principle (ISP): Los clientes no deben depender de interfaces que no usan.
+5. **D**ependency Inversion Principle (DIP): Depender de abstracciones, no de implementaciones concretas.
+
+###  Single Responsibility Principle (SRP)
+<div id="solid-1"></div>
+
+
+###  **O**pen/Closed Principle (OCP)
+<div id="solid-2"></div>
+
+
+###  **L**iskov Substitution Principle
+<div id="solid-3"></div>
+
+
+###  **I**nterface Segregation Principle (ISP)
+<div id="solid-4"></div>
+
+
+###  **D**ependency Inversion Principle (DIP)
+<div id="solid-5"></div>
+
+### Otras buenas prácticas
+<div id="other"></div>
+
+#### DRY - Don't Repeat Yourself
+<div id="other-dry"></div>
+
+#### KISS - Keep It Simple, Stupid
+<div id="other-kiss"></div>
+
+#### YAGNI - You Aren't Gonna Need It
+<div id="other-yagni"></div>
 
 
 
@@ -134,5 +185,6 @@ Una buena calidad interna tiende a lograr una buena calidad externa, PERO una bu
 
 
    
+
 
 
