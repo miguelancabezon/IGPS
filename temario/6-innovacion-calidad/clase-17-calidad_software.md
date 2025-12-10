@@ -140,7 +140,7 @@ public class UserService {
 - Usabilidad: La interfaz es intuitiva.
 - Fiabilidad: La app no se cae.
 
-***Relación***
+***Relación***<br/>
 Una buena calidad interna tiende a lograr una buena calidad externa, PERO una buena calidad externa no significa que exista una buena calidad interna.
 
 
@@ -1014,6 +1014,7 @@ public class OrderService {
 
 
    
+
 
 
 
