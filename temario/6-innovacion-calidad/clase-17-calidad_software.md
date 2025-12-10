@@ -149,7 +149,7 @@ Una buena calidad interna tiende a lograr una buena calidad externa, PERO una bu
 
 Los principios SOLID son 5 reglas fundamentales para el diseño orientado a objetos de calidad. Se basa en un acrónimo de las siguientes palabras:
 
-1. **S**ingle Responsibility Principle (SRP): Una clase debe tener una sola razón para cambiar.
+1. **S**ingle Responsibility Principle (SRP): Una clase debe tener una sola responsabilidad.
 2. **O**pen/Closed Principle (OCP): Abierto para extensión, cerrado para modificación.
 3. **L**iskov Substitution Principle (LSP): Los objetos de una subclase deben poder sustituir a objetos de la superclase.
 4. **I**nterface Segregation Principle (ISP): Los clientes no deben depender de interfaces que no usan.
@@ -1014,6 +1014,7 @@ public class OrderService {
 
 
    
+
 
 
 
