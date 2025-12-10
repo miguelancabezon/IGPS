@@ -30,7 +30,7 @@
 ### ¿A qué nos referimos con Calidad del Software?
 <div id="calidad-definicion"></div>
 
-La calidad del software es el grado en que un producto satisface las necesidades establecidad y brinda valor a todas las personas interesadas (clientes, accionistas, ...)
+La calidad del software es el grado en que un producto satisface las necesidades establecidas y brinda valor a todas las personas interesadas (clientes, accionistas, ...)
 
 
 **Entornos o Perspectivas en la Calidad**
@@ -1014,6 +1014,7 @@ public class OrderService {
 
 
    
+
 
 
 
