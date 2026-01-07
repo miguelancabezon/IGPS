@@ -100,19 +100,6 @@ En este entorno científico y creativo, Ada se denominaba a sí misma científic
 También supo ver más allá llegando a afirmar que los ordenadores podían hacer más cosas que calcular operaciones con números.
 
 
-# Software
-
-## ¿Qué es el software?
-
-## ¿Quién lo construye?
-
-## ¿Cómo se construye?
-
-## ¿Cuáles son sus atributos?
-
-## ¿Cuáles son los retos del software?
-
-## ¿Cuáles son sus costos?
 
 # Bibliografía
 
@@ -121,6 +108,7 @@ También supo ver más allá llegando a afirmar que los ordenadores podían hace
 3.[Wikipedia - Lee De Forest](https://es.wikipedia.org/wiki/Lee_De_Forest)
 4.[Wikipedia - Douglas Engelbart](https://es.wikipedia.org/wiki/Douglas_Engelbart)
 5.[Wikipedia - Ada Lovelace](https://es.wikipedia.org/wiki/Ada_Lovelace)
+
 
 
 
