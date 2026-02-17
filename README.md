@@ -3,7 +3,7 @@
 
 - [x] [IDEs](temario/1-ides/clase-1-ides.md) ![Progress](https://progress-bar.xyz/100/?width=50&style=flat)
 - [x] [GIT](/temario/2-git) ![Progress](https://progress-bar.xyz/100/?width=50&style=flat)
-- **Sofware**
+- **Software**
   - [x] [Ingeniería del Software](/temario/3-ingenieria-software/clase-5-ingenieria_software.md) ![Progress](https://progress-bar.xyz/100/?width=50&style=flat)
   - [x] [Procesos del Software](/temario/3-ingenieria-software/clase-6-proceso_software.md) ![Progress](https://progress-bar.xyz/100/?width=50&style=flat)
 - **Lenguajes de marcado**
