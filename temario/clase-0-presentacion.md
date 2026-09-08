@@ -11,9 +11,8 @@ Además, la clase está pensada para mejorar las habilidades de exposición, raz
 | Actividades de evaluación | Ponderación |
 |---|---|
 | **Evaluación continua** | |
-| Examen Parcial | 25% |
-| Actividades y ejercicios | 20% |
-| Interés y participación del alumno en la asignatura | 5% |
+| Examen Parcial | 35% |
+| Actividades y ejercicios | 15% |
 | **Evaluación final** | |
 | Examen Teórico-Práctico | 50% * |
 
@@ -30,7 +29,7 @@ El máximo de faltas de asistencia será del 30%, a partir de este el alumno dej
 Grado superior en Desarrollo de Aplicaciones Multiplataforma -> Ingeniería Informática -> Máster Universitario en Diseño y Desarrollo de Videojuegos
 
 ### Trabajo
-Analista de Negocio (Business Analyst) y en un futuro cercano Doctorando de Proyectos
+Analista de Negocio (Business Analyst) y actualmente Doctorando de Proyectos
 
 ### "Tiempo libre"
 Crítico de videojuegos
