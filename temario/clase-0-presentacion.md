@@ -32,7 +32,7 @@ Grado superior en Desarrollo de Aplicaciones Multiplataforma -> Ingeniería Info
 Analista de Negocio (Business Analyst) y actualmente Doctorando de Proyectos
 
 ### "Tiempo libre"
-Crítico de videojuegos
+Crítico de videojuegos en Akihabara Blues(https://akihabarablues.com/author/miguelcabezon/)
 
 ### ¿Y vosotros? ¿Por qué queréis estudiar Ingeniería Informática?
 
