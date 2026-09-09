@@ -1,6 +1,4 @@
-Aquí tienes el código Markdown completo con las mejoras aplicadas:
 
-```markdown
 # Entornos de Desarrollo Integrado (IDE)
 
 ## ¿Qué es un IDE?
@@ -107,4 +105,3 @@ Instala siempre la extensión oficial correspondiente al lenguaje que estés usa
 1. **Minimalismo**: Instala solo las extensiones estrictamente necesarias. Cada extensión adicional consume recursos y puede ralentizar el editor.
 2. **Seguridad**: Prioriza siempre las extensiones oficiales publicadas por Microsoft o los equipos de desarrollo del lenguaje. Si buscas alternativas, valora el número de descargas y las reseñas.
 3. **Evita distracciones**: Evita extensiones decorativas (como mascotas animadas); consumen CPU/GPU innecesariamente y restan foco al desarrollo.
-```
