@@ -5,21 +5,31 @@
 
 Un entorno de desarrollo integrado (*integrated development environment*) es un tipo de software que facilita el desarrollo a un programador para el desarrollo de otro software.
 
-Habitualmente, los IDEs contienen un editor de texto para el código fuente, un depurador (*debugger*) y alguna herramienta para ver el resultado (compilador, previsualizador, …)
+Habitualmente, los IDES contienen:
+- Un editor de texto avanzado para código fuente.
+- Un depurador (*debugger*) para identificar errores.
+- Herramientas para compilar o previsualizar el resultado final.
 
 Actualmente este tipo de software permite el uso de herramientas avanzadas cómo el uso de terminal, control de versiones, programación visual, etc...
 
-- Programación visual: [1](https://scratch.mit.edu/projects/editor/?tutorial=getStarted), [2](https://www.steamakersblocks.com/web/project/editordemo?id=1), [3](https://dev.epicgames.com/documentation/en-us/unreal-engine/quick-start-guide-for-blueprints-visual-scripting-in-unreal-engine) - [Blockly@UNEATLANTICO](https://blockly.uneatlantico.es/)
+**Ejemplos de programación visual:**
+1. [Scratch](https://scratch.mit.edu/projects/editor/?tutorial=getStarted)
+2. [Steamakers Blokcs](https://www.steamakersblocks.com/web/project/editordemo?id=1)
+3. [Blueprints en Unreal Engine](https://dev.epicgames.com/documentation/en-us/unreal-engine/quick-start-guide-for-blueprints-visual-scripting-in-unreal-engine)
+4. [Blockly@UNEATLANTICO](https://blockly.uneatlantico.es/)
 
 ## Historia de los IDEs
 
 Hoy en día tenemos la ventaja de tener un entorno completamente adaptado a nosotros como desarrolladores y capaz de realizar gestiones complejas en el código. Esto no siempre fue así.
 
-[Paleolítico](https://es.wikipedia.org/wiki/Tarjeta_perforada) -> [Edad Antigua](https://www.techspot.com/images2/news/bigimage/2023/12/2023-12-05-image-14.jpg) -> [Edad Contemporánea/Cyberpunk](https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F66cfc3xwzxxa1.jpg)
+Periodos históricos de los IDEs:
+1. [Paleolítico](https://es.wikipedia.org/wiki/Tarjeta_perforada): Tarjetas perforadas.
+2. [Edad Antigua](https://www.techspot.com/images2/news/bigimage/2023/12/2023-12-05-image-14.jpg): Terminales de línea de comandos.
+3. [Era Contemporánea/Cyberpunk](https://www.reddit.com/media?url=https%3A%2F%2Fi.redd.it%2F66cfc3xwzxxa1.jpg): Interfaces gráficas modernas
 
-El primero de los entornos de desarrollo integrado que se puede definir como tal se creó en 1964. El Dartmouth BASIC fue diseñado y desarrollado en el Dartmouth College por John Kemeny y Thomas Kurtz durante ese mismo año e integraba en el propio sistema operativo la posibilidad de escribir, probar y ejecutar código en un mismo entorno. Otras fuentes declaran que el primer IDE fue el [Maestro I](https://www.flickr.com/photos/caseorganic/4642200363) que ya incluía [herramientas](https://en.wikipedia.org/wiki/Maestro_I#Technology) para depurar el código.
+El primero de los entornos de desarrollo integrado que se puede definir como tal se creó en 1964. El **Dartmouth BASIC** fue diseñado y desarrollado en el Dartmouth College por John Kemeny y Thomas Kurtz durante ese mismo año e integraba en el propio sistema operativo la posibilidad de escribir, probar y ejecutar código en un mismo entorno. Otras fuentes declaran que el primer IDE fue el **[Maestro I](https://www.flickr.com/photos/caseorganic/4642200363)** que ya incluía [herramientas](https://en.wikipedia.org/wiki/Maestro_I#Technology) para depurar el código.
 
-Ya a mediados de los 80 vemos una deriva hacia nuevos lenguajes de programación y hacia nuevas necesidades. Pascal y, tanto C (aunque venían de los 70) como C++, crecían en popularidad y conocimiento y llegaban a requerir entornos más productivos. Turbo Pascal fue de los primeros en incluir un compilador (venía en [cómodos disquets](https://keepcoding.io/wp-content/uploads/2024/08/28653358174_6cfe22806e_b.jpg)) o Borland C++ que incluía mejorar en la depuración.
+Ya a mediados de los 80 vemos una deriva hacia nuevos lenguajes de programación y hacia nuevas necesidades. Pascal y, tanto C (aunque venían de los 70) como C++, crecían en popularidad y conocimiento y llegaban a requerir entornos más productivos. **Turbo Pascal** fue de los primeros en incluir un compilador (venía en [cómodos disquets](https://keepcoding.io/wp-content/uploads/2024/08/28653358174_6cfe22806e_b.jpg)) o **Borland C++** que incluía mejoras en la depuración.
 
 Llegamos al siglo XXI con el boom de las .com y el desarrollo web. Ya las aplicaciones no son sólo para hacer cuentas en tu ordenador, ahora puedes recibir datos a través de [APIs](https://free-apis.github.io/#/browse) de manera sencilla y crear aplicaciones y páginas para mostrar al mundo. También los lenguajes evolucionan, C y C++ (sobre todo este último) se actualiza para ofrecer mejoras tanto en rendimiento como en posibilidades y facilidades en el desarrollo. Aparecen lenguajes más sencillos (Java), o lenguajes enfocados a entornos web (Javascript), o incluso lenguajes incrustados en procesos del software (CI/CD). Esta miríada de lenguajes, provocó (y sigue provocando) una serie de derivas que bifurcan en dos vertientes:
 
@@ -55,20 +65,24 @@ IDEs hay muchos. Unos más famosos y otros menos. Al final un IDE es bueno si te
 Se pueden separar en tres categorías no oficiales pero que nos ayudan a elegir:
 
 #### IDEs por lenguaje
-Los IDEs por lenguaje se caracterizan por estar diseñados alrededor de un lenguaje o ecosistema en concreto. Para Java existen programas como IntelliJ idea, Netbeans o Eclipse. Para C# y .NET tenemos Visual Studio. Para Android, existe Android Studio.
-Estos IDEs proporcionan una experiencia más completa y profunda, con herramientas enfocadas a el lenguaje objetivo.
+Los IDEs por lenguaje se caracterizan por estar diseñados alrededor de un lenguaje o ecosistema en concreto, proporcionando una experiencia más completa y profunda, con herramientas enfocadas a el lenguaje objetivo. 
+
+- **Java**: IntelliJ IDEA, Netbeans o Eclipse.
+- **C# y .NET**: Visual Studio.
+- **Android**: Android Studio.
+
 
 #### IDEs multiplataforma/multilenguaje
 Cuando queremos algo entre un editor de texto básico y un IDE pudiendo llegar a establecer un entorno de desarrollo completo a través de la instalación de extensiones, entonces necesitaremos un IDE multiplataforma/multilenguaje.
 
 Este tipo de IDEs no sólo están pensados para poder trabajar con distintos lenguajes, sino que también en distintos sistemas operativos. Ejemplos, Visual Studio Code o Sublime Text.
 
-En este curso nos centraremos en Visual Studio Code.
+En este curso nos centraremos en *Visual Studio Code*.
 
 #### IDEs web/online
 Los IDEs web/online es software cuya principal ventaja es la de tener un entorno completo accesible desde un navegador, sin la necesidad de instalar nada. Ejemplos son CodePen o GitHub Codespaces.
 
-### Visual Studio Code
+## Visual Studio Code
 
 Podéis descargar Visual Studio Code [aquí](https://code.visualstudio.com)
 
