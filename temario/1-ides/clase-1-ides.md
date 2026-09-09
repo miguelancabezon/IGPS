@@ -86,7 +86,7 @@ Los IDEs web/online es software cuya principal ventaja es la de tener un entorno
 
 Podéis descargar Visual Studio Code [aquí](https://code.visualstudio.com)
 
-#### Extensiones que esenciales
+#### Extensiones esenciales
 - Toda aquella instalación oficial del lenguaje objetivo. Aquí tenéis algunos ejemplos:
 	- [C/C++](https://marketplace.visualstudio.com/items?itemName=ms-vscode.cpptools)
 	- [C#](https://marketplace.visualstudio.com/items?itemName=ms-dotnettools.csharp)
@@ -102,7 +102,7 @@ Podéis descargar Visual Studio Code [aquí](https://code.visualstudio.com)
 	- [eppz!](https://marketplace.visualstudio.com/items?itemName=eppz.eppz-code)
 	- [Tokyo Night](https://marketplace.visualstudio.com/items?itemName=enkia.tokyo-night)
 
-#### Funcionalidades clave de Visual Studio Code
+#### Atajos y funcionalidades clave
 - Autocompletado y sugerencias `Ctrl + Space`
 - Depuración paso a paso `F5`
 - Control de versiones integrado (a través de extensiones)
@@ -110,7 +110,8 @@ Podéis descargar Visual Studio Code [aquí](https://code.visualstudio.com)
 - Búsqueda y remplazo avanzado `Ctrl + H`
 - Búsqueda de archivos e inicio de procesos rápida `Ctrl + P para buscar, > para buscar procesos`
 
-#### Consejos
-- Instalar solo las extensiones necesarias para tus necesidades.
-- Intentar buscar las oficiales y, sino hay disponibles, basarse en el número de descargas.
-- Las extensiones de mascotas gastan muchos recursos y distraen más de lo que divierten.
+#### Consejos de uso
+1. **Minimalismo**: Instala solo las extensiones estrictamente necesarias. Cada extensión adicional consume recursos y puede ralentizar el editor.
+2. **Seguridad**: Prioriza siempre las extensiones oficiales publicadas por Microsoft o los equipos de desarrollo del lenguaje. Si buscas alternativas, valora el número de descargas y las reseñas.
+3. **Evita distracciones**: Evita extensiones decorativas (como mascotas animadas); consumen CPU/GPU innecesariamente y restan foco al desarrollo.
+
