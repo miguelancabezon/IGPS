@@ -1,7 +1,7 @@
 # IGPS ![Progress](https://progress-bar.xyz/0/?width=300&style=square)
 
 
-- [ ] [IDEs](temario/1-ides/clase-1-ides.md) ![Progress](https://progress-bar.xyz/0/?width=50&style=flat)
+- [ ] [IDEs](temario/1-ides/clase-1-ides.md) ![Progress](https://progress-bar.xyz/100/?width=50&style=flat)
 - [ ] [GIT](/temario/2-git) ![Progress](https://progress-bar.xyz/0/?width=50&style=flat)
 - **Software**
   - [ ] [Ingeniería del Software](/temario/3-ingenieria-software/clase-5-ingenieria_software.md) ![Progress](https://progress-bar.xyz/0/?width=50&style=flat)
