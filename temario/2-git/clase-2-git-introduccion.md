@@ -4,30 +4,14 @@
 
 Un **sistema de control de versiones** es una herramienta que registra los cambios realizados en archivos a lo largo del tiempo, permitiendo recuperar versiones específicas cuando sea necesario. Es como tener un "historial de cambios" detallado de tu proyecto.
 
-## Tipos de Sistemas de Control de Versiones
+## Tipos de Sistemas
 
-### **1. Sistemas Locales**
+| Tipo | Descripción | Ejemplos | Desventajas Principales |
+|--|--|--|--|
+|**Locales**|Guardan versiones únicamente en tu computadora local.|RCS (Revision Control System)|Sin colaboración; alto riesgo de pérdida de datos.|
+|**Centralizados**|Un servidor central almacena todas las versiones. Los desarrolladores trabajan contra ese nodo único.|SVN (Subversion), Perforce, CVS|Punto único de falla; dependencia total de la conexión a internet.|
+|**Distribuidos**|Cada desarrollador tiene una copia completa del historial. No exista un punto central obligatorio.|Git|Curva de aprendizaje inicial más alta|
 
-- Guardan versiones en tu computadora.
-- **Problema**: No hay colaboración, riesgo de pérdida de datos.
-- **Ejemplo**: RCS (Revision Control System)
-
-### **2. Sistemas Centralizados**
-
-- Un servidor central almacena todas las versiones.
-- Los desarrolladores descargan archivos del servidor.
-- **Ejemplos**: SVN (Subversion), Perforce, CVS.
-- **Problemas**:
-  - Si el servidor falla, nadie puede trabajar.
-  - Punto único de falla.
-  - Dependencia de conexión a internet.
-
-### **3. Sistemas Distribuidos (Como Git)**
-
-- Cada desarrollador tiene una **copia completa** del historial.
-- No hay un punto central único.
-
-## Representación Visual
 
 ![Distribuido vs Centralizado](../../images/control_versiones-distribuido_vs_centralizado.jpg)
 
