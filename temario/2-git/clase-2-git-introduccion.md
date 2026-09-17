@@ -54,41 +54,47 @@ sudo apt install git-all
 
 Para ver si está instalado correctamente, sólo hay que acceder al terminal e introducir el siguiente comando:
 
-```
+```bash
 git --version
 ```
 
 ![Git version](../../images/git-version-img.png)
 
-### Configuración inicial
+### Configuración global
 
 Por su naturaleza colaborativa, Git utiliza un sistema de cuentas para poder conocer quién ha realizado los cambios en los archivos.
 Para poder usar Git sin que te pida la contraseña en cada acción debemos configurarlo en un inicio con nuestras credenciales:
 
-```
-git config --global user.name "Tu Nombre" # Usuario de Git
-git config --global user.email "tu@email.com" # Email de Git
-git config --list # Lista toda la configuración (opcional)
+```bash
+# Establece tu nombre de usuario
+git config --global user.name "Tu Nombre"
+
+# Establece tu email
+git config --global user.email "tu@email.com"
+
+# Verifica toda la configuración actual
+git config --list
 ```
 
 
-### Conceptos básicos
+## Conceptos Clave: Los Tres Entornos de Git
 
 ![Git Resumen](../../images/git-resumen.png)
 
-#### Los tres entornos de Git
+Para entender cómo funciona Git, debes visualizar tres áreas donde residen tus archivos:
 
-**Working directory (Directorio de trabajo)**
 
-Este es el directorio/carpeta en el que el ingeniero trabaja, ya sea para cambiar líneas de código, añadir o eliminar archivos, ...
+### Working directory (Directorio de trabajo)
 
-Dentro de esta carpeta, aparte del proyecto a trabajar, tendremos la carpeta oculta _.git_ que tiene toda la información sobre el repositorio local y remoto y sus ramas.
+- Este es el directorio/carpeta en el que el ingeniero trabaja, ya sea para cambiar líneas de código, añadir o eliminar archivos, ...
+
+- Dentro de esta carpeta, aparte del proyecto a trabajar, tendremos la carpeta oculta _.git_ que tiene toda la información sobre el historial y los metadatos del repositorio.
 
 Un ejemplo de proyecto con Git sería:
 
 ```
 mi-proyecto/
-├── .git
+├── .git        # Carpeta oculta con el historial
 ├── index.html
 ├── style.css
 └── script.js
@@ -96,46 +102,46 @@ mi-proyecto/
 
 Dato: El nombre de la carpeta "mi-proyecto" es el nombre del repositorio de Git.
 
-**Staging Area (Área de "Preparación")**
+### Staging Area (Área de "Preparación"/Índice)
 
-El _Staging Area_ es un área intermedia al que iremos añadiendo los archivos que has modificado con el objetivo de preparar tu próximo _commit_.
+El _Staging Area_ es un área intermedia al que iremos añadiendo los cambios que nosotros especifiquemos con el objetivo de preparar tu próximo _commit_. Así, tenemos los cambios agrupados los cambios lógicamente antes de registrarlos en el historial.
 
 Para añadir archivos al staging area sólo necesitaréis el siguiente comando:
 
-```
+```bash
 git add index.html # Para un solo archivo
 git add * # Para incluir al commit todo lo modificado
 ```
 
-**Repositorio (carpeta .git)**
+### Repositorio (carpeta .git)
 
-El repositorio guarda todas las modificaciones y versiones de forma permanente en el historial de git. Esta carpeta es la que va a coordinar con el repositorio remoto (GitHub, por ejemplo) para que se pueda acceder de manera remota.
+El repositorio guarda todas las modificaciones y versiones de forma permanente en el historial de git. Esta carpeta es la que va a coordinar con el repositorio remoto (GitHub, por ejemplo).
+Podemos ver cada commit como una versión única del repositorio.
 
 Para añadir los cambios preparados en la staging area, debemos hacer un commit con el siguiente comando:
-
-```
+```bash
 git commit -m "Add homepage design" # -m Indica el mensaje que vas a escribir entre comillas
 ```
-
-Podemos ver cada commit como una versión única del repositorio.
 
 
 >[!TIP]
 > Si quieres simplificar el proceso puedes usar el comando `git commit -am "<mensaje>"`, la 'a' adicional te mueve los cambios al Staging Area antes del commit.
 > Eso si, este comando solo funciona **para cambios en archivos**. **No funciona para archivos nuevos**.
 
-#### ¿Qué es HEAD?
+### ¿Qué es HEAD?
 
-HEAD es el nombre de una variable que almacena la dirección del último commit. Es útil para cuando queramos realizar acciones partiendo desde ese commit.
+`HEAD` es un puntero que apunta siempre al último commit de la rama en la que te encuentras actualmente. Es tu posición actual en el historial.
 
 
-#### Estados - git status
+### Estados y Registro de Cambios
 
-Cuando ejecutamos el comando `git status` nos va a devolver una serie de estados por archivo. Cada uno tiene su significado:
+#### Ver Estado (`git status`)
 
-- **Untracked**: El archivo con este estado es nuevo y no está añadido a git.
-- **Modified**: Está en git y detecta cambios en el archivo.
-- **Staged**: El archivo está en el _staging area_.
+Este comando te dice en que estado del historial están tus archivos:
+
+- **Untracked**: El archivo con este estado es nuevo y git no lo vigila.
+- **Modified**: Está en git y detecta cambios en el archivo, sin estar añadido al stage area.
+- **Staged**: El archivo está en el _staging area_ y listo para ser comiteado.
 - **Commited**: El archivo está en el repositorio, registrado en el historial de git.
 
 #### Registro de cambios - git log, git show y git diff
