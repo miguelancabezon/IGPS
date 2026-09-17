@@ -15,17 +15,19 @@ Un **sistema de control de versiones** es una herramienta que registra los cambi
 
 ![Distribuido vs Centralizado](../../images/control_versiones-distribuido_vs_centralizado.jpg)
 
-## GIT - Fundamentos
+---
 
 ### ¿Qué es Git?
 
-Git es un software de control de versiones diseñado por Linus Torvalds. Enfocado a la eficiencia y la compatibilidad de versiones en archivos de código, su propósito es llevar registro de los cambios incluyendo coordinar el trabajo que varias personas realizan sobre archivos compartidos en un repositorio de código.
+**Git** es un software de control de versiones gratuito, de código abierto y extremadamente eficiente. Fue diseñado por Linus Torvalds para gestionar el desarrollo del núcleo de Linux, aunque hoy se utiliza en proyectos de cualquier tamaño.
 
-Gratis, de código abierto y compatible para proyectos tanto grandes cómo pequeños.
+Su propósito es doble:
+1. Llevar un registro preciso de los cambios en el código.
+2. Coordinar el trabajo colaborativo de múltiples personas sobre un mismo repositorio.
 
 ### Historia de Git
 
-A principios de los 2000 el kernel de Linux comenzaba a tener un tamaño considerable. Las versiones, se controlaban con parches enviado a través de correo electrónico indicando los cmabios realizados en los archivos. Paralelamente, muchos desarrolladores que aportaban al proyecto, usaban Beekeeper como herramienta para la gestión del código fuente.
+A principios de los 2000 el kernel de Linux comenzaba a tener un tamaño considerable. Las versiones, se controlaban con parches enviado a través de correo electrónico indicando los cambios realizados en los archivos. Paralelamente, muchos desarrolladores que aportaban al proyecto, usaban Beekeeper como herramienta para la gestión del código fuente.
 En 2005, Beekeeper eliminó la versión gratuita alegando infracciones de contrato debido a que varios desarrolladores de Linux habían realizado modificaciones en el software desbloqueando funciones de pago. Esta trifulca entre el equipo de Beekeeper y Linux llevó a Linus Torvalds, iniciador y parte importante de Linux, a diseñar un nuevo software de control de versiones tan libre como lo era (y es) Linux.
 
 Así nació Git.
