@@ -17,7 +17,7 @@ Un **sistema de control de versiones** es una herramienta que registra los cambi
 
 ---
 
-### ¿Qué es Git?
+## ¿Qué es Git?
 
 **Git** es un software de control de versiones gratuito, de código abierto y extremadamente eficiente. Fue diseñado por Linus Torvalds para gestionar el desarrollo del núcleo de Linux, aunque hoy se utiliza en proyectos de cualquier tamaño.
 
@@ -25,7 +25,14 @@ Su propósito es doble:
 1. Llevar un registro preciso de los cambios en el código.
 2. Coordinar el trabajo colaborativo de múltiples personas sobre un mismo repositorio.
 
-### Historia de Git
+### Git vs. GitHub
+
+Es común confundir ambos términos en un principio, pero son cosas distintas:
+
+- **Git** es la herramienta de línea de comandos que instalas en tu máquina. Gestiona el historial localmente.
+- **GitHub** es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador. Podéis acceder a GitHub a través de este [enlace](https://github.com).
+
+## Historia de Git
 
 A principios de los 2000 el kernel de Linux comenzaba a tener un tamaño considerable. Las versiones, se controlaban con parches enviado a través de correo electrónico indicando los cambios realizados en los archivos. Paralelamente, muchos desarrolladores que aportaban al proyecto, usaban Beekeeper como herramienta para la gestión del código fuente.
 En 2005, Beekeeper eliminó la versión gratuita alegando infracciones de contrato debido a que varios desarrolladores de Linux habían realizado modificaciones en el software desbloqueando funciones de pago. Esta trifulca entre el equipo de Beekeeper y Linux llevó a Linus Torvalds, iniciador y parte importante de Linux, a diseñar un nuevo software de control de versiones tan libre como lo era (y es) Linux.
@@ -34,17 +41,14 @@ Así nació Git.
 
 ![Linus Torvalds](../../images/linus_torvalds.jpg)
 
-### Git y GitHub
 
-**GitHub** es una forja (plataforma de desarrollo colaborativo) para alojar proyectos utilizando el sistema de control de versiones Git. Se utiliza principalmente para la creación de código fuente de programas de ordenador.
 
-Podéis acceder a GitHub a través de este [enlace](https://github.com).
+## Instalación y Configuración Inicial
 
 ### Instalación
-
-Para instalar GIT en Windows, se puede descargar la última versión [aquí](https://git-scm.com). Si usáis algún sistema operativo Linux, podéis usar el siguiente comando:
-
-```
+- **Windows/macOS/Linux**: Descarga la última versión oficial desde [git-scm.com](https://git-scm.com).
+- **Linux (Debian/Ubuntu)**: También puedes usar el gestor de paquetes:
+```bash
 sudo apt install git-all
 ```
 
