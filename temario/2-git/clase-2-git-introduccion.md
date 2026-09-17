@@ -159,7 +159,7 @@ Por último, con `git diff` podremos ver los cambios realizados que aún no est�
 
 Como ejemplo, podemos crear un alias para el comando `git status` ejecutando el siguiente comando `git config --global alias.st status`. Ahora, cada vez que quieras ver el estado del repositorio puedes ejecutar `git st`.
 
-Otro ejemplo puede ser simplificar el comando `git log --oneline`. Podemos configurarlo con `git config --global alias.logone "log --onlineline"` (OJO, OJITO a que el comando lleva comillas, porque le hemos añadido el parámetro --oneline).
+Otro ejemplo puede ser simplificar el comando `git log --oneline`. Podemos configurarlo con `git config --global alias.logone "log --online"` (OJO, OJITO a que el comando lleva comillas, porque le hemos añadido el parámetro --oneline).
 
 
 
@@ -168,7 +168,7 @@ Otro ejemplo puede ser simplificar el comando `git log --oneline`. Podemos confi
 Imagináos la siguiente situación. Estamos trabajando y hacemos distintos commits pero, en un momento, nos damos cuenta de que tenemos un error que hiciste hace varios commits y no tienes ni idea de cómo volver atrás.
 Pues existen varias maneras en las que tendremos que tener en cuenta, qué queremos hacer o deshacer y a qué areas va a afectar esa restauración.
 
-#### git reset
+#### `git reset`
 
 Es un poderoso comando que reescribe el historial de commits. Para usarlo, tenemos tres opciones:
 
@@ -176,7 +176,7 @@ Es un poderoso comando que reescribe el historial de commits. Para usarlo, tenem
   - Mixed (por defecto): `git reset --mixed <id_commit>` Mantiene los cambios sólo en el directorio de trabajo.
   - Hard (muy destructivo): `git reset --hard <id_commit>` Descarta todos los cambios en todos los entornos.
 
-#### git restore
+#### `git restore`
 
 Es un comando introducido en las versiones más recientes de Git (concretamente la 2.23 de Agosto de 2019) diseñada para deshacer cambios en el directorio de trabajo y en el *staging area*.
 
@@ -186,7 +186,7 @@ Es un comando introducido en las versiones más recientes de Git (concretamente 
 
 Se introdujo este nuevo comando para separar la funcionalidad de restaurar archivos con git chekcout y crear comandos más específicos.
 
-#### git checkout
+#### `git checkout`
 
 Es un comando flexible que te permite navegar entre ramas y reestablecer los archivos en el directorio de trabajo.
 Podemos usarlo para cambiar a un commit específico con `git checkout <id_commit>`.
