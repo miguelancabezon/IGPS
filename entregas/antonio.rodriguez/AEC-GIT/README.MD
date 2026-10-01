@@ -8,6 +8,10 @@ Actividad 1 Gestion de Proyectos, Antonio Rodriguez
 
 
 
+En el paso 1 se hizo una clonación del repositorio original de Miguel Cabezon. Luego se agrego ese repo clonado en mi computadora local.
+
+
+
 !\[Fotografia del Paso 2](img/paso2.png)
 
 
