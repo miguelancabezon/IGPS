@@ -20,3 +20,19 @@ PROCESO REALIZADO HASTA AHORA
 8. Realicé el primer commit con el mensaje "docs: nuevo archivo".
 9. Subí el commit a mi repositorio remoto mediante git push origin main.
 10. Creé la rama docs/modificaciones para continuar trabajando.
+
+CAPTURAS DE PANTALLA
+
+Durante la actividad se han realizado capturas de pantalla como evidencia
+del proceso seguido.
+
+Las capturas documentan:
+- Clonación del repositorio.
+- Creación de las carpetas.
+- Creación del archivo README.txt.
+- Estado del repositorio con git status.
+- Uso de git add.
+- Primer commit.
+- Subida de los cambios a GitHub.
+- Creación de la rama docs/modificaciones.
+- Primer commit realizado en esta rama.
