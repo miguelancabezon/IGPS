@@ -16,3 +16,13 @@ PASOS REALIZADOS
 5. Realicé el primer commit.
 6. Subí los cambios a GitHub.
 7. Creé la rama docs/modificaciones.Actividad de Git y GitHub 
+CAPTURAS Y EVIDENCIAS
+
+Durante la realización de la actividad se han realizado capturas
+de pantalla para demostrar los diferentes pasos realizados con Git.
+
+SEGUNDO BLOQUE DE TRABAJO
+
+En este segundo bloque se continúa trabajando con la rama
+docs/modificaciones y se prepara el contenido necesario para
+realizar posteriormente el Pull Request.
