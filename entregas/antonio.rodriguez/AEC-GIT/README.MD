@@ -16,6 +16,12 @@ En el paso 1 se hizo una clonación del repositorio original de Miguel Cabezon. 
 
 
 
+En el paso 2 creamos la carpeta de entregas y adentro de esta tarjeta creamos una carpeta llamada Antonio.rodriguez, y luego adentro de esta misma carpeta se creo la carpeta llamada exactamente AEC-GIT
+
+
+
+
+
 !\[Fotografia del Paso 3](img/paso3.png)
 
 
