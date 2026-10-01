@@ -26,3 +26,4 @@ SEGUNDO BLOQUE DE TRABAJO
 En este segundo bloque se continúa trabajando con la rama
 docs/modificaciones y se prepara el contenido necesario para
 realizar posteriormente el Pull Request.
+Tercer cambio realizado para completar la actividad de Git y GitHub.
