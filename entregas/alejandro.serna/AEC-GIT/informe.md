@@ -62,19 +62,21 @@ Esta rama se utiliza para realizar los cambios relacionados con la documentació
 
 ---
 
-## 6. Trabajo realizado en la rama
+### 6. Trabajo en la rama de documentación
 
-Una vez creada la rama `docs/modificaciones`, se continuó trabajando en el informe y añadiendo las capturas correspondientes.
+Para realizar las modificaciones de la actividad se utilizó la rama
+`docs/modificaciones`.
 
-Los cambios realizados se dividieron en varios commits para mantener un historial de modificaciones claro y ordenado.
+El trabajo se dividió en varios commits para mantener un historial
+ordenado de los cambios realizados.
 
----
+## 7. Historial de commits
 
-## 7. Fusión de las ramas
+Se utilizó el comando `git log --oneline --graph` para comprobar el historial de commits del repositorio.
 
-Una vez terminados los cambios de documentación, se volvió a la rama `main` y se fusionaron los cambios realizados en `docs/modificaciones`.
+De esta forma se pudo verificar que los cambios realizados en la rama `docs/modificaciones` se habían guardado correctamente en distintos commits.
 
-Después de comprobar que la fusión se había realizado correctamente, se subieron los cambios al repositorio remoto.
+![Historial de commits](capturas/6.historial.png)
 
 ---
 
