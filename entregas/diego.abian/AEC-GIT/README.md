@@ -28,5 +28,17 @@ Creé la carpeta entregas/diego.abian/AEC-GIT con un README.md vacío. Lo añad�
 
 !\[Carpetas, commit y push](capturas/4.png)
 
+## Paso 4: Rama de trabajo
+
+Creé la rama docs/modificaciones con git checkout -b y la carpeta capturas para guardar las imágenes. En esta rama he documentado la actividad en varios commits.
+
+!\[Rama docs/modificaciones](capturas/5.png)
+
+
+
+\## Conclusiones
+
+He practicado el flujo completo de trabajo con Git: fork, clonado, commits, ramas, merge y Pull Request hacia el repositorio original.
+
 ## 
 
