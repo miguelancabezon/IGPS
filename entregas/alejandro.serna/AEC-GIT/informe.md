@@ -80,6 +80,8 @@ De esta forma se pudo verificar que los cambios realizados en la rama `docs/modi
 
 ---
 
-## 8. Pull Request
+## 8. Subida de la rama al repositorio remoto
 
-Finalmente, se creó una Pull Request desde mi fork hacia el repositorio original de la asignatura para realizar la entrega de la actividad.
+Después de realizar los commits correspondientes, se subió la rama `docs/modificaciones` a mi fork de GitHub mediante el comando `git push origin docs/modificaciones`.
+
+![Subida de la rama](capturas/7.push-rama.png)
