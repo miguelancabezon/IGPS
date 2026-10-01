@@ -26,5 +26,11 @@ En el paso 2 creamos la carpeta de entregas y adentro de esta tarjeta creamos un
 
 
 
+En el paso 3 creamos un archivo de texto vacio README, luego añadimos el archivo al área de staging con git add para luego hacer un commit y finalmente subir todo lo que hemos hecho hasta este punto al repo remoto
+
+
+
+
+
 !\[Fotografia del Paso 4](img/paso4.png)
 
