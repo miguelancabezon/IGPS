@@ -1,0 +1,23 @@
+AEC-GIT FINAL PREPARADO
+
+Copia el README.md y la carpeta capturas dentro de:
+C:\Users\nieto\IGPS\entregas\pablo.nieto\AEC-GIT
+
+Ya están incluidas y renombradas las capturas de:
+- clonación
+- creación de estructura
+- git add / status
+- primer commit
+- push inicial a main
+- creación de docs/modificaciones
+- commits en la rama
+- push de docs/modificaciones
+- merge
+- push final a main
+
+FALTA antes de entregar:
+1. Captura clara del fork en GitHub.
+2. Captura de la configuración de la Pull Request.
+3. Captura de la Pull Request ya creada.
+
+Después de añadir esas capturas, actualiza el README y realiza el commit/push correspondiente si el profesor exige que también aparezcan dentro del repositorio.
