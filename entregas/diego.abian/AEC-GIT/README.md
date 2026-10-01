@@ -22,3 +22,11 @@ Cloné el fork en mi equipo con git clone y entré en la carpeta del proyecto.
 
 !\[git clone](capturas/3.png)
 
+## Paso 3: Estructura de carpetas y primer commit
+
+Creé la carpeta entregas/diego.abian/AEC-GIT con un README.md vacío. Lo añadí al staging con git add, hice el commit "docs: nuevo archivo" y lo subí a la rama main de mi fork con git push.
+
+!\[Carpetas, commit y push](capturas/4.png)
+
+## 
+
