@@ -4,7 +4,7 @@ Actividad 1 Gestion de Proyectos, Antonio Rodriguez
 
 
 
-!\[Fotografia del Paso 1](./img/paso1.png)
+<img src="img/paso1.png" alt=" Foto Paso 1">
 
 
 
