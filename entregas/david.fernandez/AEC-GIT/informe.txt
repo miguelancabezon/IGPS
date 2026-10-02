@@ -1,0 +1,25 @@
+﻿Capturas realizadas durante la actividad:
+- capturas/Imagen1.png
+- capturas/Imagen2.png
+- capturas/Imagen3.png
+- capturas/Imagen4.png
+- capturas/Imagen5.png
+- capturas/Imagen6.png
+
+magen1 — Creación de estructura inicial
+“Se muestra la creación de las carpetas necesarias para organizar la entrega dentro del directorio del proyecto.”
+
+Imagen2 — Navegación y gestión de directorios
+“La captura refleja cómo navego entre carpetas y gestiono directorios usando PowerShell.”
+
+Imagen3 — Corrección de comandos y primer commit
+“En esta imagen se observa la corrección del comando git commit y la confirmación de que el repositorio está sincronizado.”
+
+Imagen4 — Creación del archivo informe.txt
+“La captura muestra la creación del archivo informe.txt y su verificación mediante el comando dir.”
+
+Imagen5 — Commit del informe y estado del repositorio
+“Se aprecia el intento de commit del informe y la indicación de Git sobre archivos sin trackear.”
+
+Imagen6 — Push final de la rama principal
+“La imagen confirma que la rama main está actualizada y sincronizada con el repositorio remoto.”
