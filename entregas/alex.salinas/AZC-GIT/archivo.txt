@@ -1,0 +1,50 @@
+Pr ctica de Git y GitHub 
+
+PRÁCTICA DE GIT Y GITHUB
+
+1. CREACIÓN DE LA ESTRUCTURA DE CARPETAS
+
+Se creó la estructura de carpetas:
+entregas/alex.salinas/AZC-GIT
+
+
+2. CREACIÓN DEL ARCHIVO
+
+Se creó el archivo archivo.txt dentro de:
+entregas/alex.salinas/AZC-GIT
+
+
+3. PRIMERA SUBIDA AL REPOSITORIO
+
+Se agregó el archivo al repositorio de GitHub y se realizó el primer commit.
+
+
+4. TRABAJO CON RAMAS
+
+Se trabajó con la rama:
+docs/modificaciones
+
+
+5. MODIFICACIONES
+
+Se realizaron modificaciones en archivo.txt y se registraron mediante commits.
+
+
+6. INTEGRACIÓN
+
+Se integraron los cambios de la rama de trabajo con la rama main.
+
+
+7. SUBIDA DE CAMBIOS
+
+Se utilizaron los comandos de Git necesarios para subir los cambios al repositorio remoto.
+
+
+8. PULL REQUEST
+
+Se creó un Pull Request para enviar los cambios al repositorio del profesor.
+
+
+9. EVIDENCIAS
+
+Se tomaron capturas de pantalla de los pasos realizados durante el proceso.
