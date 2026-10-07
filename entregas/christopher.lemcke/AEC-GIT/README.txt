@@ -15,3 +15,6 @@ Cree un commit con el mensaje "Docs: Nuevo archivo".
 Subi los cambios a la rama main de mi fork con "git push origin main". 
 
 Desde la rama main creé una nueva rama llamada "docs/modificaciones" y cambié a ella.
+
+Añadí las capturas de el terminal. 
+
