@@ -1,4 +1,4 @@
-# IGPS ![Progress](https://progress-bar.xyz/0/?width=300&style=square)
+# IGPS ![Progress](https://progress-bar.xyz/20/?width=300&style=square)
 
 
 - [x] [IDEs](temario/1-ides/clase-1-ides.md) ![Progress](https://progress-bar.xyz/100/?width=50&style=flat)
