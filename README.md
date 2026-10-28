@@ -20,7 +20,7 @@ Se recomienda además el leer los artículos contenidos en la carpeta de [docume
 
 <div align=center>
 
-|Actual|[[26][27]](https://github.com/miguelancabezon/26-27-igps)|
+|Repo de Entregas Actual|[[26][27]](https://github.com/miguelancabezon/26-27-igps)|
 |:-|:-
 
 </div>
