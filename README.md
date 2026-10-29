@@ -5,9 +5,9 @@
 - [x] [GIT](/temario/2-git) ![Progress](https://progress-bar.xyz/100/?width=50&style=flat)
 - **Software**
   - [x] [Ingeniería del Software](/temario/3-ingenieria-software/clase-5-ingenieria_software.md) ![Progress](https://progress-bar.xyz/100/?width=50&style=flat)
-  - [ ] [Procesos del Software](/temario/3-ingenieria-software/clase-6-proceso_software.md) ![Progress](https://progress-bar.xyz/0/?width=50&style=flat)
+  - [ ] [Procesos del Software](/temario/3-ingenieria-software/clase-6-proceso_software.md) ![Progress](https://progress-bar.xyz/100/?width=50&style=flat)
 - **Lenguajes de marcado**
-  - [x] [Markdown](/temario/4-markdown) ![Progress](https://progress-bar.xyz/50/?width=50&style=flat)
+  - [x] [Markdown](/temario/4-markdown) ![Progress](https://progress-bar.xyz/100/?width=50&style=flat)
   - [ ] [Plant UML - No UML](/temario/5-plantuml) ![Progress](https://progress-bar.xyz/0/?width=50&style=flat)
   - [ ] [Plant UML - UML](/temario/5-plantuml) ![Progress](https://progress-bar.xyz/0/?width=50&style=flat)
 - [ ] [Innovación](/temario/6-innovacion-calidad/clase-16-innovacion.md) ![Progress](https://progress-bar.xyz/0/?width=50&style=flat)
