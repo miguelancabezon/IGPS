@@ -34,10 +34,15 @@ Este proyecto permite aprender sobre astronomía mediante artículos interconect
 
 | Elemento | Cantidad |
 |---|---:|
-| Artículos previstos | 5 |
-| Glosarios | 1 |
-| Diagramas previstos | 12 |
-| Preguntas frecuentes previstas | 10 |
+| Artículos principales | 5 |
+| Páginas Markdown | 8 |
+| Palabras totales | 9.343 |
+| Diagramas Mermaid | 13 |
+| Tablas de contenido | 15+ |
+| Términos del glosario | 20 |
+| Preguntas frecuentes | 10 |
+| Autor | Daniel Godefroy |
+
 
 ## 🕰️ Historia de la exploración espacial
 
