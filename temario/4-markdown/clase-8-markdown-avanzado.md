@@ -189,10 +189,10 @@ Puedes incluir prácticamente cualquier markdown aquí:
 ![Coverage](https://img.shields.io/badge/coverage-95%25-brightgreen.svg)
 
 <!-- Badges dinámicos -->
-![GitHub issues](https://img.shields.io/github/issues/miguelancabezon/25-26-igps)
-![GitHub forks](https://img.shields.io/github/forks/miguelancabezon/25-26-igps)
-![GitHub stars](https://img.shields.io/github/stars/miguelancabezon/25-26-igps)
-![Contributors](https://img.shields.io/github/contributors/miguelancabezon/25-26-igps)
+![GitHub issues](https://img.shields.io/github/issues/miguelancabezon/26-27-igps)
+![GitHub forks](https://img.shields.io/github/forks/miguelancabezon/26-27-igps)
+![GitHub stars](https://img.shields.io/github/stars/miguelancabezon/26-27-igps)
+![Contributors](https://img.shields.io/github/contributors/miguelancabezon/26-27-igps)
 
 <!-- Badges de tecnologías -->
 ![Python](https://img.shields.io/badge/Python-3.9+-blue.svg)
