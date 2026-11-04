@@ -260,6 +260,18 @@ sequenceDiagram
 
 ---
 
+
+### Diagrama 3: Interpretación de los diagramas### Diagrama 3: Interpretación de los diagramas
+
+Los diagramas explican cómo se clasifican las estrellas según su masa y cómo se forman a partir de nubes moleculares. El primero permite comparar los posibles destinos de las estrellas, mientras que el segundo muestra las etapas de formación.
+
+Los diagramas anteriores permiten comprender la organización y formación del Sistema Solar.
+
+**El primer diagrama** representa la clasificación de sus principales componentes: el Sol, los planetas y los cuerpos menores.
+
+**El segundo diagrama** explica cómo una nube de gas y polvo evolucionó hasta formar el Sol y los planetas mediante procesos gravitacionales.
+
+Ambas representaciones ayudan a comprender el funcionamiento de nuestro sistema planetario.
 ## 💡 Información adicional
 
 <details>
@@ -304,7 +316,29 @@ Posteriormente, las observaciones de Galileo y las leyes de Kepler ayudaron a co
 
 ---
 
-## Conclusiones
+## Conclusiones### 1. Principales conocimientos
+
+Las estrellas producen energía mediante fusión nuclear y atraviesan diferentes etapas evolutivas.
+
+### 2. Importancia científica
+
+Su investigación permite comprender la producción de elementos químicos y el desarrollo de las galaxias.
+
+### 3. Reflexión final
+
+El estudio de las estrellas demuestra que el universo evoluciona constantemente y que nuestra existencia está relacionada con procesos estelares.
+### 1. Principales conocimientos
+
+El Sistema Solar está formado por el Sol, ocho planetas y numerosos cuerpos menores. La gravedad permite mantener estos objetos en órbitas alrededor del Sol.
+
+### 2. Importancia científica
+
+Estudiar el Sistema Solar permite comprender el origen de la Tierra, investigar otros planetas y conocer mejor los procesos que dieron lugar a nuestro entorno espacial.
+
+### 3. Reflexión final
+
+El conocimiento del Sistema Solar demuestra cuánto ha avanzado la humanidad gracias a la observación, la ciencia y la tecnología. Su exploración continúa ofreciendo nuevos descubrimientos.
+
 
 El Sistema Solar constituye nuestro entorno astronómico y ofrece información fundamental sobre el origen de la Tierra.
 
