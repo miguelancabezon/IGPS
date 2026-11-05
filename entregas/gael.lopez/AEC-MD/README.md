@@ -10,3 +10,17 @@
 ![Node.js](https://img.shields.io/badge/Node.js-20.x-339933?logo=node.js&logoColor=white)
 
 > 🎓 **StudyQuest** es una aplicación web que convierte el estudio en una aventura: cada tarea completada otorga experiencia, cada asignatura es una *misión* y cada examen es un *jefe final*.
+
+## Presentación del proyecto
+
+**StudyQuest** es una plataforma de *gamificación del estudio* pensada para estudiantes de ESO, Bachillerato y universidad. Permite organizar asignaturas, planificar sesiones de estudio y seguir el progreso mediante un sistema de **niveles**, **logros** y **rachas diarias**.
+
+### Problema que resuelve
+
+Muchos estudiantes **pierden la motivación** o **no saben por dónde empezar** cuando se acercan los exámenes. Las agendas tradicionales listan tareas, pero no ofrecen ningún incentivo para cumplirlas.
+
+### Objetivo principal
+
+Aumentar la **constancia** y la **organización** del estudiante transformando sus hábitos de estudio en un juego con recompensas visibles, sin perder de vista el objetivo real: *aprender mejor*.
+
+---
