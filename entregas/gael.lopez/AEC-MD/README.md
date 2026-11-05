@@ -24,3 +24,20 @@ Muchos estudiantes **pierden la motivación** o **no saben por dónde empezar** 
 Aumentar la **constancia** y la **organización** del estudiante transformando sus hábitos de estudio en un juego con recompensas visibles, sin perder de vista el objetivo real: *aprender mejor*.
 
 ---
+
+## Índice de contenidos
+
+1. [Presentación del proyecto](#presentación-del-proyecto)
+2. [Índice de contenidos](#índice-de-contenidos)
+3. [Características principales](#características-principales)
+4. [Instalación y configuración](#instalación-y-configuración)
+   1. [Requisitos previos](#requisitos-previos)
+   2. [Pasos de instalación](#pasos-de-instalación)
+5. [Tecnologías utilizadas](#tecnologías-utilizadas)
+6. [Arquitectura y funcionamiento](#arquitectura-y-funcionamiento)
+7. [Ejemplos de uso](#ejemplos-de-uso)
+8. [Información adicional](#información-adicional)
+9. [Contacto](#contacto)
+10. [Elementos visuales y caracteres especiales](#elementos-visuales-y-caracteres-especiales)
+
+---
