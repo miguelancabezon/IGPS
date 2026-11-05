@@ -199,3 +199,26 @@ console.log(calculateXp({ priority: "high" }, 3)); // 36
 - [Técnica Pomodoro (Wikipedia)](https://es.wikipedia.org/wiki/T%C3%A9cnica_Pomodoro)
 
 ---
+
+## Información adicional
+
+> ⚠️ **Importante:** nunca subas tu archivo `.env` al repositorio. Contiene claves privadas como `JWT_SECRET` y debe estar incluido en el `.gitignore`.
+
+<!-- TODO: añadir capturas de pantalla de la aplicación cuando esté terminada la interfaz. Este comentario no se muestra en el README. -->
+
+<details>
+<summary>📌 Ver la fórmula de niveles y el sistema de rachas</summary>
+
+<br>
+
+El nivel del usuario se obtiene a partir de la experiencia total acumulada:
+
+- **Nivel 1:** 0 XP
+- **Nivel 2:** 100 XP
+- **Nivel 3:** 250 XP
+- Cada nivel siguiente requiere un *50 % más* de XP que el anterior.
+
+La **racha** se reinicia a cero si el usuario pasa un día completo sin completar ninguna tarea. Cada día de racha añade `+2 XP` de bonificación, con un máximo de 7 días.
+
+</details>
+
