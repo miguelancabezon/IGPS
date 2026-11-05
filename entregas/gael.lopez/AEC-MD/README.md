@@ -114,3 +114,15 @@ Aumentar la **constancia** y la **organización** del estudiante transformando s
 7. Abre `http://localhost:3000` en tu navegador.
 
 ---
+
+## Tecnologías utilizadas
+
+| Tecnología | Versión | Descripción | Uso en el proyecto |
+| :--- | :---: | :--- | :--- |
+| **Node.js** | `20.x` | Entorno de ejecución de *JavaScript* en servidor | Ejecuta la API y la lógica de XP |
+| **Express** | `4.19` | Framework web minimalista para Node.js | Define las rutas `/api/tasks` y `/api/users` |
+| **PostgreSQL** | `15` | Base de datos relacional de código abierto | Guarda usuarios, tareas y logros |
+| **React** | `18.3` | Biblioteca para interfaces de usuario | Construye el panel y el temporizador |
+| **Mermaid** | `10.x` | Generador de diagramas desde texto | Documenta los flujos en este README |
+
+---
