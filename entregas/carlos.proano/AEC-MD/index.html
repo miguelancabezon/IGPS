@@ -1,0 +1,81 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TaskFlow: organiza tus tareas y mejora tu productividad.">
+    <title>TaskFlow | Gestión de tareas</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">Task<span>Flow</span></div>
+        <p>Organiza tu día, alcanza tus objetivos.</p>
+    </header>
+
+    <main class="container">
+
+        <section class="welcome">
+            <h1>Mis tareas</h1>
+            <p>Gestiona tus actividades de forma sencilla.</p>
+        </section>
+
+        <section class="stats">
+            <article class="stat-card">
+                <span>Total de tareas</span>
+                <h2 id="totalTasks">0</h2>
+            </article>
+
+            <article class="stat-card">
+                <span>Pendientes</span>
+                <h2 id="pendingTasks">0</h2>
+            </article>
+
+            <article class="stat-card">
+                <span>Completadas</span>
+                <h2 id="completedTasks">0</h2>
+            </article>
+        </section>
+
+        <section class="task-form">
+            <h2>Nueva tarea</h2>
+
+            <form id="taskForm">
+                <input type="text" id="taskTitle"
+                    placeholder="¿Qué necesitas hacer?" required>
+
+                <textarea id="taskDescription"
+                    placeholder="Descripción de la tarea..."></textarea>
+
+                <div class="form-options">
+                    <select id="taskPriority">
+                        <option value="Baja">Prioridad baja</option>
+                        <option value="Media" selected>Prioridad media</option>
+                        <option value="Alta">Prioridad alta</option>
+                    </select>
+
+                    <input type="date" id="taskDate">
+                </div>
+
+                <button type="submit">+ Añadir tarea</button>
+            </form>
+        </section>
+
+        <section class="task-section">
+            <h2>Mis actividades</h2>
+            <div id="taskList" class="task-list">
+                <p class="empty-message">Todavía no tienes tareas.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>© 2026 TaskFlow - Organiza tu productividad.</p>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
