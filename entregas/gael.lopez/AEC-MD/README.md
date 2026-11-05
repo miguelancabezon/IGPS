@@ -126,3 +126,28 @@ Aumentar la **constancia** y la **organización** del estudiante transformando s
 | **Mermaid** | `10.x` | Generador de diagramas desde texto | Documenta los flujos en este README |
 
 ---
+
+## Arquitectura y funcionamiento
+
+StudyQuest sigue una arquitectura **cliente-servidor**: la interfaz en *React* consume una API REST creada con *Express*, que persiste los datos en *PostgreSQL*. Cuando el usuario completa una tarea, el servidor calcula la experiencia ganada, comprueba si hay subida de nivel o logros nuevos y devuelve el resultado actualizado.
+
+```mermaid
+sequenceDiagram
+    actor U as Estudiante
+    participant F as Frontend (React)
+    participant A as API (Express)
+    participant D as Base de datos (PostgreSQL)
+
+    U->>F: Marca una tarea como completada
+    F->>A: PATCH /api/tasks/42 {done: true}
+    A->>D: Actualiza la tarea
+    D-->>A: Tarea guardada
+    A->>A: Calcula XP y racha
+    alt XP suficiente para subir de nivel
+        A->>D: Incrementa el nivel del usuario
+    end
+    A-->>F: {xp, nivel, logros}
+    F-->>U: Muestra animación de recompensa
+```
+
+---
