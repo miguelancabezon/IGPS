@@ -222,3 +222,25 @@ La **racha** se reinicia a cero si el usuario pasa un día completo sin completa
 
 </details>
 
+## Contacto
+
+- 👤 **Autor:** Gael López
+- 📧 **Correo:** [gael.lopez@alumnos.uneatlantico.es](mailto:gael.lopez@alumnos.uneatlantico.es)
+- 💻 **GitHub:** [github.com/usuario/studyquest](https://github.com/usuario/studyquest)
+- 🐛 **Incidencias:** [github.com/usuario/studyquest/issues](https://github.com/usuario/studyquest/issues)
+
+---
+
+## Elementos visuales y caracteres especiales
+
+Este documento utiliza **badges** de Shields.io, emojis (🎓 ⚠️ 📌 👤), líneas horizontales para separar secciones y bloques HTML justificados (`<details>` para contenido opcional y un comentario oculto para notas internas).
+
+Para mostrar caracteres con significado especial en Markdown se escapan con una barra invertida:
+
+- Asteriscos literales: \*esto no está en cursiva\*
+- Almohadilla literal: \# esto no es un encabezado
+- Corchetes literales: \[esto no es un enlace\]
+- Guion bajo literal: nombre\_de\_variable
+- Barra invertida literal: \\
+
+_Proyecto realizado como actividad de evaluación continua (AEC-MD) de Markdown._
