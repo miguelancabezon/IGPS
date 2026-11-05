@@ -75,3 +75,42 @@ Aumentar la **constancia** y la **organización** del estudiante transformando s
 - [ ] Aplicación móvil
 
 ---
+
+## Instalación y configuración
+
+### Requisitos previos
+
+- **Node.js** 20 o superior
+- **npm** 10 o superior
+- **Git**
+- Una base de datos **PostgreSQL** 15 en local o en la nube
+
+### Pasos de instalación
+
+1. Clona el repositorio y entra en la carpeta del proyecto:
+
+   ```bash
+   git clone https://github.com/usuario/studyquest.git
+   cd studyquest
+   ```
+
+2. Instala las dependencias con `npm install`.
+3. Copia el fichero de ejemplo de variables de entorno:
+
+   ```bash
+   cp .env.example .env
+   ```
+
+4. Edita `.env` y define al menos `DATABASE_URL` y `JWT_SECRET`:
+
+   ```ini
+   PORT=3000
+   DATABASE_URL=postgresql://usuario:clave@localhost:5432/studyquest
+   JWT_SECRET=cambia-esta-clave
+   ```
+
+5. Crea las tablas ejecutando `npm run migrate`.
+6. Arranca el servidor de desarrollo con `npm run dev`.
+7. Abre `http://localhost:3000` en tu navegador.
+
+---
