@@ -151,3 +151,51 @@ sequenceDiagram
 ```
 
 ---
+
+## Ejemplos de uso
+
+### Ejemplo 1: completar una tarea desde la API
+
+Petición con `curl` para marcar como hecha la tarea `42`:
+
+```bash
+curl -X PATCH http://localhost:3000/api/tasks/42 \
+  -H "Authorization: Bearer $TOKEN" \
+  -H "Content-Type: application/json" \
+  -d '{"done": true}'
+```
+
+Respuesta esperada:
+
+```json
+{
+  "task": { "id": 42, "done": true },
+  "xpGained": 30,
+  "level": 5,
+  "newAchievements": ["Madrugador"]
+}
+```
+
+### Ejemplo 2: calcular la experiencia desde el código
+
+La función que decide cuánta experiencia otorga una tarea según su prioridad:
+
+```javascript
+const BASE_XP = { low: 10, medium: 20, high: 30 };
+
+function calculateXp(task, streakDays) {
+  const bonus = Math.min(streakDays, 7) * 2; // máximo 14 puntos extra
+  return BASE_XP[task.priority] + bonus;
+}
+
+console.log(calculateXp({ priority: "high" }, 3)); // 36
+```
+
+### Recursos relacionados
+
+- [Documentación de Express](https://expressjs.com/es/)
+- [Guía de Markdown de GitHub](https://docs.github.com/es/get-started/writing-on-github)
+- [Documentación de Mermaid](https://mermaid.js.org/intro/)
+- [Técnica Pomodoro (Wikipedia)](https://es.wikipedia.org/wiki/T%C3%A9cnica_Pomodoro)
+
+---
