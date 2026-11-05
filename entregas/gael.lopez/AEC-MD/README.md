@@ -41,3 +41,37 @@ Aumentar la **constancia** y la **organización** del estudiante transformando s
 10. [Elementos visuales y caracteres especiales](#elementos-visuales-y-caracteres-especiales)
 
 ---
+
+## Características principales
+
+1. **Gestión de asignaturas y tareas**
+   - Crear, editar y eliminar asignaturas con color propio.
+   - Tareas con fecha límite, prioridad y estimación de tiempo.
+2. **Sistema de experiencia y niveles**
+   - Cada tarea completada suma puntos de experiencia (XP).
+   - Al reunir suficiente XP el usuario sube de nivel.
+3. **Rachas y logros**
+   - Racha de días consecutivos estudiando.
+   - Insignias desbloqueables (por ejemplo, «Madrugador» o «Maratón de estudio»).
+4. **Temporizador Pomodoro integrado**
+   - Sesiones de 25 minutos con descansos de 5.
+   - Registro automático del tiempo dedicado a cada asignatura.
+5. **Estadísticas de progreso**
+   - Gráficas semanales de horas de estudio.
+   - Comparativa entre asignaturas.
+6. **Modo multijugador por grupos**
+   - Retos compartidos entre compañeros.
+   - Clasificación semanal del grupo.
+
+### Estado de desarrollo
+
+- [x] Registro e inicio de sesión de usuarios
+- [x] Gestión de asignaturas y tareas
+- [x] Sistema de experiencia y niveles
+- [x] Temporizador Pomodoro
+- [ ] Rachas y logros *(en curso)*
+- [ ] Estadísticas de progreso
+- [ ] Modo multijugador por grupos
+- [ ] Aplicación móvil
+
+---
