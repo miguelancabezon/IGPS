@@ -8,7 +8,7 @@
   - [x] [Ingeniería del Software](/temario/3-ingenieria-software/clase-5-ingenieria_software.md) :green_square::green_square::green_square::green_square::green_square::green_square::green_square::green_square::green_square::green_square:
   - [x] [Procesos del Software](/temario/3-ingenieria-software/clase-6-proceso_software.md) :green_square::green_square::green_square::green_square::green_square::green_square::green_square::green_square::green_square::green_square:
 - **Lenguajes de marcado**
-  - [x] [Markdown](/temario/4-markdown) ![Progress](https://progress-bar.xyz/100/?width=50&style=flat)
+  - [x] [Markdown](/temario/4-markdown) :green_square::green_square::green_square::green_square::green_square::green_square::green_square::green_square::green_square::green_square:
   - [ ] [Plant UML - No UML](/temario/5-plantuml) :green_square::green_square::green_square::green_square::green_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square:
   - [ ] [Plant UML - UML](/temario/5-plantuml) :white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square:
 - [ ] [Innovación](/temario/6-innovacion-calidad/clase-16-innovacion.md) :white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square::white_large_square:
