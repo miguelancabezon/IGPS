@@ -31,6 +31,9 @@
 
 ### Libros
 
+#### Guía de Referencia del Lenguaje PlantUML [PDF](./libros/PlantUML_Language_Reference_Guide_es.pdf)
+![Guía de Referencia del Lenguaje PlantUML](./libros/PlantUML_Language_Reference_Guide.png)
+
 ### Enlaces
 
 ### Vídeos
