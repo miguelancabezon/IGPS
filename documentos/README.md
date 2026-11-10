@@ -21,7 +21,7 @@
 
 **2. Cursos y tutoriales prácticos**
   - [Learn Git Branching](https://learngitbranching.js.org/?locale=es_ES): herramienta interactiva para aprender visualmente cómo funcionan las ramas, los commits, los merges y los rebases. Permite practicar directamente desde el navegador.
-  - [GitHub Skills]https://skills.github.com/(): cursos interactivos gratuitos para aprender a trabajar con GitHub mediante ejercicios prácticos.
+  - [GitHub Skills](https://skills.github.com/): cursos interactivos gratuitos para aprender a trabajar con GitHub mediante ejercicios prácticos.
   - [First Contributions](https://firstcontributions.github.io/): tutorial guiado para realizar la primera contribución a un proyecto de código abierto mediante un Pull Request.
   - [Git - Learn](https://git-scm.com/learn): colección de recursos oficiales, incluidos vídeos breves, para comprender qué es el control de versiones y cómo funciona Git.
 
