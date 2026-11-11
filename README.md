@@ -9,7 +9,7 @@
   - [x] [Procesos del Software](/temario/3-ingenieria-software/clase-6-proceso_software.md) ▰▰▰▰▰▰▰▰▰▰ 100%
 - **Lenguajes de marcado**
   - [x] [Markdown](/temario/4-markdown) ▰▰▰▰▰▰▰▰▰▰ 100%
-  - [ ] [Plant UML - No UML](/temario/5-plantuml) ▰▰▰▰▰▰▰▰▰▱ 90%
+  - [x] [Plant UML - No UML](/temario/5-plantuml) ▰▰▰▰▰▰▰▰▰▰ 100%
   - [ ] [Plant UML - UML](/temario/5-plantuml) ▱▱▱▱▱▱▱▱▱▱ 0%
 - [ ] [Innovación](/temario/6-innovacion-calidad/clase-16-innovacion.md) ▱▱▱▱▱▱▱▱▱▱ 0%
 - [ ] [Calidad del Software](/temario/6-innovacion-calidad/clase-17-calidad_software.md) ▱▱▱▱▱▱▱▱▱▱ 0%
